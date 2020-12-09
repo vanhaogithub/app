@@ -1,0 +1,14 @@
+.container {
+    margin-top: 50px;
+}
+
+.modal-content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.block-image {
+    margin-top: 50px;
+    margin-left: 15px;
+}

@@ -24,7 +24,7 @@ public class UserEntity extends BaseEntity {
 	@Column(name = "fullname")
 	private String fullName;
 
-	@Column
+	@Column(name = "status")
 	private Integer status;
 
 	@ManyToMany(fetch = FetchType.LAZY)

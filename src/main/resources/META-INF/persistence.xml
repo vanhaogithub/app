@@ -5,6 +5,12 @@
         <class>com.bachkhoa.entity.UserEntity</class>
         <class>com.bachkhoa.entity.RoleEntity</class>
         <class>com.bachkhoa.entity.CategoryEntity</class>
+        <class>com.bachkhoa.entity.DepartmentEntity</class>
+        <class>com.bachkhoa.entity.LeaveDayEntity</class>
+        <class>com.bachkhoa.entity.OtEntity</class>
+        <class>com.bachkhoa.entity.ProjectEntity</class>
+        <class>com.bachkhoa.entity.TimekeepingEntity</class>
+        <class>com.bachkhoa.entity.UserDetailEntity</class>
     </persistence-unit>
 </persistence>
 

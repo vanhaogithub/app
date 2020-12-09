@@ -30,7 +30,7 @@ public class NewController {
 	@Autowired
 	private MessageUtil messageUtil;
 
-	@RequestMapping(value = "/quan-tri/bai-viet/danh-sach", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/news/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, 
 								 @RequestParam("limit") int limit, HttpServletRequest request) {
 		NewDTO model = new NewDTO();
@@ -50,7 +50,7 @@ public class NewController {
 		return mav;
 	}
 	
-	@RequestMapping(value = "/quan-tri/bai-viet/chinh-sua", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/news/edit", method = RequestMethod.GET)
 	public ModelAndView editNew(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("admin/new/edit");
 		NewDTO model = new NewDTO();

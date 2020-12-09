@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <c:url var="newAPI" value="/api/new"/>
-<c:url var="newURL" value="/quan-tri/bai-viet/danh-sach"/>
+<c:url var="newURL" value="/admin/news/list"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -13,7 +13,7 @@
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/quan-tri/bai-viet/danh-sach'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/admin/news/list'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -37,7 +37,7 @@
 									<div class="table-btn-controls">
 										<div class="pull-right tableTools-container">
 											<div class="dt-buttons btn-overlap btn-group">
-												<c:url var="createNewURL" value="/quan-tri/bai-viet/chinh-sua"/>
+												<c:url var="createNewURL" value="/admin/news/edit"/>
 												<a flag="info"
 												   class="dt-button buttons-colvis btn btn-white btn-primary btn-bold" data-toggle="tooltip"
 												   title='Thêm bài viết' href='${createNewURL}'>
@@ -74,7 +74,7 @@
 															<td>${item.title}</td>
 															<td>${item.shortDescription}</td>
 															<td>
-																<c:url var="updateNewURL" value="/quan-tri/bai-viet/chinh-sua">
+																<c:url var="updateNewURL" value="/admin/news/edit">
 																	<c:param name="id" value="${item.id}"/>															
 																</c:url>																
 																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
