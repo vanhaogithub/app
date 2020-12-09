@@ -28,13 +28,13 @@
                       <h3>Information</h3>
                       <form>
                         <div class="form-group">
-                            <p> User name: Nguyen van A</p>
+                            <p> User name: ${userDetailDTO.fullname}</p>
                         </div>
                         <div class="form-group">
-                            <p> Email: nguyenvana@gmail.com</p>
+                            <p> Email: ${userDetailDTO.email}</p>
                         </div>
                         <div class="form-group">
-                            <p> Phone: 034 333 444 555</p>
+                            <p> Phone: ${userDetailDTO.phone}</p>
                         </div>
                         <button type="submit" class="btn btn-success pull-left">Edit</button>
                       </form>

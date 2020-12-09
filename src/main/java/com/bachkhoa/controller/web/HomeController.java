@@ -24,10 +24,9 @@ public class HomeController {
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView homePage() {
-		UserDetailDTO userDetailDTO = new UserDetailDTO();
-		userDetailDTO = userDetailService.findByOriginid(SecurityUtils.getPrincipal().getId());
+		UserDetailDTO userDetailDTO = userDetailService.findByOriginid(SecurityUtils.getPrincipal().getId());
 		ModelAndView mav = new ModelAndView("web/home");
-		//mav.addObject("userDetailDTO", userDetailDTO);
+		mav.addObject("userDetailDTO", userDetailDTO);
 		return mav;
 	}
 

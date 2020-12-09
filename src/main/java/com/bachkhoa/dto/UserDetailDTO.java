@@ -1,6 +1,9 @@
 package com.bachkhoa.dto;
 
 import java.util.Date;
+import java.util.List;
+
+import com.bachkhoa.entity.ProjectEntity;
 
 public class UserDetailDTO extends AbstractDTO<UserDetailDTO> {
 	private Long originid;
@@ -17,32 +20,22 @@ public class UserDetailDTO extends AbstractDTO<UserDetailDTO> {
 
 	private Long manager02id;
 
-	private Float daySalary;
+	private Float daySalaryAmount;
 
-	private Float dayBonus;
+	private Float dayBonusAmount;
 
 	private Date effectiveDate;
 
 	private Date expirationDate;
 
-	private String name;
+	private List<ProjectEntity> projects;
 
-	private String code;
-
-	public String getName() {
-		return name;
+	public List<ProjectEntity> getProjects() {
+		return projects;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
+	public void setProjects(List<ProjectEntity> projects) {
+		this.projects = projects;
 	}
 
 	public Long getOriginid() {
@@ -101,20 +94,22 @@ public class UserDetailDTO extends AbstractDTO<UserDetailDTO> {
 		this.manager02id = manager02id;
 	}
 
-	public Float getDaySalary() {
-		return daySalary;
+	
+
+	public Float getDaySalaryAmount() {
+		return daySalaryAmount;
 	}
 
-	public void setDaySalary(Float daySalary) {
-		this.daySalary = daySalary;
+	public void setDaySalaryAmount(Float daySalaryAmount) {
+		this.daySalaryAmount = daySalaryAmount;
 	}
 
-	public Float getDayBonus() {
-		return dayBonus;
+	public Float getDayBonusAmount() {
+		return dayBonusAmount;
 	}
 
-	public void setDayBonus(Float dayBonus) {
-		this.dayBonus = dayBonus;
+	public void setDayBonusAmount(Float dayBonusAmount) {
+		this.dayBonusAmount = dayBonusAmount;
 	}
 
 	public Date getEffectiveDate() {
