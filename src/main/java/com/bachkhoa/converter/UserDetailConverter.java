@@ -22,7 +22,7 @@ public class UserDetailConverter {
 		result.setDayBonusAmount(entity.getDayBonusAmount());
 		result.setEffectiveDate(entity.getEffectiveDate());
 		result.setExpirationDate(entity.getExpirationDate());
-
+		result.setProjects(entity.getProjects());
 		return result;
 	}
 }

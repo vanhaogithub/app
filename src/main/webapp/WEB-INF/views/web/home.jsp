@@ -45,13 +45,14 @@
                 <div class="row">
                     <div class="col-md-5 col-lg-5">
                         <h3>Thong tin quan ly:</h3>
-                        <p>Quan ly cap 1: anh Nguyen van 1</p><br/>
-                        <p>Quan ly cap 2: anh Nguyen van 2</p>
+                        <p>Quan ly cap 1: anh ${manager01DTO.fullname}</p><br/>
+                        <p>Quan ly cap 2: anh ${manager02DTO.fullname}</p>
                     </div>
                     <div class="col-md-7 col-lg-7">
                         <h3>Thong tin du an:</h3>
-                        <p>Du an 1: Project01</p><br/>
-                        <p>Du an 2: Project02</p>
+                        <c:forEach var="item" items="${projectDTOs}">
+							<p>Du an: ${item.name}</p><br/>
+						</c:forEach>
                     </div>
                 </div>
             </div>

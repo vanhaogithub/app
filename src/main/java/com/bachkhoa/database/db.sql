@@ -33,4 +33,20 @@ insert into department(code,name) values('HR','Department HR');
 
 insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
 values('2','Employee1','Employee1@gmail.com','034 111000111','1','1','1','300000','400000','2020-10-10','2021-10-10');
+insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
+values('1','Administrator','Administrator@gmail.com','034 111000222','1','1','1','500000','600000','2020-10-10','2021-10-10');
+insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
+values('3','Employee2','Employee2@gmail.com','034 111000333','2','1','1','400000','400000','2020-10-10','2021-10-10');
+
+INSERT INTO user_project(userid,projectid) VALUES (1,1);
+INSERT INTO user_project(userid,projectid) VALUES (1,2);
+INSERT INTO user_project(userid,projectid) VALUES (2,2);
+INSERT INTO user_project(userid,projectid) VALUES (2,3);
+INSERT INTO user_project(userid,projectid) VALUES (3,3);
+INSERT INTO user_project(userid,projectid) VALUES (3,1);
+
+
+
+
+
 
