@@ -45,7 +45,107 @@ INSERT INTO user_project(userid,projectid) VALUES (2,3);
 INSERT INTO user_project(userid,projectid) VALUES (3,3);
 INSERT INTO user_project(userid,projectid) VALUES (3,1);
 
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-15',4, 'Di choi','Da phe duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-18',5, 'Di choi','Chua duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-14',4, 'Viec ca nhan','Tu choi', 2);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-18',3, 'Viec ca nhan','Da phe duyet', 2);
 
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-15',4, 'Di choi','Chua duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-18',5, 'Di choi','Da phe duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-14',4, 'Viec ca nhan','Chua duyet', 1);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-18',3, 'Viec ca nhan','Tu choi', 1);
+
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-15',4, 'Di choi','Tu choi', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-10-18',5, 'Di choi','Chua duyet', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-14',4, 'Viec ca nhan','Tu choi', 3);
+INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
+VALUES ('2020-12-18',3, 'Viec ca nhan','Da phe duyet', 3);
+
+INSERT INTO ot(dateot,timesot,reason,status,userid) 
+VALUES ('2020-10-10',2, 'OT Project DYN','Da phe duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-11',2, 'OT Project DYN','Da phe duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-15',4, 'OT Project CSS','Da phe duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-18',5, 'OT Project CSS','Chua duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-11-10',2, 'OT Project DYN','Da phe duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-10',1, 'OT Project CSS','Da phe duyet', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-14',4, 'OT Project DYN','Tu choi', 2);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-18',3, 'OT Project CSS','Da phe duyet', 2);
+
+INSERT INTO ot(dateot,timesot,reason,status,userid) 
+VALUES ('2020-10-10',1, 'OT Project MSW','Da phe duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-11',1, 'OT Project MSW','Da phe duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-15',4, 'OT Project DYN','Chua duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-18',5, 'OT Project MSW','Da phe duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-11-10',2, 'OT Project DYN','Da phe duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-10',1, 'OT Project DYN','Da phe duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-14',4, 'OT Project MSW','Chua duyet', 1);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-18',3, 'OT Project DYN','Tu choi', 1);
+
+INSERT INTO ot(dateot,timesot,reason,status,userid) 
+VALUES ('2020-10-10',1, 'OT Project MSW','Da phe duyet', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-11',1, 'OT Project CSS','Da phe duyet', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-15',4, 'OT Project MSW','Tu choi', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-18',1, 'OT Project CSS','Chua duyet', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-11-10',2, 'OT Project MSW','Da phe duyet', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-10',1, 'OT Project CSS','Da phe duyet', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-14',4, 'OT Project MSW','Tu choi', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-18',3, 'OT Project CSS','Da phe duyet', 3);
 
 
 

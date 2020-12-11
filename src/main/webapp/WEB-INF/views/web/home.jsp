@@ -1,3 +1,4 @@
+<%@include file="/common/taglib.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -22,7 +23,7 @@
             <div class="jumbotron text-feft">
                 <div class="row">
                     <div class="col-md-5 col-lg-5 block-image">
-                      <img src="<c:url value='/template/common/img/avatar.jpg'/>" class="img-responsive"/> 
+                      <img src="<c:url value=''/>" class="img-responsive"/> 
                     </div>
                     <div class="col-md-6 col-lg-6 block-contact">
                       <h3>Information</h3>
@@ -57,44 +58,43 @@
                 </div>
             </div>
             <div class="jumbotron text-feft">
-                <h3>Ngay dang ky nghi phep:</h3>
-                <div class="row">
-                    <div class="col-md-10 col-lg-10">
-                        <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th>Ngay nghi</th>
-                                <th>Thoi gian nghi</th>
-                                <th>Ly do</th>
-                                <th>Status</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th>2020/10/11</th>
-                                <th>Ca ngay</th>
-                                <th>Nghi om</th>
-                                <th>Da phe duyet</th>
-                              </tr>
-                              <tr>
-                                <th>2020/11/20</th>
-                                <th>Ca ngay</th>
-                                <th>Di choi</th>
-                                <th>Da phe duyet</th>
-                              </tr>
-                              <tr>
-                                <th>2020/12/11</th>
-                                <th>Ca ngay</th>
-                                <th>Di choi</th>
-                                <th>Chưa phe duyet</th>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <button type="button" class="btn btn-success pull-left">Register</button>
-                    </div>
-                </div>
+            	<form action="<c:url value=''/>" id="formSubmit01" method="get">
+	                <h3>Ngay dang ky nghi phep:</h3>
+	                <div class="row">
+	                    <div class="col-md-10 col-lg-10">
+	                        <div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th><input type="checkbox" id="checkAll"></th>
+										<th>Ngay nghi</th>
+		                                <th>Thoi gian nghi</th>
+		                                <th>Ly do</th>
+		                                <th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<c:forEach var="item" items="${leaveDayDTOs}">
+										<tr>
+											<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
+											<td>${item.dateleave}</td>
+											<td>${item.timesleave}</td>
+											<td>${item.reason}</td>
+											<td>${item.status}</td>
+										</tr>
+									</c:forEach>
+								</tbody>
+								</table>
+								<ul class="pagination" id="pagination01"></ul>	
+								<input type="hidden" value="" id="page01" name="page"/>
+								<input type="hidden" value="" id="limit01" name="limit"/>									
+							</div>
+	                    </div>
+	                    <div class="col-md-2 col-lg-2">
+	                        <button type="button" class="btn btn-success pull-left">Register</button>
+	                    </div>
+	                </div>
+                </form>
             </div>
             <div class="jumbotron text-feft">
                 <h3>Ngay dang ky OT:</h3>
@@ -139,7 +139,25 @@
     </div>
 	
 	<!-- /.container -->
-
+	<script>
+		var totalPages = ${model.totalPage};
+		var currentPage = ${model.page};
+		$(function () {
+	        window.pagObj = $('#pagination01').twbsPagination({
+	            totalPages: totalPages,
+	            visiblePages: 10,
+	            startPage: currentPage,
+	            onPageClick: function (event, page) {
+	            	if (currentPage != page) {
+	            		$('#limit01').val(2);
+						$('#page01').val(page);
+						$('#formSubmit01').submit();
+					}
+	            }
+	        });
+	    });
+		
+	</script>
 </body>
 
 </html>

@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.bachkhoa.converter.ProjectConverter;
+import com.bachkhoa.dto.LeaveDayDTO;
 import com.bachkhoa.dto.ProjectDTO;
 import com.bachkhoa.dto.UserDetailDTO;
+import com.bachkhoa.service.ILeaveDayService;
 import com.bachkhoa.service.IUserDetailService;
 import com.bachkhoa.util.SecurityUtils;
 
@@ -27,6 +29,8 @@ public class HomeController {
 	private IUserDetailService userDetailService;
 	@Autowired
 	private ProjectConverter projectConverter;
+	@Autowired
+	private ILeaveDayService leaveDayService;
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView homePage() {
@@ -34,11 +38,13 @@ public class HomeController {
 		UserDetailDTO manager01DTO = userDetailService.findByOriginid(userDetailDTO.getManager01id());
 		UserDetailDTO manager02DTO = userDetailService.findByOriginid(userDetailDTO.getManager02id());
 		List<ProjectDTO> projectDTOs = projectConverter.toDTOs(userDetailDTO.getProjects());
+		List<LeaveDayDTO> leaveDayDTOs = leaveDayService.findByUserid(userDetailDTO.getOriginid());
 		ModelAndView mav = new ModelAndView("web/home");
 		mav.addObject("userDetailDTO", userDetailDTO);
 		mav.addObject("manager01DTO", manager01DTO);
 		mav.addObject("manager02DTO", manager02DTO);
 		mav.addObject("projectDTOs", projectDTOs);
+		mav.addObject("leaveDayDTOs", leaveDayDTOs);
 		return mav;
 	}
 
