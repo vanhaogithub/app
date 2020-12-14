@@ -59,50 +59,18 @@
             </div>
             <div class="jumbotron text-feft">
             	<div class="col-md-10 col-lg-10">
-                	<h3>Ngay dang ky nghi phep:</h3>
+                	<h3>Ngay dang ky nghi phep</h3>
                 </div>
                 <div class="col-md-2 col-lg-2">
                 	<a class="nav-link" href="<c:url value='/home/leave/list?page=1&limit=5'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
                 </div>
             </div>
             <div class="jumbotron text-feft">
-                <h3>Ngay dang ky OT:</h3>
-                <div class="row">
-                    <div class="col-md-10 col-lg-10">
-                        <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th>Ngay OT</th>
-                                <th>Thoi gian OT</th>
-                                <th>Ly do</th>
-                                <th>Status</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th>2020/10/11</th>
-                                <th>1h</th>
-                                <th>Code  function 1</th>
-                                <th>Da phe duyet</th>
-                              </tr>
-                              <tr>
-                                <th>2020/11/20</th>
-                                <th>2h</th>
-                                <th>Code  function 2</th>
-                                <th>Da phe duyet</th>
-                              </tr>
-                              <tr>
-                                <th>2020/12/11</th>
-                                <th>1.5h</th>
-                                <th>Code  function 1</th>
-                                <th>Da phe duyet</th>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <button type="button" class="btn btn-success pull-left">Register</button>
-                    </div>
+                <div class="col-md-10 col-lg-10">
+                	<h3>Ngay dang ky OT</h3>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                	<a class="nav-link" href="<c:url value='/home/ot/list?page=1&limit=5'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
                 </div>
             </div>
     </div>

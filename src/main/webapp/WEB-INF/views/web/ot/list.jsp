@@ -8,7 +8,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Ngay nghi</title>
+<title>Ngay OT</title>
 
 </head>
 
@@ -17,8 +17,8 @@
 	<!-- Page Content -->
 	<div class="container">
          <div class="jumbotron text-feft">
-         	<form action="<c:url value='/home/leave/list'/>" id="formSubmit" method="get">
-              <h3>Ngay dang ky nghi phep</h3>
+         	<form action="<c:url value='/home/ot/list'/>" id="formSubmit" method="get">
+              <h3>Ngay dang ky OT</h3>
               <div id="leaveDay" class="row">
                   <div class="col-md-10 col-lg-10">
                       <div class="table-responsive">
@@ -36,8 +36,8 @@
 									<c:forEach var="item" items="${model.listResult}">
 										<tr>
 											<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
-											<td>${item.dateleave}</td>
-											<td>${item.timesleave}</td>
+											<td>${item.dateot}</td>
+											<td>${item.timesot}</td>
 											<td>${item.reason}</td>
 											<td>${item.status}</td>
 										</tr>
