@@ -58,43 +58,12 @@
                 </div>
             </div>
             <div class="jumbotron text-feft">
-            	<form action="<c:url value=''/>" id="formSubmit01" method="get">
-	                <h3>Ngay dang ky nghi phep:</h3>
-	                <div class="row">
-	                    <div class="col-md-10 col-lg-10">
-	                        <div class="table-responsive">
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<th><input type="checkbox" id="checkAll"></th>
-										<th>Ngay nghi</th>
-		                                <th>Thoi gian nghi</th>
-		                                <th>Ly do</th>
-		                                <th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<c:forEach var="item" items="${leaveDayDTOs}">
-										<tr>
-											<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
-											<td>${item.dateleave}</td>
-											<td>${item.timesleave}</td>
-											<td>${item.reason}</td>
-											<td>${item.status}</td>
-										</tr>
-									</c:forEach>
-								</tbody>
-								</table>
-								<ul class="pagination" id="pagination01"></ul>	
-								<input type="hidden" value="" id="page01" name="page"/>
-								<input type="hidden" value="" id="limit01" name="limit"/>									
-							</div>
-	                    </div>
-	                    <div class="col-md-2 col-lg-2">
-	                        <button type="button" class="btn btn-success pull-left">Register</button>
-	                    </div>
-	                </div>
-                </form>
+            	<div class="col-md-10 col-lg-10">
+                	<h3>Ngay dang ky nghi phep:</h3>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                	<a class="nav-link" href="<c:url value='/home/leave/list?page=1&limit=5'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
+                </div>
             </div>
             <div class="jumbotron text-feft">
                 <h3>Ngay dang ky OT:</h3>
@@ -137,27 +106,6 @@
                 </div>
             </div>
     </div>
-	
-	<!-- /.container -->
-	<script>
-		var totalPages = ${model.totalPage};
-		var currentPage = ${model.page};
-		$(function () {
-	        window.pagObj = $('#pagination01').twbsPagination({
-	            totalPages: totalPages,
-	            visiblePages: 10,
-	            startPage: currentPage,
-	            onPageClick: function (event, page) {
-	            	if (currentPage != page) {
-	            		$('#limit01').val(2);
-						$('#page01').val(page);
-						$('#formSubmit01').submit();
-					}
-	            }
-	        });
-	    });
-		
-	</script>
 </body>
 
 </html>
