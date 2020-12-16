@@ -1,6 +1,7 @@
 <%@include file="/common/taglib.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<c:url var="otURL" value="/home/ot/edit"/>
 <!DOCTYPE html>
 
 <html>
@@ -40,6 +41,14 @@
 											<td>${item.timesot}</td>
 											<td>${item.reason}</td>
 											<td>${item.status}</td>
+											<td>
+												<c:url var="updateURL" value="/home/ot/edit">
+													<c:param name="id" value="${item.id}"/>															
+												</c:url>																
+												<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
+												   title="Edit content" href='${updateURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+												</a>
+											</td>
 										</tr>
 									</c:forEach>
 								</tbody>
@@ -50,7 +59,7 @@
 						</div>
                   </div>
                   <div class="col-md-2 col-lg-2">
-                      <button type="button" class="btn btn-success pull-left">Register</button>
+                      <button type="button" class="btn btn-success pull-left" id="otNew">Register</button>
                   </div>
               </div>
              </form>
@@ -76,6 +85,9 @@
 	        });
 	    });
 		
+		$('#otNew').click(function (e) {
+			window.location.href = "${otURL}";
+		});
 	</script>
 </body>
 

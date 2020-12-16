@@ -57,8 +57,14 @@ public class OtService implements IOtService {
 	@Override
 	@Transactional
 	public OtDTO save(OtDTO dto) {
-		// TODO Auto-generated method stub
-		return null;
+		OtEntity entity = new OtEntity();
+		if (dto.getId() != null) {
+			OtEntity oldEntity = otRepository.findOne(dto.getId());
+			entity = otConverter.toEntity(oldEntity, dto);
+		} else {
+			entity = otConverter.toEntity(dto);
+		}
+		return otConverter.toDTO(otRepository.save(entity));
 	}
 
 	@Override
