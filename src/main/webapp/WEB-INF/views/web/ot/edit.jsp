@@ -6,6 +6,14 @@
 <html>
 <head>
 <title>Chỉnh sửa OT</title>
+
+<link href="<c:url value='/template/web/otEdit/css/bootstrap.css'/>" rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/otEdit/css/register.css'/>" rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/otEdit/css/themes/base/jquery-ui.css'/>" rel="stylesheet" type="text/css">
+
+<script src="<c:url value='/template/web/otEdit/js/jquery-3.5.1.js'/>"></script>
+<script src="<c:url value='/template/web/otEdit/js/bootstrap.js'/>"></script>
+<script src="<c:url value='/template/web/otEdit/js/jquery-ui.js'/>"></script>
 </head>
 <body>
 <div class="container">
@@ -25,7 +33,11 @@
 					<div class="form-group">
 						<form:input path="dateot" rows="5" cols="10" cssClass="form-control" id="dateot"/>
 					</div>
+					<div class="form-group">
+		                  <input name="birthday" class="mycalendar form-control" placeholder="Birthday: "/>
+		             </div>
 				</div>
+				
 				<div class="col-lg-3">
 					<h5>Thời gian:</h5>
 				</div>
@@ -74,7 +86,20 @@
 	</div>
 </div>	
 
-<script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.mycalendar').datepicker({
+        changeYear:true,
+        changeMonth:true,
+        showAnim: 'fold',
+        inline: true,
+        yearRange: '1950:2021',
+        onSelect:function(dateText, inst){
+            alert(inst['currentDay']+"-"+inst['currentMonth']+"-"+inst['currentYear']);
+        }
+    });
+});
+
 	$('#btnAddOrUpdate').click(function (e) {
 	    e.preventDefault();
 	    var data = {};
@@ -121,6 +146,8 @@
             }
         });
 	}
+	
+	
 </script>
 </body>
 </html>
