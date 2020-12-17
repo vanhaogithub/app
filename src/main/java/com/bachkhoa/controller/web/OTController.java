@@ -40,7 +40,7 @@ public class OTController {
 	}
 	
 	@RequestMapping(value = "/home/ot/edit", method = RequestMethod.GET)
-	public ModelAndView editNew(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
+	public ModelAndView editOT(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("web/ot/edit");
 		OtDTO model = new OtDTO();
 		if (id != null) {

@@ -26,18 +26,18 @@
 							<table class="table table-bordered">
 								<thead>
 									<tr>
-										<th><input type="checkbox" id="checkAll"></th>
 										<th>Ngay nghi</th>
 			                               <th>Thoi gian nghi</th>
 			                               <th>Ly do</th>
 			                               <th>Status</th>
+			                               <th>Edit</th>
 									</tr>
 								</thead>
 								<tbody>
 									<c:forEach var="item" items="${model.listResult}">
+										<c:set var="dateot" value="${item.dateot}"/>  
 										<tr>
-											<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
-											<td>${item.dateot}</td>
+											<td>${fn:substring(dateot, 0, 10)}</td>
 											<td>${item.timesot}</td>
 											<td>${item.reason}</td>
 											<td>${item.status}</td>

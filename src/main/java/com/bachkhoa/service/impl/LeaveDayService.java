@@ -57,8 +57,14 @@ public class LeaveDayService implements ILeaveDayService {
 	@Override
 	@Transactional
 	public LeaveDayDTO save(LeaveDayDTO dto) {
-		// TODO Auto-generated method stub
-		return null;
+		LeaveDayEntity entity = new LeaveDayEntity();
+		if (dto.getId() != null) {
+			LeaveDayEntity oldEntity = leaveDayRepository.findOne(dto.getId());
+			entity = leaveDayConverter.toEntity(oldEntity, dto);
+		} else {
+			entity = leaveDayConverter.toEntity(dto);
+		}
+		return leaveDayConverter.toDTO(leaveDayRepository.save(entity));
 	}
 
 	@Override
