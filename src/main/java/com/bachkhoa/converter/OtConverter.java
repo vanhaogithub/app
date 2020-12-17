@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import com.bachkhoa.constant.ApprovalStatus;
 import com.bachkhoa.dto.OtDTO;
 import com.bachkhoa.entity.OtEntity;
+import com.bachkhoa.util.SecurityUtils;
 
 @Component
 public class OtConverter {
@@ -30,7 +31,7 @@ public class OtConverter {
 
 	public OtEntity toEntity(OtDTO dto) {
 		OtEntity entity = new OtEntity();
-		entity.setUserid(dto.getUserid());
+		entity.setUserid(SecurityUtils.getPrincipal().getId());
 		entity.setDateot(dto.getDateot());
 		entity.setTimesot(dto.getTimesot());
 		entity.setReason(dto.getReason());

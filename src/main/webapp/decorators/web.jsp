@@ -19,7 +19,10 @@
 	<!-- phan trang -->
 	<script src="<c:url value='/template/admin/paging/jquery.twbsPagination.js' />"></script>
 	<script src="<c:url value='/template/admin/assets/js/bootstrap.min.js' />"></script>
-
+	<!-- Date picker -->
+	<link href="<c:url value='/template/web/otEdit/css/register.css'/>" rel="stylesheet" type="text/css">
+	<link href="<c:url value='/template/web/otEdit/css/themes/base/jquery-ui.css'/>" rel="stylesheet" type="text/css">
+	<script src="<c:url value='/template/web/otEdit/js/jquery-ui.js'/>"></script>
 </head>
 <body>
 	<!-- Navigation -->

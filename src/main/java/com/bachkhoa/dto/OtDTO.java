@@ -18,6 +18,9 @@ public class OtDTO extends AbstractDTO<OtDTO> {
 	}
 
 	public void setDateot(Date dateot) {
+		/*String pattern = "yyyy-mm-dd";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		this.dateot = simpleDateFormat.format(dateot);*/
 		this.dateot = dateot;
 	}
 

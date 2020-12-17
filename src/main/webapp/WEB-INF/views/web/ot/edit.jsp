@@ -7,18 +7,13 @@
 <head>
 <title>Chỉnh sửa OT</title>
 
-<link href="<c:url value='/template/web/otEdit/css/bootstrap.css'/>" rel="stylesheet" type="text/css">
-<link href="<c:url value='/template/web/otEdit/css/register.css'/>" rel="stylesheet" type="text/css">
-<link href="<c:url value='/template/web/otEdit/css/themes/base/jquery-ui.css'/>" rel="stylesheet" type="text/css">
-
-<script src="<c:url value='/template/web/otEdit/js/jquery-3.5.1.js'/>"></script>
-<script src="<c:url value='/template/web/otEdit/js/bootstrap.js'/>"></script>
-<script src="<c:url value='/template/web/otEdit/js/jquery-ui.js'/>"></script>
 </head>
 <body>
 <div class="container">
-	<div class="jumbotron text-feft">
-
+	<div class="jumbotron text-feft">															
+		<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
+		   title="Edit content" href="<c:url value='/home/ot/list?page=1&limit=5'/>"><h5>Back to OT list</h5>
+		</a>
 		<div class="col-lg-12">
 			<c:if test="${not empty message}">
 				<div class="alert alert-${alert}">
@@ -31,11 +26,8 @@
 				</div>
 				<div class="col-lg-9">
 					<div class="form-group">
-						<form:input path="dateot" rows="5" cols="10" cssClass="form-control" id="dateot"/>
+						<form:input path="dateot" rows="5" cols="10" cssClass="mycalendar form-control" id="dateot"/>
 					</div>
-					<div class="form-group">
-		                  <input name="birthday" class="mycalendar form-control" placeholder="Birthday: "/>
-		             </div>
 				</div>
 				
 				<div class="col-lg-3">
@@ -87,19 +79,23 @@
 </div>	
 
 <script type="text/javascript">
-$(document).ready(function(){
-    $('.mycalendar').datepicker({
-        changeYear:true,
-        changeMonth:true,
-        showAnim: 'fold',
-        inline: true,
-        yearRange: '1950:2021',
-        onSelect:function(dateText, inst){
-            alert(inst['currentDay']+"-"+inst['currentMonth']+"-"+inst['currentYear']);
-        }
-    });
-});
 
+	$(document).ready(function(){
+	    $('.mycalendar').datepicker({
+	        changeYear:true,
+	        changeMonth:true,
+	        showAnim: 'fold',
+	        inline: true,
+	        dateFormat: 'yy-mm-dd',
+	        yearRange: '1950:2021',
+	        onSelect:function(dateText, inst){
+	        }
+	    });
+	    var dateot = "${model.dateot}";
+	    if ( dateot.length ){
+	    	$("#dateot").val(dateot.substring(0, 10));
+	    }
+	});
 	$('#btnAddOrUpdate').click(function (e) {
 	    e.preventDefault();
 	    var data = {};

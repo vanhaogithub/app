@@ -1,5 +1,7 @@
 package com.bachkhoa.entity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -29,6 +31,13 @@ public class OtEntity extends BaseEntity {
 	}
 
 	public void setDateot(Date dateot) {
+		/*String pattern = "yyyy-mm-dd hh:mm:ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		try {
+			this.dateot = simpleDateFormat.parse(dateot);
+		} catch (ParseException e) {
+			this.dateot = null;
+		}*/
 		this.dateot = dateot;
 	}
 
