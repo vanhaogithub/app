@@ -16,17 +16,17 @@ public class LeaveDayAPI {
 	private ILeaveDayService leaveDayService;
 
 	@PostMapping("/api/leave")
-	public LeaveDayDTO createOt(@RequestBody LeaveDayDTO dto) {
+	public LeaveDayDTO create(@RequestBody LeaveDayDTO dto) {
 		return leaveDayService.save(dto);
 	}
 
 	@PutMapping("/api/leave")
-	public LeaveDayDTO updateOt(@RequestBody LeaveDayDTO dto) {
+	public LeaveDayDTO update(@RequestBody LeaveDayDTO dto) {
 		return leaveDayService.save(dto);
 	}
 
 	@DeleteMapping("/api/leave")
-	public void deletePt(@RequestBody long[] ids) {
+	public void delete(@RequestBody long[] ids) {
 		leaveDayService.delete(ids);
 	}
 }

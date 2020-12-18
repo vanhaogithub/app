@@ -18,21 +18,21 @@ public class OTAPI {
 	//@PostMapping("/api/ot")
 	@RequestMapping(value = "/api/ot", method = RequestMethod.POST)
 	@ResponseBody
-	public OtDTO createOt(@RequestBody OtDTO dto) {
+	public OtDTO create(@RequestBody OtDTO dto) {
 		return otService.save(dto);
 	}
 
 	//@PutMapping("/api/ot")
 	@RequestMapping(value = "/api/ot", method = RequestMethod.PUT)
 	@ResponseBody
-	public OtDTO updateOt(@RequestBody OtDTO dto) {
+	public OtDTO update(@RequestBody OtDTO dto) {
 		return otService.save(dto);
 	}
 
 	//@DeleteMapping("/api/ot")
 	@RequestMapping(value = "/api/ot", method = RequestMethod.DELETE)
 	@ResponseBody
-	public void deletePt(@RequestBody long[] ids) {
+	public void delete(@RequestBody long[] ids) {
 		otService.delete(ids);
 	}
 }

@@ -37,7 +37,7 @@
                         <div class="form-group">
                             <p> Phone: ${userDetailDTO.phone}</p>
                         </div>
-                        <button type="submit" class="btn btn-success pull-left">Edit</button>
+                        <a class="nav-link" href="<c:url value='/home/user/edit'/>"><button type="button" class="btn btn-success pull-left">Edit</button></a>
                       </form>
                     </div>
                 </div>

@@ -4,4 +4,5 @@ import com.bachkhoa.dto.UserDetailDTO;
 
 public interface IUserDetailService {
 	UserDetailDTO findByOriginid(long originid);
+	UserDetailDTO save(UserDetailDTO dto);
 }

@@ -2,6 +2,7 @@ package com.bachkhoa.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.converter.UserDetailConverter;
 import com.bachkhoa.dto.UserDetailDTO;
@@ -25,4 +26,16 @@ public class UserDetailService implements IUserDetailService {
 		return userDetailDTO;
 	}
 
+	@Override
+	@Transactional
+	public UserDetailDTO save(UserDetailDTO dto) {
+		UserDetailEntity entity = new UserDetailEntity();
+		if (dto.getId() != null) {
+			UserDetailEntity oldEntity = userDetailRepository.findOne(dto.getId());
+			entity = userDetailConverter.toEntity(oldEntity, dto);
+		} else {
+			entity = userDetailConverter.toEntity(dto);
+		}
+		return userDetailConverter.toDto(userDetailRepository.save(entity));
+	}
 }
