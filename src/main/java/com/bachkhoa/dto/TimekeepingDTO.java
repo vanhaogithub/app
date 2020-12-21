@@ -1,13 +1,16 @@
 package com.bachkhoa.dto;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 	private Long userid;
 
-	private Date startTime;
+	private LocalDate workDay;
 
-	private Date endTime;
+	private LocalTime startTime;
+
+	private LocalTime endTime;
 
 	public Long getUserid() {
 		return userid;
@@ -17,19 +20,28 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 		this.userid = userid;
 	}
 
-	public Date getStartTime() {
+	public LocalDate getWorkDay() {
+		return workDay;
+	}
+
+	public void setWorkDay(LocalDate workDay) {
+		this.workDay = workDay;
+	}
+
+	public LocalTime getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(Date startTime) {
+	public void setStartTime(LocalTime startTime) {
 		this.startTime = startTime;
 	}
 
-	public Date getEndTime() {
+	public LocalTime getEndTime() {
 		return endTime;
 	}
 
-	public void setEndTime(Date endTime) {
+	public void setEndTime(LocalTime endTime) {
 		this.endTime = endTime;
 	}
+
 }

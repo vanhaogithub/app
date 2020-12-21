@@ -1,6 +1,7 @@
 package com.bachkhoa.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,12 +12,15 @@ import javax.persistence.Table;
 public class TimekeepingEntity extends BaseEntity {
 	@Column(name = "userid")
 	private Long userid;
+	
+	@Column(name = "workday")
+	private LocalDate workDay;
 
 	@Column(name = "starttime")
-	private Date startTime;
+	private LocalTime startTime;
 
 	@Column(name = "endtime")
-	private Date endTime;
+	private LocalTime endTime;
 
 	public Long getUserid() {
 		return userid;
@@ -26,20 +30,29 @@ public class TimekeepingEntity extends BaseEntity {
 		this.userid = userid;
 	}
 
-	public Date getStartTime() {
+	public LocalDate getWorkDay() {
+		return workDay;
+	}
+
+	public void setWorkDay(LocalDate workDay) {
+		this.workDay = workDay;
+	}
+
+	public LocalTime getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(Date startTime) {
+	public void setStartTime(LocalTime startTime) {
 		this.startTime = startTime;
 	}
 
-	public Date getEndTime() {
+	public LocalTime getEndTime() {
 		return endTime;
 	}
 
-	public void setEndTime(Date endTime) {
+	public void setEndTime(LocalTime endTime) {
 		this.endTime = endTime;
 	}
+
 
 }

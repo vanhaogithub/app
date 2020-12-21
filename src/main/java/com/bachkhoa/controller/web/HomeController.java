@@ -32,7 +32,7 @@ public class HomeController {
 	@Autowired
 	private ProjectConverter projectConverter;
 	@Autowired
-	private ITimekeepingService iimekeepingService;
+	private ITimekeepingService timekeepingService;
 	@Autowired
 	private MessageUtil messageUtil;
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
@@ -43,8 +43,8 @@ public class HomeController {
 		List<ProjectDTO> projectDTOs = projectConverter.toDTOs(userDetailDTO.getProjects());
 		
 		ModelAndView mav = new ModelAndView("web/home");
-		if(!iimekeepingService.registerStartTime()){
-			Map<String, String> message = messageUtil.getMessage(SystemConstant.ERROR_SYSTEM);
+		if(!timekeepingService.registerStartTime()){
+			Map<String, String> message = messageUtil.getMessage(SystemConstant.WORK_LATE);
 			mav.addObject("message", message.get("message"));
 			mav.addObject("alert", message.get("alert"));
 		}

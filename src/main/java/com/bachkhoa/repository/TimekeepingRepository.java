@@ -1,6 +1,6 @@
 package com.bachkhoa.repository;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,5 +10,5 @@ import com.bachkhoa.entity.TimekeepingEntity;
 
 public interface TimekeepingRepository extends JpaRepository<TimekeepingEntity, Long>{
 	@Query(value = "SELECT * FROM timekeeping t WHERE t.userid = :userid and t.starttime = :starttime", nativeQuery = true)
-	TimekeepingEntity findByUseridAndDateQuery(@Param("userid") Long userid,@Param("starttime") Date starttime);
+	TimekeepingEntity findByUseridAndDateQuery(@Param("userid") Long userid,@Param("starttime") LocalDate date);
 }
