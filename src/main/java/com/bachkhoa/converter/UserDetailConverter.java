@@ -26,6 +26,24 @@ public class UserDetailConverter {
 		result.setProjects(entity.getProjects());
 		return result;
 	}
+	
+	public UserDetailDTO toDto1(UserDetailEntity entity) {
+		UserDetailDTO result = new UserDetailDTO();
+		result.setId(entity.getId());
+		result.setOriginid(entity.getOriginid());
+		result.setFullname(entity.getFullname());
+		result.setEmail(entity.getEmail());
+		result.setPhone(entity.getPhone());
+		result.setDepartmentid(entity.getDepartmentid());
+		result.setManager01id(entity.getManager01id());
+		result.setManager02id(entity.getManager02id());
+		result.setDaySalaryAmount(entity.getDaySalaryAmount());
+		result.setDayBonusAmount(entity.getDayBonusAmount());
+		result.setEffectiveDate(entity.getEffectiveDate());
+		result.setExpirationDate(entity.getExpirationDate());
+		
+		return result;
+	}
 
 	public UserDetailEntity toEntity(UserDetailEntity result, UserDetailDTO dto) {
 		result.setFullname(dto.getFullname());

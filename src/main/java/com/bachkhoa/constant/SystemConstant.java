@@ -9,4 +9,10 @@ public class SystemConstant {
 		"/admin/home","/admin/news/list","/home/user/edit","/api/userDetail",
 		"/admin/news/edit","/error","/logout","/accessDenied","/j_spring_security_check"};
 	public static final String[] LIST_URL_PARTEN = {"^/template.+"};
+	
+	public static final String UPDATE_SUCCESS = "update_success";
+	public static final String INSERT_SUCCESS = "insert_success";
+	public static final String DELETE_SUCCESS = "delete_success";
+	public static final String ERROR_SYSTEM = "error_system";
+
 }

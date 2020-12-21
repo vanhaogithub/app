@@ -36,6 +36,7 @@ public class UserDetailService implements IUserDetailService {
 		} else {
 			entity = userDetailConverter.toEntity(dto);
 		}
-		return userDetailConverter.toDto(userDetailRepository.save(entity));
+		UserDetailEntity entityAfter = userDetailRepository.save(entity);
+		return userDetailConverter.toDto1(entityAfter);
 	}
 }

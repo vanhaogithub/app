@@ -16,7 +16,7 @@ import com.bachkhoa.util.MessageUtil;
 import com.bachkhoa.util.SecurityUtils;
 
 @Controller
-public class UserController {
+public class UserDetailController {
 	@Autowired
 	private IUserDetailService userDetailService;
 	@Autowired

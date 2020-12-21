@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MessageUtil {
-
+	
 	/**
 	 * @param message
 	 * @return

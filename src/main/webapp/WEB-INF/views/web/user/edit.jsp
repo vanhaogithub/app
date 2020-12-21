@@ -42,7 +42,7 @@
 				</div>
 				<div class="col-lg-9">
 					<div class="form-group">
-						<form:textarea path="phone" rows="5" cols="10" cssClass="form-control" id="phone"/>
+						<form:input path="phone" rows="5" cols="10" cssClass="form-control" id="phone"/>
 					</div>
 				</div>
 				<form:hidden path="id" id="id"/>
@@ -76,10 +76,10 @@
             data[""+v.name+""] = v.value;
         });
 	    
-	    updateNew(data);
+	    update(data);
 	});
 	
-	function updateNew(data) {
+	function update(data) {
 		$.ajax({
             url: '${userAPI}',
             type: 'PUT',
