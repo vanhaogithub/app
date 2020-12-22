@@ -55,26 +55,25 @@
 												<thead>
 													<tr>
 														<th><input type="checkbox" id="checkAll"></th>
+														<th>Nhan vien</th>
 														<th>Ngay nghi</th>
 							                            <th>Thoi gian nghi</th>
 							                            <th>Ly do</th>
 							                            <th>Status</th>
-							                            <th>Edit</th>
+							                            <th>Approval</th>
 													</tr>
 												</thead>
 												<tbody>
 													<c:forEach var="item" items="${model.listResult}">
+														<c:set var="dateleave" value="${item.dateleave}"/> 
 														<tr>
-															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
-															<td>${item.title}</td>
-															<td>${item.shortDescription}</td>
-															<td>
-																<c:url var="updateNewURL" value="/admin/news/edit">
-																	<c:param name="id" value="${item.id}"/>															
-																</c:url>																
-																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-																   title="Cập nhật bài viết" href='${updateNewURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-																</a>
+															<td>${item.userName}</td>
+															<td>${fn:substring(dateleave, 0, 10)}</td>
+															<td>${item.timesleave}</td>
+															<td>${item.reason}</td>
+															<td>${item.status}</td>
+															<td>															
+																<button onclick="approval()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
 															</td>
 														</tr>
 													</c:forEach>
@@ -110,7 +109,20 @@
 		            }
 		        });
 		    });
-			
+			function approval() {
+		        $.ajax({
+		            url: '${newAPI}',
+		            type: 'PUT',
+		            contentType: 'application/json',
+		            data: JSON.stringify(data),
+		            success: function (result) {
+		                window.location.href = "${newURL}?page=1&limit=2&message=delete_success";
+		            },
+		            error: function (error) {
+		            	window.location.href = "${newURL}?page=1&limit=2&message=error_system";
+		            }
+		        });
+		    }
 			function warningBeforeDelete() {
 					swal({
 					  title: "Xác nhận xóa",
