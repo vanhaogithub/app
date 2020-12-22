@@ -5,6 +5,7 @@ import java.time.LocalTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.constant.SystemConstant;
 import com.bachkhoa.entity.TimekeepingEntity;
@@ -18,6 +19,7 @@ public class TimekeepingService implements ITimekeepingService {
 	private TimekeepingRepository timekeepingRepository;
 
 	@Override
+	@Transactional
 	public boolean registerStartTime() {
 		LocalDate date = LocalDate.now();
 		LocalTime time = LocalTime.now();
@@ -37,12 +39,13 @@ public class TimekeepingService implements ITimekeepingService {
 	}
 
 	@Override
+	@Transactional
 	public boolean registerEndTime() {
 		LocalDate date = LocalDate.now();
 		LocalTime time = LocalTime.now();
 		TimekeepingEntity timekeepingEntity = timekeepingRepository
 				.findByUseridAndDateQuery(SecurityUtils.getPrincipal().getId(), date);
-		if (timekeepingEntity != null) {
+		if (timekeepingEntity != null && timekeepingEntity.getEndTime() == null) {
 			timekeepingEntity.setEndTime(time);
 			timekeepingRepository.save(timekeepingEntity);
 			return true;

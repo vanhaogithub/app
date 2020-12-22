@@ -1,5 +1,8 @@
 package com.bachkhoa.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,6 +29,18 @@ public class UserDetailService implements IUserDetailService {
 		return userDetailDTO;
 	}
 
+	@Override
+	public List<UserDetailDTO> findBymanagerid(long managerid) {
+		List<UserDetailDTO> models = new ArrayList<>();
+		List<UserDetailEntity> entities = userDetailRepository.findBymanagerid(managerid);
+		for (UserDetailEntity item : entities) {
+			UserDetailDTO dto = userDetailConverter.toDto(item);
+			models.add(dto);
+		}
+		
+		return models;
+	}
+	
 	@Override
 	@Transactional
 	public UserDetailDTO save(UserDetailDTO dto) {

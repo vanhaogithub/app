@@ -1,7 +1,5 @@
 package com.bachkhoa.entity;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;

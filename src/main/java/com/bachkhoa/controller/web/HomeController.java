@@ -13,6 +13,7 @@ import org.springframework.security.web.authentication.logout.SecurityContextLog
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.bachkhoa.constant.SystemConstant;
@@ -62,8 +63,11 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) {
+	public ModelAndView logout(@RequestParam(value = "endday", required = false) Long isEndday, HttpServletRequest request, HttpServletResponse response) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		if (isEndday != null) {
+			timekeepingService.registerEndTime();
+		}
 		if (auth != null) {
 			new SecurityContextLogoutHandler().logout(request, response, auth);
 		}

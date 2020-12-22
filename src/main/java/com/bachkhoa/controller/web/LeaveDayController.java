@@ -16,8 +16,9 @@ import org.springframework.web.servlet.ModelAndView;
 import com.bachkhoa.dto.LeaveDayDTO;
 import com.bachkhoa.service.ILeaveDayService;
 import com.bachkhoa.util.MessageUtil;
+import com.bachkhoa.util.SecurityUtils;
 
-@Controller
+@Controller(value = "leaveDayControllerOfWeb")
 public class LeaveDayController {
 	@Autowired
 	private ILeaveDayService leaveDayService;
@@ -32,7 +33,7 @@ public class LeaveDayController {
 		ModelAndView mav = new ModelAndView("web/leave/list");
 		Pageable pageable = new PageRequest(page - 1, limit);
 		model.setListResult(leaveDayService.findAll(pageable));
-		model.setTotalItem(leaveDayService.getTotalItem());
+		model.setTotalItem(leaveDayService.getTotalItem(SecurityUtils.getPrincipal().getId()));
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);
 

@@ -8,8 +8,8 @@
         <div class="navbar-header pull-left">
             <a href="#" class="navbar-brand">
                 <small>
-                    <i class="fa fa-leaf"></i>
-                    Trang quản trị
+                    <i class="fa fa-balance-scale"></i>
+                    Admin page
                 </small>
             </a>
         </div>

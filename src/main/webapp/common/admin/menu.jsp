@@ -38,7 +38,7 @@
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-list"></i>
                 <span class="menu-text"></span>
-                Quản lý bài viết
+                Menu
                 <b class="arrow fa fa-angle-down"></b>
             </a>
             <b class="arrow"></b>
@@ -49,6 +49,29 @@
                         DS bài viết
                     </a>
                     <b class="arrow"></b>
+                </li>
+                <li>
+                    <a href="<c:url value=''/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Cham cong
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a href="<c:url value=''/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Phe duyet OT
+                    </a>
+                    <b class="arrow"></b>
+                    
+                </li>
+                <li>
+                    <a href="<c:url value='/admin/leave/list?page=1&limit=5'/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Phe duyet nghi phep
+                    </a>
+                    <b class="arrow"></b>
+                    
                 </li>
             </ul>
         </li>

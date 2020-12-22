@@ -9,7 +9,7 @@ import com.bachkhoa.dto.OtDTO;
 public interface IOtService {
 	List<OtDTO> findByUserid(long userid);
 	List<OtDTO> findAll(Pageable pageable);
-	int getTotalItem();
+	int getTotalItem(Long userId);
 	OtDTO findById(long id);
 	OtDTO save(OtDTO dto);
 	void delete(long[] ids);

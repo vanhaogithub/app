@@ -1,4 +1,4 @@
-package com.bachkhoa.controller.web;
+package com.bachkhoa.controller.admin;
 
 import java.util.Map;
 
@@ -13,39 +13,38 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.bachkhoa.dto.OtDTO;
-import com.bachkhoa.service.IOtService;
+import com.bachkhoa.dto.LeaveDayDTO;
+import com.bachkhoa.service.ILeaveDayService;
 import com.bachkhoa.util.MessageUtil;
 import com.bachkhoa.util.SecurityUtils;
 
-@Controller(value = "otControllerOfWeb")
-public class OTController {
+@Controller(value = "leaveDayControllerOfAdmin")
+public class LeaveDayController {
 	@Autowired
-	private IOtService otService;
+	private ILeaveDayService leaveDayService;
 	@Autowired
 	private MessageUtil messageUtil;
-	@RequestMapping(value = "/home/ot/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/leave/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, 
 								 @RequestParam("limit") int limit, HttpServletRequest request) {
-		OtDTO model = new OtDTO();
+		LeaveDayDTO model = new LeaveDayDTO();
 		model.setPage(page);
 		model.setLimit(limit);
-		ModelAndView mav = new ModelAndView("web/ot/list");
+		ModelAndView mav = new ModelAndView("admin/leave/list");
 		Pageable pageable = new PageRequest(page - 1, limit);
-		model.setListResult(otService.findAll(pageable));
-		model.setTotalItem(otService.getTotalItem(SecurityUtils.getPrincipal().getId()));
+		model.setListResult(leaveDayService.findAll(pageable));
+		model.setTotalItem(leaveDayService.getTotalItem(SecurityUtils.getPrincipal().getId()));
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);
 
 		return mav;
 	}
-	
-	@RequestMapping(value = "/home/ot/edit", method = RequestMethod.GET)
-	public ModelAndView editOT(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("web/ot/edit");
-		OtDTO model = new OtDTO();
+	@RequestMapping(value = "/admin/leave/edit", method = RequestMethod.GET)
+	public ModelAndView editLeaveDay(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
+		ModelAndView mav = new ModelAndView("admin/leave/edit");
+		LeaveDayDTO model = new LeaveDayDTO();
 		if (id != null) {
-			model = otService.findById(id);
+			model = leaveDayService.findById(id);
 		}
 		if (request.getParameter("message") != null) {
 			Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));

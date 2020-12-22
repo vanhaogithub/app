@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,7 @@ import com.bachkhoa.dto.OtDTO;
 import com.bachkhoa.entity.OtEntity;
 import com.bachkhoa.repository.OtRepository;
 import com.bachkhoa.service.IOtService;
+import com.bachkhoa.util.SecurityUtils;
 
 @Service
 public class OtService implements IOtService {
@@ -35,7 +37,11 @@ public class OtService implements IOtService {
 	@Override
 	public List<OtDTO> findAll(Pageable pageable) {
 		List<OtDTO> models = new ArrayList<>();
-		List<OtEntity> entities = otRepository.findAll(pageable).getContent();
+		//List<OtEntity> entities = otRepository.findAll(pageable).getContent();
+		OtEntity otEntity = new OtEntity();
+		otEntity.setUserid(SecurityUtils.getPrincipal().getId());
+		Example<OtEntity> example = Example.of(otEntity);
+		List<OtEntity> entities = otRepository.findAll(example, pageable).getContent();
 		for (OtEntity item : entities) {
 			OtDTO dto = otConverter.toDTO(item);
 			models.add(dto);
@@ -44,8 +50,8 @@ public class OtService implements IOtService {
 	}
 
 	@Override
-	public int getTotalItem() {
-		return (int) otRepository.count();
+	public int getTotalItem(Long userId) {
+		return (int) otRepository.countUserId(userId);
 	}
 
 	@Override

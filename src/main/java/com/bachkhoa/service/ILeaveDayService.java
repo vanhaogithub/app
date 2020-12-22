@@ -9,7 +9,8 @@ import com.bachkhoa.dto.LeaveDayDTO;
 public interface ILeaveDayService {
 	List<LeaveDayDTO> findByUserid(long userid);
 	List<LeaveDayDTO> findAll(Pageable pageable);
-	int getTotalItem();
+	List<LeaveDayDTO> findAllNeedApproval(Pageable pageable);
+	int getTotalItem(Long userId);
 	LeaveDayDTO findById(long id);
 	LeaveDayDTO save(LeaveDayDTO dto);
 	void delete(long[] ids);
