@@ -136,7 +136,10 @@ public class LeaveDayService implements ILeaveDayService {
 	@Override
 	public LeaveDayDTO updateStatus(RequestApprovalDTO dto) {
 		LeaveDayEntity entity = leaveDayRepository.findOne(dto.getId());
-		entity.setStatus(dto.getStatus());
+		if (ApprovalStatus.REJECT_STATUS.equals(dto.getStatus())
+				|| ApprovalStatus.APPROVALE_STATUS.equals(dto.getStatus())) {
+			entity.setStatus(dto.getStatus());
+		}
 		return leaveDayConverter.toDTO(leaveDayRepository.save(entity));
 	}
 

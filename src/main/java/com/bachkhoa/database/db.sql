@@ -32,11 +32,11 @@ insert into department(code,name) values('ADM','Department ADM');
 insert into department(code,name) values('HR','Department HR');
 
 insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
-values('2','Employee1','Employee1@gmail.com','034 111000111','1','1','1','300000','400000','2020-10-10','2021-10-10');
+values('2','Employee1','Employee1@gmail.com','034 111000111','1','1','3','300000','400000','2020-10-10','2021-10-10');
 insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
-values('1','Administrator','Administrator@gmail.com','034 111000222','1','1','1','500000','600000','2020-10-10','2021-10-10');
+values('1','Administrator','Administrator@gmail.com','034 111000222','1','1',null,'500000','600000','2020-10-10','2021-10-10');
 insert into userdetail(originid,fullname,email,phone,departmentid,manager01id,manager02id, daysalaryamount,daybonusamount,effectivedate,expirationdate) 
-values('3','Employee2','Employee2@gmail.com','034 111000333','2','1','1','400000','400000','2020-10-10','2021-10-10');
+values('3','Employee2','Employee2@gmail.com','034 111000333','2','1','2','400000','400000','2020-10-10','2021-10-10');
 
 INSERT INTO user_project(userid,projectid) VALUES (1,1);
 INSERT INTO user_project(userid,projectid) VALUES (1,2);
@@ -46,106 +46,106 @@ INSERT INTO user_project(userid,projectid) VALUES (3,3);
 INSERT INTO user_project(userid,projectid) VALUES (3,1);
 
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 2);
+VALUES ('2020-10-10',8, 'Nghi om','REQUEST', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 2);
+VALUES ('2020-10-11',8, 'Nghi om','REQUEST', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-15',4, 'Di choi','Da phe duyet', 2);
+VALUES ('2020-10-15',4, 'Di choi','REQUEST', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-18',5, 'Di choi','Chua duyet', 2);
+VALUES ('2020-10-18',5, 'Di choi','APPROVAL', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 2);
+VALUES ('2020-11-10',8, 'Nghi om','REQUEST', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 2);
+VALUES ('2020-12-10',8, 'Nghi om','REQUEST', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-14',4, 'Viec ca nhan','Tu choi', 2);
+VALUES ('2020-12-14',4, 'Viec ca nhan','REJECT', 2);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-18',3, 'Viec ca nhan','Da phe duyet', 2);
+VALUES ('2020-12-18',3, 'Viec ca nhan','REQUEST', 2);
 
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 1);
+VALUES ('2020-10-10',8, 'Nghi om','REQUEST', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 1);
+VALUES ('2020-10-11',8, 'Nghi om','REQUEST', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-15',4, 'Di choi','Chua duyet', 1);
+VALUES ('2020-10-15',4, 'Di choi','APPROVAL', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-18',5, 'Di choi','Da phe duyet', 1);
+VALUES ('2020-10-18',5, 'Di choi','REQUEST', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 1);
+VALUES ('2020-11-10',8, 'Nghi om','REQUEST', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 1);
+VALUES ('2020-12-10',8, 'Nghi om','REQUEST', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-14',4, 'Viec ca nhan','Chua duyet', 1);
+VALUES ('2020-12-14',4, 'Viec ca nhan','APPROVAL', 1);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-18',3, 'Viec ca nhan','Tu choi', 1);
+VALUES ('2020-12-18',3, 'Viec ca nhan','REJECT', 1);
 
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-10',8, 'Nghi om','Da phe duyet', 3);
+VALUES ('2020-10-10',8, 'Nghi om','REQUEST', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-11',8, 'Nghi om','Da phe duyet', 3);
+VALUES ('2020-10-11',8, 'Nghi om','REQUEST', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-15',4, 'Di choi','Tu choi', 3);
+VALUES ('2020-10-15',4, 'Di choi','REJECT', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-10-18',5, 'Di choi','Chua duyet', 3);
+VALUES ('2020-10-18',5, 'Di choi','APPROVAL', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-11-10',8, 'Nghi om','Da phe duyet', 3);
+VALUES ('2020-11-10',8, 'Nghi om','REQUEST', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-10',8, 'Nghi om','Da phe duyet', 3);
+VALUES ('2020-12-10',8, 'Nghi om','REQUEST', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-14',4, 'Viec ca nhan','Tu choi', 3);
+VALUES ('2020-12-14',4, 'Viec ca nhan','REJECT', 3);
 INSERT INTO leaveday(dateleave,timesleave,reason,status,userid) 
-VALUES ('2020-12-18',3, 'Viec ca nhan','Da phe duyet', 3);
-
-INSERT INTO ot(dateot,timesot,reason,status,userid) 
-VALUES ('2020-10-10',2, 'OT Project DYN','Da phe duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-11',2, 'OT Project DYN','Da phe duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-15',4, 'OT Project CSS','Da phe duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-18',5, 'OT Project CSS','Chua duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-11-10',2, 'OT Project DYN','Da phe duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-10',1, 'OT Project CSS','Da phe duyet', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-14',4, 'OT Project DYN','Tu choi', 2);
-INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-18',3, 'OT Project CSS','Da phe duyet', 2);
+VALUES ('2020-12-18',3, 'Viec ca nhan','REQUEST', 3);
 
 INSERT INTO ot(dateot,timesot,reason,status,userid) 
-VALUES ('2020-10-10',1, 'OT Project MSW','Da phe duyet', 1);
+VALUES ('2020-10-10',2, 'OT Project DYN','REQUEST', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-11',1, 'OT Project MSW','Da phe duyet', 1);
+VALUES ('2020-10-11',2, 'OT Project DYN','REQUEST', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-15',4, 'OT Project DYN','Chua duyet', 1);
+VALUES ('2020-10-15',4, 'OT Project CSS','REQUEST', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-18',5, 'OT Project MSW','Da phe duyet', 1);
+VALUES ('2020-10-18',5, 'OT Project CSS','APPROVAL', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-11-10',2, 'OT Project DYN','Da phe duyet', 1);
+VALUES ('2020-11-10',2, 'OT Project DYN','REQUEST', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-10',1, 'OT Project DYN','Da phe duyet', 1);
+VALUES ('2020-12-10',1, 'OT Project CSS','REQUEST', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-14',4, 'OT Project MSW','Chua duyet', 1);
+VALUES ('2020-12-14',4, 'OT Project DYN','REJECT', 2);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-18',3, 'OT Project DYN','Tu choi', 1);
+VALUES ('2020-12-18',3, 'OT Project CSS','REQUEST', 2);
 
 INSERT INTO ot(dateot,timesot,reason,status,userid) 
-VALUES ('2020-10-10',1, 'OT Project MSW','Da phe duyet', 3);
+VALUES ('2020-10-10',1, 'OT Project MSW','REQUEST', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-11',1, 'OT Project CSS','Da phe duyet', 3);
+VALUES ('2020-10-11',1, 'OT Project MSW','REQUEST', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-15',4, 'OT Project MSW','Tu choi', 3);
+VALUES ('2020-10-15',4, 'OT Project DYN','APPROVAL', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-10-18',1, 'OT Project CSS','Chua duyet', 3);
+VALUES ('2020-10-18',5, 'OT Project MSW','REQUEST', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-11-10',2, 'OT Project MSW','Da phe duyet', 3);
+VALUES ('2020-11-10',2, 'OT Project DYN','REQUEST', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-10',1, 'OT Project CSS','Da phe duyet', 3);
+VALUES ('2020-12-10',1, 'OT Project DYN','REQUEST', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-14',4, 'OT Project MSW','Tu choi', 3);
+VALUES ('2020-12-14',4, 'OT Project MSW','APPROVAL', 1);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
-VALUES ('2020-12-18',3, 'OT Project CSS','Da phe duyet', 3);
+VALUES ('2020-12-18',3, 'OT Project DYN','REJECT', 1);
+
+INSERT INTO ot(dateot,timesot,reason,status,userid) 
+VALUES ('2020-10-10',1, 'OT Project MSW','REQUEST', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-11',1, 'OT Project CSS','REQUEST', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-15',4, 'OT Project MSW','REJECT', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-10-18',1, 'OT Project CSS','APPROVAL', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-11-10',2, 'OT Project MSW','REQUEST', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-10',1, 'OT Project CSS','REQUEST', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-14',4, 'OT Project MSW','REJECT', 3);
+INSERT INTO ot(dateot,timesot,reason,status,userid)
+VALUES ('2020-12-18',3, 'OT Project CSS','REQUEST', 3);
 
 
 

@@ -1,8 +1,6 @@
 package com.bachkhoa.api.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,18 +14,9 @@ public class LeaveDayAPI {
 	@Autowired
 	private ILeaveDayService leaveDayService;
 
-	@PostMapping("/api/admin/leave")
-	public LeaveDayDTO create(@RequestBody LeaveDayDTO dto) {
-		return leaveDayService.save(dto);
-	}
-
 	@PutMapping("/api/admin/leave")
 	public LeaveDayDTO update(@RequestBody RequestApprovalDTO requestApproval) {
 		return leaveDayService.updateStatus(requestApproval);
 	}
 
-	@DeleteMapping("/api/admin/leave")
-	public void delete(@RequestBody long[] ids) {
-		leaveDayService.delete(ids);
-	}
 }

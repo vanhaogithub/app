@@ -2,7 +2,7 @@ package com.bachkhoa.dto;
 
 import java.util.Date;
 
-public class OTApprovalDTO extends AbstractDTO<OTApprovalDTO> {
+public class OtApprovalDTO extends AbstractDTO<OtApprovalDTO> {
 
 	private Date dateot;
 

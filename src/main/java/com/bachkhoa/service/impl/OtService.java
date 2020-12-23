@@ -9,13 +9,17 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bachkhoa.constant.ApprovalStatus;
+import com.bachkhoa.converter.OtApprovalConverter;
 import com.bachkhoa.converter.OtConverter;
-import com.bachkhoa.dto.OTApprovalDTO;
+import com.bachkhoa.dto.OtApprovalDTO;
 import com.bachkhoa.dto.OtDTO;
 import com.bachkhoa.dto.RequestApprovalDTO;
+import com.bachkhoa.dto.UserDetailDTO;
 import com.bachkhoa.entity.OtEntity;
 import com.bachkhoa.repository.OtRepository;
 import com.bachkhoa.service.IOtService;
+import com.bachkhoa.service.IUserDetailService;
 import com.bachkhoa.util.SecurityUtils;
 
 @Service
@@ -24,6 +28,10 @@ public class OtService implements IOtService {
 	private OtRepository otRepository;
 	@Autowired
 	private OtConverter otConverter;
+	@Autowired
+	private OtApprovalConverter otApprovalConverter;
+	@Autowired
+	private IUserDetailService userDetailService;
 
 	@Override
 	public List<OtDTO> findByUserid(long userid) {
@@ -39,7 +47,7 @@ public class OtService implements IOtService {
 	@Override
 	public List<OtDTO> findAll(Pageable pageable) {
 		List<OtDTO> models = new ArrayList<>();
-		//List<OtEntity> entities = otRepository.findAll(pageable).getContent();
+		// List<OtEntity> entities = otRepository.findAll(pageable).getContent();
 		OtEntity otEntity = new OtEntity();
 		otEntity.setUserid(SecurityUtils.getPrincipal().getId());
 		Example<OtEntity> example = Example.of(otEntity);
@@ -85,26 +93,49 @@ public class OtService implements IOtService {
 	}
 
 	@Override
-	public List<OTApprovalDTO> findAllNeedApproval() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<OtApprovalDTO> findAllNeedApproval() {
+		List<OtApprovalDTO> models = new ArrayList<>();
+		List<UserDetailDTO> users = userDetailService.findBymanagerid(SecurityUtils.getPrincipal().getId());
+		for (UserDetailDTO item : users) {
+			OtEntity entity = new OtEntity();
+			entity.setUserid(item.getOriginid());
+			entity.setStatus(ApprovalStatus.REQUEST_STATUS);
+			Example<OtEntity> example = Example.of(entity);
+			List<OtEntity> entities = otRepository.findAll(example);
+			for (OtEntity en : entities) {
+				OtApprovalDTO dto = otApprovalConverter.toDTO(en, item);
+				models.add(dto);
+			}
+		}
+		return models;
 	}
 
 	@Override
-	public List<OTApprovalDTO> findPageNeedApproval(int page, int limit) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<OtApprovalDTO> findPageNeedApproval(int page, int limit) {
+		List<OtApprovalDTO> models = new ArrayList<>();
+		List<OtApprovalDTO> all = this.findAllNeedApproval();
+		int start = (page - 1) * limit;
+		int end = (page - 1) * limit + limit - 1;
+		end = end < all.size() ? end : all.size();
+		for (int i = start; i < end; i++) {
+			models.add(all.get(i));
+		}
+		return models;
 	}
 
 	@Override
 	public int getTotalItemApproval() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.findAllNeedApproval().size();
 	}
 
 	@Override
 	public OtDTO updateStatus(RequestApprovalDTO dto) {
-		// TODO Auto-generated method stub
-		return null;
+		OtEntity entity = otRepository.findOne(dto.getId());
+		if (ApprovalStatus.REJECT_STATUS.equals(dto.getStatus())
+				|| ApprovalStatus.APPROVALE_STATUS.equals(dto.getStatus())) {
+			entity.setStatus(dto.getStatus());
+		}
+
+		return otConverter.toDTO(otRepository.save(entity));
 	}
 }
