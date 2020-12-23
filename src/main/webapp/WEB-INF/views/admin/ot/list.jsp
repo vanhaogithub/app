@@ -1,19 +1,19 @@
 <%@include file="/common/taglib.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<c:url var="leaveAPI" value="/api/admin/leave"/>
-<c:url var="leaveURL" value="/admin/leave/list"/>
+<c:url var="otAPI" value="/api/admin/ot"/>
+<c:url var="otURL" value="/admin/ot/list"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Leave day approval page</title>
+		<title>OT approval page</title>
 	</head>
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/admin/leave/list'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/admin/ot/list'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -65,11 +65,11 @@
 												</thead>
 												<tbody>
 													<c:forEach var="item" items="${model.listResult}">
-														<c:set var="dateleave" value="${item.dateleave}"/> 
+														<c:set var="dateot" value="${item.dateot}"/>  
 														<tr>
 															<td>${item.userName}</td>
-															<td>${fn:substring(dateleave, 0, 10)}</td>
-															<td>${item.timesleave}</td>
+															<td>${fn:substring(dateot, 0, 10)}</td>
+															<td>${item.timesot}</td>
 															<td>${item.reason}</td>
 															<td>${item.status}</td>
 															<td>															
@@ -114,15 +114,15 @@
 		    });
 			function approval(id, status) {
 		        $.ajax({
-		            url: '${leaveAPI}',
+		            url: '${otAPI}',
 		            type: 'PUT',
 		            contentType: 'application/json',
 		            data: JSON.stringify({"id": id, "status": status}),
 		            success: function (result) {
-		                window.location.href = "${leaveURL}?page="+${model.page}+"&limit=5&message=delete_success";
+		                window.location.href = "${otURL}?page="+${model.page}+"&limit=5&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${leaveURL}?page="+${model.page}+"&limit=5&message=error_system";
+		            	window.location.href = "${otURL}?page="+${model.page}+"&limit=5&message=error_system";
 		            }
 		        });
 		    }
@@ -147,15 +147,15 @@
 			} 
 			function deleteNew(data) {
 		        $.ajax({
-		            url: '${leaveAPI}',
+		            url: '${otAPI}',
 		            type: 'DELETE',
 		            contentType: 'application/json',
 		            data: JSON.stringify(data),
 		            success: function (result) {
-		                window.location.href = "${leaveURL}?page=1&limit=2&message=delete_success";
+		                window.location.href = "${otURL}?page=1&limit=2&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${leaveURL}?page=1&limit=2&message=error_system";
+		            	window.location.href = "${otURL}?page=1&limit=2&message=error_system";
 		            }
 		        });
 		    }

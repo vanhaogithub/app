@@ -9,14 +9,17 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bachkhoa.constant.ApprovalStatus;
 import com.bachkhoa.converter.LeaveDayApprovalConverter;
 import com.bachkhoa.converter.LeaveDayConverter;
 import com.bachkhoa.dto.LeaveDayApprovalDTO;
 import com.bachkhoa.dto.LeaveDayDTO;
+import com.bachkhoa.dto.RequestApprovalDTO;
 import com.bachkhoa.dto.UserDetailDTO;
 import com.bachkhoa.entity.LeaveDayEntity;
 import com.bachkhoa.repository.LeaveDayRepository;
 import com.bachkhoa.service.ILeaveDayService;
+import com.bachkhoa.service.IUserDetailService;
 import com.bachkhoa.util.SecurityUtils;
 
 @Service
@@ -31,7 +34,7 @@ public class LeaveDayService implements ILeaveDayService {
 	private LeaveDayApprovalConverter leaveDayApprovalConverter;
 
 	@Autowired
-	private UserDetailService userDetailService;
+	private IUserDetailService userDetailService;
 
 	@Override
 	public List<LeaveDayDTO> findByUserid(long userid) {
@@ -68,6 +71,7 @@ public class LeaveDayService implements ILeaveDayService {
 		for (UserDetailDTO item : users) {
 			LeaveDayEntity leaveDayEntity = new LeaveDayEntity();
 			leaveDayEntity.setUserid(item.getOriginid());
+			leaveDayEntity.setStatus(ApprovalStatus.REQUEST_STATUS);
 			Example<LeaveDayEntity> example = Example.of(leaveDayEntity);
 			List<LeaveDayEntity> entities = leaveDayRepository.findAll(example);
 			for (LeaveDayEntity entity : entities) {
@@ -127,6 +131,13 @@ public class LeaveDayService implements ILeaveDayService {
 			leaveDayRepository.delete(id);
 		}
 
+	}
+
+	@Override
+	public LeaveDayDTO updateStatus(RequestApprovalDTO dto) {
+		LeaveDayEntity entity = leaveDayRepository.findOne(dto.getId());
+		entity.setStatus(dto.getStatus());
+		return leaveDayConverter.toDTO(leaveDayRepository.save(entity));
 	}
 
 }

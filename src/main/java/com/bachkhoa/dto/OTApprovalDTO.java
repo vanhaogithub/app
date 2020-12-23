@@ -2,7 +2,8 @@ package com.bachkhoa.dto;
 
 import java.util.Date;
 
-public class OtDTO extends AbstractDTO<OtDTO> {
+public class OTApprovalDTO extends AbstractDTO<OTApprovalDTO> {
+
 	private Date dateot;
 
 	private Float timesot;
@@ -12,6 +13,8 @@ public class OtDTO extends AbstractDTO<OtDTO> {
 	private String status;
 
 	private Long userid;
+
+	private String userName;
 
 	public Date getDateot() {
 		return dateot;
@@ -51,5 +54,13 @@ public class OtDTO extends AbstractDTO<OtDTO> {
 
 	public void setUserid(Long userid) {
 		this.userid = userid;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 }

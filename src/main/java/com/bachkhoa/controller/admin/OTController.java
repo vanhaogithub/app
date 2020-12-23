@@ -11,26 +11,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.bachkhoa.dto.OTApprovalDTO;
 import com.bachkhoa.dto.OtDTO;
 import com.bachkhoa.service.IOtService;
-import com.bachkhoa.util.MessageUtil;
 import com.bachkhoa.util.SecurityUtils;
 
 @Controller(value = "otControllerOfAdmin")
 public class OTController {
 	@Autowired
 	private IOtService otService;
-	@Autowired
-	private MessageUtil messageUtil;
+	
 	@RequestMapping(value = "/admin/ot/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, 
 								 @RequestParam("limit") int limit, HttpServletRequest request) {
-		OtDTO model = new OtDTO();
+		OTApprovalDTO model = new OTApprovalDTO();
 		model.setPage(page);
 		model.setLimit(limit);
 		ModelAndView mav = new ModelAndView("admin/ot/list");
-		Pageable pageable = new PageRequest(page - 1, limit);
-		model.setListResult(otService.findAll(pageable));
+		
+		//model.setListResult(otService.findAll(pageable));
 		model.setTotalItem(otService.getTotalItem(SecurityUtils.getPrincipal().getId()));
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);

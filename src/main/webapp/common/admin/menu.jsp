@@ -58,7 +58,7 @@
                     <b class="arrow"></b>
                 </li>
                 <li>
-                    <a href="<c:url value=''/>">
+                    <a href="<c:url value='/admin/ot/list?page=1&limit=5'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Phe duyet OT
                     </a>

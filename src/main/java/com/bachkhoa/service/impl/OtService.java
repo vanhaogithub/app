@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.converter.OtConverter;
+import com.bachkhoa.dto.OTApprovalDTO;
 import com.bachkhoa.dto.OtDTO;
+import com.bachkhoa.dto.RequestApprovalDTO;
 import com.bachkhoa.entity.OtEntity;
 import com.bachkhoa.repository.OtRepository;
 import com.bachkhoa.service.IOtService;
@@ -80,5 +82,29 @@ public class OtService implements IOtService {
 			otRepository.delete(id);
 		}
 
+	}
+
+	@Override
+	public List<OTApprovalDTO> findAllNeedApproval() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<OTApprovalDTO> findPageNeedApproval(int page, int limit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getTotalItemApproval() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public OtDTO updateStatus(RequestApprovalDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

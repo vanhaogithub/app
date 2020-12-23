@@ -6,6 +6,7 @@ import org.springframework.data.domain.Pageable;
 
 import com.bachkhoa.dto.LeaveDayApprovalDTO;
 import com.bachkhoa.dto.LeaveDayDTO;
+import com.bachkhoa.dto.RequestApprovalDTO;
 
 public interface ILeaveDayService {
 	List<LeaveDayDTO> findByUserid(long userid);
@@ -16,5 +17,6 @@ public interface ILeaveDayService {
 	int getTotalItemApproval();
 	LeaveDayDTO findById(long id);
 	LeaveDayDTO save(LeaveDayDTO dto);
+	LeaveDayDTO updateStatus(RequestApprovalDTO dto);
 	void delete(long[] ids);
 }

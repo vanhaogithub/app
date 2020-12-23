@@ -27,10 +27,10 @@
 								<thead>
 									<tr>
 										<th>Ngay nghi</th>
-			                               <th>Thoi gian nghi</th>
-			                               <th>Ly do</th>
-			                               <th>Status</th>
-			                               <th>Edit</th>
+		                                <th>Thoi gian nghi</th>
+		                                <th>Ly do</th>
+		                                <th>Status</th>
+		                                <th>Edit</th>
 									</tr>
 								</thead>
 								<tbody>
