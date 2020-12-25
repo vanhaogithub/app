@@ -11,6 +11,8 @@
         <class>com.bachkhoa.entity.ProjectEntity</class>
         <class>com.bachkhoa.entity.TimekeepingEntity</class>
         <class>com.bachkhoa.entity.UserDetailEntity</class>
+        <class>com.bachkhoa.entity.SalarySummaryEntity</class>
+        <class>com.bachkhoa.entity.SalaryEntity</class>
     </persistence-unit>
 </persistence>
 
