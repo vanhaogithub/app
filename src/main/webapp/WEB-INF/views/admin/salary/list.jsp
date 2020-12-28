@@ -3,6 +3,7 @@
     pageEncoding="UTF-8"%>
 <c:url var="salaryAPI" value="/api/admin/salary"/>
 <c:url var="salaryURL" value="/admin/salary/list"/>
+<c:url var="salaryDetailURL" value="/admin/salary/detail"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -35,23 +36,30 @@
 									</div>
 								</c:if>
 								
-								<div class="form-group">
-								    <label>Select month:</label>
-								    <input type="text" class="form-control form-control-1 input-sm salaryMonth" >
-								</div>
 								
 								<div class="widget-box table-filter">
-									<div class="table-btn-controls">
-										<div class="pull-right tableTools-container">
-											<div class="dt-buttons btn-overlap btn-group">
-												<button id="btnRunSalary" type="button" onclick="">
-													<span>
-														Run cham cong
-													</span>
-												</button>
+								
+									<div class="col-xs-6">
+										<div class="form-group">
+										    <label>Select month:</label>
+										   	<input id="monthPicker" type="text" value="" />
+										</div>
+									</div>
+									
+									<div class="col-xs-6">
+										<div class="table-btn-controls">
+											<div class="pull-right tableTools-container">
+												<div class="dt-buttons btn-overlap btn-group">
+													<button id="btnRunSalary" type="button" onclick="">
+														<span>
+															Run cham cong
+														</span>
+													</button>
+												</div>
 											</div>
 										</div>
 									</div>
+									
 								</div>
 								
 								<div class="row">
@@ -60,17 +68,37 @@
 											<table class="table table-bordered">
 												<thead>
 													<tr>
+														<th>Month</th>
 														<th>Nhan vien</th>
-														<th>Ngay nghi</th>
-							                            <th>Thoi gian nghi</th>
-							                            <th>Ly do</th>
-							                            <th>Status</th>
-							                            <th>Approval</th>
-							                            <th>Reject</th>
+														<th>OT Amount</th>
+							                            <th>Leave day Amount</th>
+							                            <th>Delay work Amount</th>
+							                            <th>Luong Thang</th>
+							                            <th>Detail</th>
 													</tr>
 												</thead>
 												<tbody>
 													
+													<c:forEach var="item" items="${model.listResult}">
+														<c:set var="month" value="${item.month}"/>  
+														<tr>
+															<td>${fn:substring(month, 0, 7)}</td>
+															<td>${item.fullname}</td>
+															<td>${item.sumOtAmount}</td>
+															<td>${item.sumLeaveDayAmount}</td>
+															<td>${item.sumDelayAmount}</td>
+															<td>${item.sumSalary}</td>
+															<td>
+																<c:url var="detailURL" value="${salaryDetailURL}">
+																	<c:param name="userid" value="${item.userid}"/>															
+																</c:url>																
+																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
+																   title="Edit content" href='${detailURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+																</a>
+															</td>
+														</tr>
+													</c:forEach>
+												
 												</tbody>
 											</table>
 											<ul class="pagination" id="pagination"></ul>	
@@ -105,13 +133,6 @@
 		        });
 		    });
 			
-			$('.salaryMonth').datepicker({
-			    autoclose: true,
-			    minViewMode: 1,
-			    format: 'yyyy-mm'
-			}); 
-
-
 			function approval(id, status) {
 		        $.ajax({
 		            url: '${salaryAPI}',

@@ -10,7 +10,8 @@ import org.springframework.data.repository.query.Param;
 import com.bachkhoa.entity.SalarySummaryEntity;
 
 public interface SalarySummaryRepository extends JpaRepository<SalarySummaryEntity, Long> {
-	List<SalarySummaryEntity> findByMonth(LocalDate month);
+	@Query(value = "SELECT * FROM salarysummary u WHERE u.month = :month", nativeQuery = true)
+	List<SalarySummaryEntity> findByMonth(@Param("month") LocalDate month);
 	@Query(value = "SELECT count(*) FROM salarysummary u WHERE u.month = :month", nativeQuery = true)
 	int countMonth(@Param("month") LocalDate month);
 }

@@ -26,7 +26,10 @@ public class SalarySummaryService implements ISalarySummaryService {
 	public List<SalarySummaryDTO> findByMonth(Pageable pageable, int month, int year) {
 		LocalDate localDate = LocalDate.of(year, month, 1);
 		List<SalarySummaryDTO> dtos = new ArrayList<>();
-		List<SalarySummaryEntity> entities = salarySummaryRepository.findByMonth(localDate);
+		String date = localDate.toString();
+		LocalDate local = LocalDate.parse(date);
+		List<SalarySummaryEntity> entities = salarySummaryRepository.findByMonth(local);
+
 		for (SalarySummaryEntity item : entities) {
 			SalarySummaryDTO dto = salarySummaryConverter.toDTO(item);
 			dtos.add(dto);

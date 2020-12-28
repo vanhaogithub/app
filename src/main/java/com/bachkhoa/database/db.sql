@@ -147,6 +147,180 @@ VALUES ('2020-12-14',4, 'OT Project MSW','REJECT', 3);
 INSERT INTO ot(dateot,timesot,reason,status,userid)
 VALUES ('2020-12-18',3, 'OT Project CSS','REQUEST', 3);
 
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-10-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (2,'2020-11-01','Employee01',10000,10000,10000,2000000);
 
-
-
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-10-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
+VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
