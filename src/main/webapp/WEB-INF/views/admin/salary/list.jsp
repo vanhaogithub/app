@@ -117,6 +117,16 @@
 		</div>
 		<!-- /.main-content -->
 		<script>
+			$(document).ready(function() {
+			    $("#monthPicker").focusout(function(){
+			        var month = $('#monthPicker').val();
+			        if(month != ""){
+			        	window.location.href = '${salaryURL}?page=1&limit=5&month='+month;
+			        }
+			        
+			      });
+			});
+			
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
 			var monthParam = "${month}";
@@ -153,6 +163,7 @@
 		        });
 		    }
 			
+
 		</script>
 	</body>
 	</html>
