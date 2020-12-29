@@ -1,11 +1,11 @@
 package com.bachkhoa.dto;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class SalarySummaryDTO extends AbstractDTO<SalarySummaryDTO>{
 	private Long userid;
 
-	private LocalDate month;
+	private Date month;
 
 	private String fullname;
 
@@ -25,11 +25,11 @@ public class SalarySummaryDTO extends AbstractDTO<SalarySummaryDTO>{
 		this.userid = userid;
 	}
 
-	public LocalDate getMonth() {
+	public Date getMonth() {
 		return month;
 	}
 
-	public void setMonth(LocalDate month) {
+	public void setMonth(Date month) {
 		this.month = month;
 	}
 

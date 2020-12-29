@@ -51,7 +51,7 @@
                     <b class="arrow"></b>
                 </li>
                 <li>
-                    <a href="<c:url value='/admin/salary/list?page=1&limit=5&month=10&year=2020'/>">
+                    <a href="<c:url value='/admin/salary/list?page=1&limit=5&month=10/2020'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Cham cong
                     </a>

@@ -21,7 +21,7 @@
               http://www.springframework.org/schema/context/spring-context.xsd">
 
    <context:component-scan
-      base-package="com.bachkhoa.controller, com.bachkhoa.api, com.bachkhoa.security, com.bachkhoa.service" />
+      base-package="com.bachkhoa.controller, com.bachkhoa.api, com.bachkhoa.security, com.bachkhoa.service, com.bachkhoa.util, com.bachkhoa.repository" />
 
    <mvc:annotation-driven />
 

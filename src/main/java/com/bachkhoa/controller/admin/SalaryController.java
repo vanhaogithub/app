@@ -22,16 +22,17 @@ public class SalaryController {
 
 	@RequestMapping(value = "/admin/salary/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, @RequestParam("limit") int limit,
-			@RequestParam("month") int month, @RequestParam("year") int year, HttpServletRequest request) {
+			@RequestParam("month") String month, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("admin/salary/list");
 		SalarySummaryDTO model = new SalarySummaryDTO();
 		model.setPage(page);
 		model.setLimit(limit);
 		Pageable pageable = new PageRequest(page - 1, limit);
-		model.setListResult(salarySummaryService.findByMonth(pageable, month, year));
-		model.setTotalItem(salarySummaryService.getTotalItem(month, year));
+		model.setListResult(salarySummaryService.findByMonth(pageable, month));
+		model.setTotalItem(salarySummaryService.getTotalItem(month));
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);
+		mav.addObject("month", month);
 		return mav;
 	}
 }

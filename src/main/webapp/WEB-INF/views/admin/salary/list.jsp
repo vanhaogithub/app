@@ -103,7 +103,8 @@
 											</table>
 											<ul class="pagination" id="pagination"></ul>	
 											<input type="hidden" value="" id="page" name="page"/>
-											<input type="hidden" value="" id="limit" name="limit"/>									
+											<input type="hidden" value="" id="limit" name="limit"/>	
+											<input type="hidden" value="" id="month" name="month"/>									
 										</div>
 									</div>
 								</div>
@@ -118,6 +119,9 @@
 		<script>
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
+			var monthParam = "${month}";
+			var monthSplit = monthParam.substr(0, 7).split("-");
+			var month = monthSplit[1] + "/" + monthSplit[0]
 			$(function () {
 		        window.pagObj = $('#pagination').twbsPagination({
 		            totalPages: totalPages,
@@ -127,6 +131,7 @@
 		            	if (currentPage != page) {
 		            		$('#limit').val(5);
 							$('#page').val(page);
+							$('#month').val(month);
 							$('#formSubmit').submit();
 						}
 		            }

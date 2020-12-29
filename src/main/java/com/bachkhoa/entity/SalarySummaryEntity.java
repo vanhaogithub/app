@@ -1,6 +1,7 @@
 package com.bachkhoa.entity;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +14,7 @@ public class SalarySummaryEntity extends BaseEntity {
 	private Long userid;
 
 	@Column(name = "month")
-	private LocalDate month;
+	private Date month;
 
 	@Column(name = "fullname")
 	private String fullname;
@@ -38,11 +39,11 @@ public class SalarySummaryEntity extends BaseEntity {
 		this.userid = userid;
 	}
 
-	public LocalDate getMonth() {
+	public Date getMonth() {
 		return month;
 	}
 
-	public void setMonth(LocalDate month) {
+	public void setMonth(Date month) {
 		this.month = month;
 	}
 
