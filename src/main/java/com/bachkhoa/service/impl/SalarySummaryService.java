@@ -54,4 +54,10 @@ public class SalarySummaryService implements ISalarySummaryService {
 		return salarySummaryRepository.getSalaryByUserId(userId, date);
 	}
 
+	@Override
+	public List<SalarySummaryDTO> timeKeeping(String month) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

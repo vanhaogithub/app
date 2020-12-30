@@ -1,7 +1,7 @@
 <%@include file="/common/taglib.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<c:url var="salaryAPI" value="/api/admin/salary"/>
+<c:url var="salaryAPI" value="/api/admin/salary/timeKeeping"/>
 <c:url var="salaryURL" value="/admin/salary/list"/>
 <c:url var="salaryDetailURL" value="/admin/salary/detail"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -157,22 +157,38 @@
 			
 			function runChamCong() {
 				swal({
-				  title: "Are you sure?",
-				  text: "Once deleted, you will not be able to recover this imaginary file!",
+				  title: "Run batch cham cong ?",
+				  text: "Month: " + month,
 				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,
 				})
-				.then((willDelete) => {
-				  if (willDelete) {
-				    swal("Poof! Your imaginary file has been deleted!", {
-				      icon: "success",
+				.then((isRun) => {
+				  if (isRun) {
+				    swal({
+				    	title: "Please waiting when batch excuting!"
 				    });
+				    timeKeepExcuting(month);
 				  } else {
-				    swal("Your imaginary file is safe!");
+				    swal("Please recheck status not approval!");
 				  }
 				});
 		    }
+			function timeKeepExcuting(month) {
+				$.ajax({
+		            url: '${salaryAPI}',
+		            type: 'POST',
+		            contentType: 'application/json',
+		            data: JSON.stringify({"month": month}),
+		            dataType: 'json',
+		            success: function (result) {
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';
+		            },
+		            error: function (error) {
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=error_system';
+		            }
+		        });
+			}
 		</script>
 	</body>
 	</html>

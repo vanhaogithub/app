@@ -12,4 +12,6 @@ public interface ISalarySummaryService {
 	int getTotalItem(String month);
 
 	Float getSalaryByUserId(Long userId, String month);
+
+	List<SalarySummaryDTO> timeKeeping(String month);
 }
