@@ -14,4 +14,7 @@ public interface SalarySummaryRepository extends JpaRepository<SalarySummaryEnti
 	Page<SalarySummaryEntity> findByMonth(@Param("month") Date month, Pageable pageable);*/
 	@Query(value = "SELECT count(*) FROM salarysummary u WHERE u.month = :month", nativeQuery = true)
 	int countMonth(@Param("month") Date month);
+	
+	@Query(value = "SELECT u.sumsalary FROM salarysummary u WHERE u.month = :month and u.userid =:userid", nativeQuery = true)
+	Float getSalaryByUserId(@Param("userid") Long  userid, @Param("month") Date month);
 }

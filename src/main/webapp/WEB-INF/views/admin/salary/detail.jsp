@@ -9,12 +9,12 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Summary salary page</title>
+		<title>Detail salary page</title>
 	</head>
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/admin/salary/list'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/admin/salary/detail'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -47,16 +47,11 @@
 									</div>
 									
 									<div class="col-xs-6">
-										<div class="table-btn-controls">
-											<div class="pull-right tableTools-container">
-												<div class="dt-buttons btn-overlap btn-group">
-													<button id="btnRunSalary" type="button" onclick="runChamCong()">
-														<span>
-															Run cham cong
-														</span>
-													</button>
-												</div>
-											</div>
+										<div class="col-xs-6">
+											<span>Name : ${userName}</span>
+										</div>
+										<div class="col-xs-6">
+											<span>Salary : ${sumSalary}</span>
 										</div>
 									</div>
 									
@@ -68,38 +63,47 @@
 											<table class="table table-bordered">
 												<thead>
 													<tr>
-														<th>Month</th>
-														<th>Nhan vien</th>
-														<th>OT Amount</th>
-							                            <th>Leave day Amount</th>
-							                            <th>Delay work Amount</th>
-							                            <th>Luong Thang</th>
-							                            <th>Detail</th>
+														<th>Date</th>
+														<th>OT(h)</th>
+														<th>Status</th>
+							                            <th>Amount</th>
+							                            <th>Leave day(h)</th>
+							                            <th>Status</th>
+							                            <th>Amount</th>
+							                            <th>Delay work</th>
+							                            <th>Amount</th>
+							                            <th>Day salary</th>
+							                            <th>Day bonus</th>
+							                            <th>Actual day salary</th>
 													</tr>
 												</thead>
 												<tbody>
 													
 													<c:forEach var="item" items="${model.listResult}">
-														<c:set var="month" value="${item.month}"/>  
+														<c:set var="workDay" value="${item.workDay}"/>  
 														<tr>
-															<td>${fn:substring(month, 0, 7)}</td>
-															<td>${item.fullname}</td>
-															<td>${item.sumOtAmount}</td>
-															<td>${item.sumLeaveDayAmount}</td>
-															<td>${item.sumDelayAmount}</td>
-															<td>${item.sumSalary}</td>
-															<td>
-																<span onclick="goToDetail('${item.userid}')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
-															</td>
+															<td>${fn:substring(workDay, 0, 10)}</td>
+															<td>${item.timesOt}</td>
+															<td>${item.statusOt}</td>
+															<td>${item.otAmount}</td>
+															<td>${item.timesLeave}</td>
+															<td>${item.statusLeave}</td>
+															<td>${item.leaveDayAmount}</td>
+															<td>${item.isDelay}</td>
+															<td>${item.delayAmount}</td>
+															<td>${item.daySalaryAmount}</td>
+															<td>${item.dayBonusAmount}</td>
+															<td>${item.daySalary}</td>
+															
 														</tr>
 													</c:forEach>
-												
 												</tbody>
 											</table>
 											<ul class="pagination" id="pagination"></ul>	
 											<input type="hidden" value="" id="page" name="page"/>
 											<input type="hidden" value="" id="limit" name="limit"/>	
-											<input type="hidden" value="" id="month" name="month"/>									
+											<input type="hidden" value="" id="month" name="month"/>
+											<input type="hidden" value="" id="userid" name="userid"/>								
 										</div>
 									</div>
 								</div>
@@ -116,6 +120,7 @@
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
 			var monthParam = "${month}";
+			var userid = "${userid}";
 			var monthSplit;
 			var month
 			if(monthParam.search("-") != -1){
@@ -128,11 +133,11 @@
 			$("#monthPicker").focusout(function(){
 		        var month = $('#monthPicker').val();
 		        if(month != ""){
-		        	window.location.href = '${salaryURL}?page=1&limit=5&month='+month;
+		        	window.location.href = '${salaryDetailURL}?page=1&limit=5&month='+month+'&userid='+userid;
 		        }
 		        
 		    });
-			$(document).ready(function() {	   
+			$(document).ready(function() {  
 			    $('#monthPicker').MonthPicker({ Button: false });
 			    $('#monthPicker').val(month);
 			});
@@ -146,33 +151,13 @@
 		            		$('#limit').val(5);
 							$('#page').val(page);
 							$('#month').val(month);
+							$('#userid').val(userid);
 							$('#formSubmit').submit();
 						}
 		            }
 		        });
 		    });
-			function goToDetail(userid) {
-				window.location.href = "${salaryDetailURL}?page=1&limit=5&userid="+userid+"&month="+month;
-		    }
 			
-			function runChamCong() {
-				swal({
-				  title: "Are you sure?",
-				  text: "Once deleted, you will not be able to recover this imaginary file!",
-				  icon: "warning",
-				  buttons: true,
-				  dangerMode: true,
-				})
-				.then((willDelete) => {
-				  if (willDelete) {
-				    swal("Poof! Your imaginary file has been deleted!", {
-				      icon: "success",
-				    });
-				  } else {
-				    swal("Your imaginary file is safe!");
-				  }
-				});
-		    }
 		</script>
 	</body>
 	</html>

@@ -54,4 +54,9 @@ public class UserDetailService implements IUserDetailService {
 		UserDetailEntity entityAfter = userDetailRepository.save(entity);
 		return userDetailConverter.toDto1(entityAfter);
 	}
+
+	@Override
+	public String getNameByOriginid(long originid) {
+		return userDetailRepository.getNameByOriginid(originid);
+	}
 }

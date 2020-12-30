@@ -25,6 +25,7 @@ public class SalarySummaryService implements ISalarySummaryService {
 	private SalarySummaryConverter salarySummaryConverter;
 	@Autowired
 	private DateUtils dateUtils;
+
 	@Override
 	public List<SalarySummaryDTO> findByMonth(Pageable pageable, String month) {
 		Date date = dateUtils.stringToDate(month);
@@ -46,7 +47,11 @@ public class SalarySummaryService implements ISalarySummaryService {
 		Date date = dateUtils.stringToDate(month);
 		return (int) salarySummaryRepository.countMonth(date);
 	}
-	
-	
+
+	@Override
+	public Float getSalaryByUserId(Long userId, String month) {
+		Date date = dateUtils.stringToDate(month);
+		return salarySummaryRepository.getSalaryByUserId(userId, date);
+	}
 
 }

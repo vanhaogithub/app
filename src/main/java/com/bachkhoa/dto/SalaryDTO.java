@@ -1,11 +1,11 @@
 package com.bachkhoa.dto;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 	private Long userid;
 
-	private LocalDate workDay;
+	private Date workDay;
 
 	private String fullname;
 
@@ -39,11 +39,11 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 		this.userid = userid;
 	}
 
-	public LocalDate getWorkDay() {
+	public Date getWorkDay() {
 		return workDay;
 	}
 
-	public void setWorkDay(LocalDate workDay) {
+	public void setWorkDay(Date workDay) {
 		this.workDay = workDay;
 	}
 

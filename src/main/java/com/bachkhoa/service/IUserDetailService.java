@@ -8,4 +8,5 @@ public interface IUserDetailService {
 	UserDetailDTO findByOriginid(long originid);
 	UserDetailDTO save(UserDetailDTO dto);
 	List<UserDetailDTO> findBymanagerid(long managerid);
+	String getNameByOriginid(long originid);
 }

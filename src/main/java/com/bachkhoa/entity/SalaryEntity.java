@@ -1,6 +1,6 @@
 package com.bachkhoa.entity;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +13,7 @@ public class SalaryEntity extends BaseEntity {
 	private Long userid;
 
 	@Column(name = "workday")
-	private LocalDate workDay;
+	private Date workDay;
 
 	@Column(name = "fullname")
 	private String fullname;
@@ -59,11 +59,11 @@ public class SalaryEntity extends BaseEntity {
 		this.userid = userid;
 	}
 
-	public LocalDate getWorkDay() {
+	public Date getWorkDay() {
 		return workDay;
 	}
 
-	public void setWorkDay(LocalDate workDay) {
+	public void setWorkDay(Date workDay) {
 		this.workDay = workDay;
 	}
 

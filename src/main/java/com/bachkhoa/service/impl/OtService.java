@@ -116,8 +116,8 @@ public class OtService implements IOtService {
 		List<OtApprovalDTO> all = this.findAllNeedApproval();
 		int start = (page - 1) * limit;
 		int end = (page - 1) * limit + limit - 1;
-		end = end < all.size() ? end : all.size();
-		for (int i = start; i < end; i++) {
+		end = end < all.size() ? end : (all.size()-1);
+		for (int i = start; i <= end; i++) {
 			models.add(all.get(i));
 		}
 		return models;

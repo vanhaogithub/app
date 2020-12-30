@@ -88,7 +88,7 @@ public class LeaveDayService implements ILeaveDayService {
 		List<LeaveDayApprovalDTO> all = this.findAllNeedApproval();
 		int start = (page - 1) * limit;
 		int end = (page - 1) * limit + limit - 1;
-		end = end < all.size() ? end : all.size();
+		end = end < all.size() ? end : (all.size()-1);
 		for (int i = start; i < end; i++) {
 			models.add(all.get(i));
 		}

@@ -324,3 +324,157 @@ INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,su
 VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
 INSERT INTO salarysummary(userid,month,fullname,sumotamount,sumleavedayamount,sumdelayamount,sumsalary)
 VALUES (1,'2020-11-01','Administrator',10000,10000,10000,2000000);
+
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-01','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-02','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-03','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-04','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-05','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-06','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-07','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-08','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-09','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-10','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-11','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-12','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-13','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-14','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-15','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-16','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-17','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-18','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-10-19','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-01','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-02','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-03','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-04','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-05','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-06','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-07','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-08','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-09','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-10','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-11','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-12','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-13','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-14','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-15','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-16','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-17','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-18','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (1,'2020-11-19','Administrator',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-01','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-02','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-03','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-04','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-05','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-06','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-07','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-08','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-09','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-10','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-11','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-12','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-13','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-14','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-15','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-16','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-17','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-18','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-10-19','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-01','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-02','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-03','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-04','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-05','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-06','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-07','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-08','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-09','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-10','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-11','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-12','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-13','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-14','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-15','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-16','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-17','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-18','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);
+INSERT INTO salary(userid,workday,fullname,timesot,statusot,otamount,timesleave,statusleave,leavedayamount,isdelay,delayamount,daysalaryamount,daybonusamount,daysalary)
+VALUES (2,'2020-11-19','Employee01',1,"APPROVAL",10000,1,"APPROVAL",10000,1,5000,20000,20000,30000000);

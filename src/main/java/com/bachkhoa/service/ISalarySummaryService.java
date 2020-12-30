@@ -10,4 +10,6 @@ public interface ISalarySummaryService {
 	List<SalarySummaryDTO> findByMonth(Pageable pageable, String month);
 
 	int getTotalItem(String month);
+
+	Float getSalaryByUserId(Long userId, String month);
 }

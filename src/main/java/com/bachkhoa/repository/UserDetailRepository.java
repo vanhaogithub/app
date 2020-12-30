@@ -16,4 +16,7 @@ public interface UserDetailRepository extends JpaRepository<UserDetailEntity, Lo
 	
 	@Query(value = "SELECT * FROM userdetail u WHERE u.manager01id = :managerid or u.manager02id = :managerid", nativeQuery = true)
 	List<UserDetailEntity> findBymanagerid(@Param("managerid") Long managerid);
+	
+	@Query(value = "SELECT u.fullname FROM userdetail u WHERE u.originid = :originid", nativeQuery = true)
+	String getNameByOriginid(@Param("originid") Long originid);
 }

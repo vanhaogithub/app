@@ -24,8 +24,10 @@
     <!-- Month picker -->
     <link rel="stylesheet" href="<c:url value='/template/monthPicker/MonthPicker.min.css' />" />
     <link rel="stylesheet" href="<c:url value='/template/monthPicker/examples.css' />" />
-    <script src="<c:url value='/template/monthPicker/MonthPicker.min.js' />"></script>
-    <script src="<c:url value='/template/monthPicker/examples.js' />"></script>
+    <script src="<c:url value='/template/monthPicker/MonthPicker.min.js' />"></script>   
+    <!-- <script src="<c:url value='/template/monthPicker/examples.js' />"></script> -->
+    <!-- Popup confirm cham cong -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="no-skin">
 	<!-- header -->
