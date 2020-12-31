@@ -1,16 +1,19 @@
 package com.bachkhoa.dto;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 
 public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 	private Long userid;
 
-	private LocalDate workDay;
+	private Date startTime;
 
-	private LocalTime startTime;
+	private Date endTime;
 
-	private LocalTime endTime;
+	private boolean isDelay;
+
+	private Float timeDelay;
+
+	private boolean isAbsolve;
 
 	public Long getUserid() {
 		return userid;
@@ -20,28 +23,44 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 		this.userid = userid;
 	}
 
-	public LocalDate getWorkDay() {
-		return workDay;
-	}
-
-	public void setWorkDay(LocalDate workDay) {
-		this.workDay = workDay;
-	}
-
-	public LocalTime getStartTime() {
+	public Date getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(LocalTime startTime) {
+	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public LocalTime getEndTime() {
+	public Date getEndTime() {
 		return endTime;
 	}
 
-	public void setEndTime(LocalTime endTime) {
+	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public boolean isDelay() {
+		return isDelay;
+	}
+
+	public void setDelay(boolean isDelay) {
+		this.isDelay = isDelay;
+	}
+
+	public Float getTimeDelay() {
+		return timeDelay;
+	}
+
+	public void setTimeDelay(Float timeDelay) {
+		this.timeDelay = timeDelay;
+	}
+
+	public boolean isAbsolve() {
+		return isAbsolve;
+	}
+
+	public void setAbsolve(boolean isAbsolve) {
+		this.isAbsolve = isAbsolve;
 	}
 
 }

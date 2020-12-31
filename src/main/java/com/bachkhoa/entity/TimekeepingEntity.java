@@ -1,7 +1,6 @@
 package com.bachkhoa.entity;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,15 +11,21 @@ import javax.persistence.Table;
 public class TimekeepingEntity extends BaseEntity {
 	@Column(name = "userid")
 	private Long userid;
-	
-	@Column(name = "workday")
-	private LocalDate workDay;
 
 	@Column(name = "starttime")
-	private LocalTime startTime;
+	private Date startTime;
 
 	@Column(name = "endtime")
-	private LocalTime endTime;
+	private Date endTime;
+
+	@Column(name = "isdelay")
+	private boolean isDelay;
+
+	@Column(name = "timedelay")
+	private Float timeDelay;
+
+	@Column(name = "isabsolve")
+	private boolean isAbsolve;
 
 	public Long getUserid() {
 		return userid;
@@ -30,29 +35,44 @@ public class TimekeepingEntity extends BaseEntity {
 		this.userid = userid;
 	}
 
-	public LocalDate getWorkDay() {
-		return workDay;
-	}
-
-	public void setWorkDay(LocalDate workDay) {
-		this.workDay = workDay;
-	}
-
-	public LocalTime getStartTime() {
+	public Date getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(LocalTime startTime) {
+	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
-	public LocalTime getEndTime() {
+	public Date getEndTime() {
 		return endTime;
 	}
 
-	public void setEndTime(LocalTime endTime) {
+	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	public boolean isDelay() {
+		return isDelay;
+	}
+
+	public void setDelay(boolean isDelay) {
+		this.isDelay = isDelay;
+	}
+
+	public Float getTimeDelay() {
+		return timeDelay;
+	}
+
+	public void setTimeDelay(Float timeDelay) {
+		this.timeDelay = timeDelay;
+	}
+
+	public boolean isAbsolve() {
+		return isAbsolve;
+	}
+
+	public void setAbsolve(boolean isAbsolve) {
+		this.isAbsolve = isAbsolve;
+	}
 
 }

@@ -1,16 +1,15 @@
 package com.bachkhoa.service.impl;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bachkhoa.constant.SystemConstant;
 import com.bachkhoa.entity.TimekeepingEntity;
 import com.bachkhoa.repository.TimekeepingRepository;
 import com.bachkhoa.service.ITimekeepingService;
+import com.bachkhoa.util.DateUtils;
 import com.bachkhoa.util.SecurityUtils;
 
 @Service
@@ -18,39 +17,49 @@ public class TimekeepingService implements ITimekeepingService {
 	@Autowired
 	private TimekeepingRepository timekeepingRepository;
 
+	@Autowired
+	private DateUtils dateUtils;
+
 	@Override
 	@Transactional
 	public boolean registerStartTime() {
-		LocalDate date = LocalDate.now();
-		LocalTime time = LocalTime.now();
-		TimekeepingEntity timekeepingEntity = timekeepingRepository
-				.findByUseridAndDateQuery(SecurityUtils.getPrincipal().getId(), date);
+		boolean result = true;
+		Date date = new Date();
+		TimekeepingEntity timekeepingEntity = timekeepingRepository.findOneByUseridAndDate(
+				SecurityUtils.getPrincipal().getId(), dateUtils.getStartDay(date), dateUtils.getNextDay(date));
 		if (timekeepingEntity == null) {
 			timekeepingEntity = new TimekeepingEntity();
 			timekeepingEntity.setUserid(SecurityUtils.getPrincipal().getId());
-			timekeepingEntity.setWorkDay(date);
-			timekeepingEntity.setStartTime(time);
-			timekeepingRepository.save(timekeepingEntity);
-			if (time.isAfter(SystemConstant.START_WORK_TIME)) {
-				return false;
+			timekeepingEntity.setStartTime(date);
+
+			if (date.after(dateUtils.getStartWorkTime(date))) {
+				result = false;
+				timekeepingEntity.setDelay(true);
+				timekeepingEntity.setAbsolve(false);
+				timekeepingEntity.setTimeDelay(dateUtils.getHours(date, dateUtils.getStartWorkTime(date)));
+			} else {
+				timekeepingEntity.setDelay(false);
+				timekeepingEntity.setAbsolve(true);
+				timekeepingEntity.setTimeDelay((float) 0);
 			}
+			timekeepingRepository.save(timekeepingEntity);
 		}
-		return true;
+		return result;
 	}
 
 	@Override
 	@Transactional
 	public boolean registerEndTime() {
-		LocalDate date = LocalDate.now();
-		LocalTime time = LocalTime.now();
-		TimekeepingEntity timekeepingEntity = timekeepingRepository
-				.findByUseridAndDateQuery(SecurityUtils.getPrincipal().getId(), date);
+		boolean result = false;
+		Date date = new Date();
+		TimekeepingEntity timekeepingEntity = timekeepingRepository.findOneByUseridAndDate(
+				SecurityUtils.getPrincipal().getId(), dateUtils.getStartDay(date), dateUtils.getNextDay(date));
 		if (timekeepingEntity != null && timekeepingEntity.getEndTime() == null) {
-			timekeepingEntity.setEndTime(time);
+			timekeepingEntity.setEndTime(date);
 			timekeepingRepository.save(timekeepingEntity);
-			return true;
+			result = true;
 		}
-		return false;
+		return result;
 	}
 
 }

@@ -12,10 +12,10 @@ import com.bachkhoa.entity.SalaryEntity;
 
 @Repository
 public interface SalaryRepository extends JpaRepository<SalaryEntity, Long> {
-	@Query(value = "SELECT count(*) FROM salary u WHERE u.workday >= :start and u.workday <= :end and u.userid = :userid", nativeQuery = true)
+	@Query(value = "SELECT count(*) FROM salary u WHERE u.workday >= :start and u.workday < :end and u.userid = :userid", nativeQuery = true)
 	int countByUserIdAndMonth(@Param("start") Date start, @Param("end") Date end, @Param("userid") Long userid);
 
-	@Query(value = "SELECT * FROM salary u WHERE u.workday >= :start and u.workday <= :end and u.userid = :userid", nativeQuery = true)
+	@Query(value = "SELECT * FROM salary u WHERE u.workday >= :start and u.workday < :end and u.userid = :userid", nativeQuery = true)
 	List<SalaryEntity> findByUserIdAndMonth(@Param("start") Date start, @Param("end") Date end,
 			@Param("userid") Long userid);
 

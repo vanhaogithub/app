@@ -1,7 +1,5 @@
 package com.bachkhoa.constant;
 
-import java.time.LocalTime;
-
 public class SystemConstant {
 
 	public static final int ACTIVE_STATUS = 1;
@@ -18,6 +16,6 @@ public class SystemConstant {
 	public static final String DELETE_SUCCESS = "delete_success";
 	public static final String ERROR_SYSTEM = "error_system";
 	public static final String WORK_LATE = "work_late";
-	public static final LocalTime START_WORK_TIME = LocalTime.parse("08:00");
+	public static final String START_WORK_TIME =" 08:00:00";
 
 }

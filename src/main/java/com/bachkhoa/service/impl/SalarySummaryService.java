@@ -11,8 +11,17 @@ import org.springframework.stereotype.Service;
 
 import com.bachkhoa.converter.SalarySummaryConverter;
 import com.bachkhoa.dto.SalarySummaryDTO;
+import com.bachkhoa.entity.LeaveDayEntity;
+import com.bachkhoa.entity.OtEntity;
+import com.bachkhoa.entity.SalaryEntity;
 import com.bachkhoa.entity.SalarySummaryEntity;
+import com.bachkhoa.entity.TimekeepingEntity;
+import com.bachkhoa.entity.UserDetailEntity;
+import com.bachkhoa.repository.LeaveDayRepository;
+import com.bachkhoa.repository.OtRepository;
 import com.bachkhoa.repository.SalarySummaryRepository;
+import com.bachkhoa.repository.TimekeepingRepository;
+import com.bachkhoa.repository.UserDetailRepository;
 import com.bachkhoa.service.ISalarySummaryService;
 import com.bachkhoa.util.DateUtils;
 
@@ -25,6 +34,14 @@ public class SalarySummaryService implements ISalarySummaryService {
 	private SalarySummaryConverter salarySummaryConverter;
 	@Autowired
 	private DateUtils dateUtils;
+	@Autowired
+	private UserDetailRepository userDeatilRepository;
+	@Autowired
+	private OtRepository otRepository;
+	@Autowired
+	private LeaveDayRepository leaveDayRepository;
+	@Autowired
+	private TimekeepingRepository timekeepingRepository;
 
 	@Override
 	public List<SalarySummaryDTO> findByMonth(Pageable pageable, String month) {
@@ -54,9 +71,19 @@ public class SalarySummaryService implements ISalarySummaryService {
 		return salarySummaryRepository.getSalaryByUserId(userId, date);
 	}
 
+	// param 10/2020
 	@Override
 	public List<SalarySummaryDTO> timeKeeping(String month) {
-		// TODO Auto-generated method stub
+		SalaryEntity salaryEntity = new SalaryEntity();
+		Date startMonth = null;
+		Date endMonth = null;
+		List<UserDetailEntity> allUser = userDeatilRepository.findAll();
+		for (UserDetailEntity user : allUser) {
+			// get OT, LeaveDay, TimeKeep with month and userId
+			List<TimekeepingEntity> timekeepings = timekeepingRepository.findAllByUseridAndDate(user.getOriginid(),startMonth, endMonth);
+			List<LeaveDayEntity> leaveDays = leaveDayRepository.findAllByUseridAndDate(user.getOriginid(), startMonth, endMonth);
+			List<OtEntity> ots = otRepository.findAllByUseridAndDate(user.getOriginid(), startMonth, endMonth);
+		}
 		return null;
 	}
 
