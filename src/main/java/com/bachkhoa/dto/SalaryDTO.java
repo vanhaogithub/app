@@ -23,7 +23,11 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 
 	private boolean isDelay;
 
+	private Float timeDelay;
+	
 	private Float delayAmount;
+	
+	private boolean isAbsolve;
 
 	private Float daySalaryAmount;
 
@@ -141,6 +145,22 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 
 	public void setDaySalary(Float daySalary) {
 		this.daySalary = daySalary;
+	}
+
+	public Float getTimeDelay() {
+		return timeDelay;
+	}
+
+	public void setTimeDelay(Float timeDelay) {
+		this.timeDelay = timeDelay;
+	}
+
+	public boolean isAbsolve() {
+		return isAbsolve;
+	}
+
+	public void setAbsolve(boolean isAbsolve) {
+		this.isAbsolve = isAbsolve;
 	}
 
 }

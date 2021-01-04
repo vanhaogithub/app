@@ -39,6 +39,12 @@ public class SalaryEntity extends BaseEntity {
 	@Column(name = "isdelay")
 	private boolean isDelay;
 
+	@Column(name = "timedelay")
+	private Float timeDelay;
+
+	@Column(name = "isabsolve")
+	private boolean isAbsolve;
+	
 	@Column(name = "delayamount")
 	private Float delayAmount;
 
@@ -161,6 +167,22 @@ public class SalaryEntity extends BaseEntity {
 
 	public void setDaySalary(Float daySalary) {
 		this.daySalary = daySalary;
+	}
+
+	public Float getTimeDelay() {
+		return timeDelay;
+	}
+
+	public void setTimeDelay(Float timeDelay) {
+		this.timeDelay = timeDelay;
+	}
+
+	public boolean isAbsolve() {
+		return isAbsolve;
+	}
+
+	public void setAbsolve(boolean isAbsolve) {
+		this.isAbsolve = isAbsolve;
 	}
 
 }

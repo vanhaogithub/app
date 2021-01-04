@@ -13,7 +13,8 @@ import com.bachkhoa.constant.SystemConstant;
 @Component
 public class DateUtils {
 
-	//2020/10
+	//input 10/2020
+	//output 2020-10-01
 	public Date stringToDate(String text) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = null;
@@ -27,7 +28,8 @@ public class DateUtils {
 
 		return date;
 	}
-	// 2020/10/01
+	//input 2020-10-01
+	//output 2020-11-01
 	public Date getNextMonth(Date date) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date nextMonth = null;

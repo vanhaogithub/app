@@ -8,19 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.converter.SalarySummaryConverter;
 import com.bachkhoa.dto.SalarySummaryDTO;
-import com.bachkhoa.entity.LeaveDayEntity;
-import com.bachkhoa.entity.OtEntity;
 import com.bachkhoa.entity.SalaryEntity;
 import com.bachkhoa.entity.SalarySummaryEntity;
-import com.bachkhoa.entity.TimekeepingEntity;
 import com.bachkhoa.entity.UserDetailEntity;
-import com.bachkhoa.repository.LeaveDayRepository;
-import com.bachkhoa.repository.OtRepository;
+import com.bachkhoa.repository.SalaryRepository;
 import com.bachkhoa.repository.SalarySummaryRepository;
-import com.bachkhoa.repository.TimekeepingRepository;
 import com.bachkhoa.repository.UserDetailRepository;
 import com.bachkhoa.service.ISalarySummaryService;
 import com.bachkhoa.util.DateUtils;
@@ -35,13 +31,9 @@ public class SalarySummaryService implements ISalarySummaryService {
 	@Autowired
 	private DateUtils dateUtils;
 	@Autowired
-	private UserDetailRepository userDeatilRepository;
+	private UserDetailRepository userDetailRepository;
 	@Autowired
-	private OtRepository otRepository;
-	@Autowired
-	private LeaveDayRepository leaveDayRepository;
-	@Autowired
-	private TimekeepingRepository timekeepingRepository;
+	private SalaryRepository salaryRepo;
 
 	@Override
 	public List<SalarySummaryDTO> findByMonth(Pageable pageable, String month) {
@@ -73,16 +65,34 @@ public class SalarySummaryService implements ISalarySummaryService {
 
 	// param 10/2020
 	@Override
+	@Transactional
 	public List<SalarySummaryDTO> timeKeeping(String month) {
-		SalaryEntity salaryEntity = new SalaryEntity();
-		Date startMonth = null;
-		Date endMonth = null;
-		List<UserDetailEntity> allUser = userDeatilRepository.findAll();
+		List<SalarySummaryDTO> salarySummaryDTOs = new ArrayList<>();
+		Date startMonth = dateUtils.stringToDate(month);
+		Date endMonth = dateUtils.getNextMonth(startMonth);
+		List<UserDetailEntity> allUser = userDetailRepository.findAll();
 		for (UserDetailEntity user : allUser) {
-			// get OT, LeaveDay, TimeKeep with month and userId
-			List<TimekeepingEntity> timekeepings = timekeepingRepository.findAllByUseridAndDate(user.getOriginid(),startMonth, endMonth);
-			List<LeaveDayEntity> leaveDays = leaveDayRepository.findAllByUseridAndDate(user.getOriginid(), startMonth, endMonth);
-			List<OtEntity> ots = otRepository.findAllByUseridAndDate(user.getOriginid(), startMonth, endMonth);
+			List<SalaryEntity> salarys = salaryRepo.findByUserIdAndMonth(startMonth, endMonth, user.getOriginid());
+			SalarySummaryEntity entity = new SalarySummaryEntity();
+			Float sumOtAmount = (float) 0;
+			Float sumLeaveDayAmount = (float) 0;
+			Float sumDelayAmount = (float) 0;
+			Float sumSalary = (float) 0;
+			for (SalaryEntity salaryEntity : salarys) {
+				sumOtAmount = sumOtAmount + salaryEntity.getOtAmount();
+				sumLeaveDayAmount = sumLeaveDayAmount + salaryEntity.getLeaveDayAmount();
+				sumDelayAmount = sumDelayAmount + salaryEntity.getDelayAmount();
+				sumSalary = sumSalary + salaryEntity.getDaySalary();
+			}
+			entity.setUserid(user.getOriginid());
+			entity.setMonth(startMonth);
+			entity.setFullname(user.getFullname());
+			entity.setSumOtAmount(sumOtAmount);
+			entity.setSumLeaveDayAmount(sumLeaveDayAmount);
+			entity.setSumDelayAmount(sumDelayAmount);
+			entity.setSumSalary(sumSalary);
+			SalarySummaryEntity salarySummary = salarySummaryRepository.save(entity);
+			salarySummaryDTOs.add(salarySummaryConverter.toDTO(salarySummary));
 		}
 		return null;
 	}

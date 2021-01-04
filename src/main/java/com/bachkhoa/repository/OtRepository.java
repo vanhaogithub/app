@@ -15,7 +15,7 @@ public interface OtRepository extends JpaRepository<OtEntity, Long>{
 	@Query(value = "SELECT count(*) FROM ot u WHERE u.userid = :userid", nativeQuery = true)
 	int countUserId(@Param("userid") Long userid);
 	
-	@Query(value = "SELECT * FROM leaveday t WHERE t.userid = :userid and t.dateot >= :start and t.dateot < :next", nativeQuery = true)
+	@Query(value = "SELECT * FROM ot t WHERE t.userid = :userid and t.dateot >= :start and t.dateot < :next", nativeQuery = true)
 	List<OtEntity> findAllByUseridAndDate(@Param("userid") Long userid, @Param("start") Date start,
 			@Param("next") Date next);
 }
