@@ -91,7 +91,14 @@ public class SalarySummaryService implements ISalarySummaryService {
 			entity.setSumLeaveDayAmount(sumLeaveDayAmount);
 			entity.setSumDelayAmount(sumDelayAmount);
 			entity.setSumSalary(sumSalary);
-			SalarySummaryEntity salarySummary = salarySummaryRepository.save(entity);
+			SalarySummaryEntity origEntity = salarySummaryRepository.findOneByMonth(startMonth, user.getOriginid());
+			SalarySummaryEntity newEntity = new SalarySummaryEntity();
+			if(origEntity != null){
+				newEntity = salarySummaryConverter.toEntity(origEntity, entity);
+			} else {
+				newEntity = entity;
+			}
+			SalarySummaryEntity salarySummary = salarySummaryRepository.save(newEntity);
 			salarySummaryDTOs.add(salarySummaryConverter.toDTO(salarySummary));
 		}
 		return null;

@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bachkhoa.constant.ApprovalStatus;
 import com.bachkhoa.converter.SalaryConverter;
 import com.bachkhoa.dto.SalaryDTO;
 import com.bachkhoa.entity.LeaveDayEntity;
@@ -120,12 +121,80 @@ public class SalaryService implements ISalaryService {
 					}
 				}
 				if (checkDay) {
-					SalaryEntity salaryEntity = salaryConverter.toEntity(user, timeKeeping, leaveDay, ot);
-					SalaryEntity salary = salaryRepo.save(salaryEntity);
+					SalaryEntity newEntity = new SalaryEntity();
+					SalaryEntity calculateEntity = this.calculateTimeKeeping(user, timeKeeping, leaveDay, ot);
+					SalaryEntity oldEntity = salaryRepo.findOneByWorkDay(calculateEntity.getWorkDay(),
+							user.getOriginid());
+					if (oldEntity != null) {
+						newEntity = salaryConverter.toEntity(oldEntity, calculateEntity);
+					} else {
+						newEntity = calculateEntity;
+					}
+					SalaryEntity salary = salaryRepo.save(newEntity);
 					salaryDTOs.add(salaryConverter.toDTO(salary));
 				}
 			}
 		}
 		return salaryDTOs;
+	}
+
+	@Override
+	public SalaryEntity calculateTimeKeeping(UserDetailEntity user, TimekeepingEntity timeKeeping,
+			LeaveDayEntity leaveDay, OtEntity ot) {
+		SalaryEntity entity = new SalaryEntity();
+		Date workDay = null;
+		Float timesOt = (float) 0;
+		String statusOt = null;
+		Float otAmount = (float) 0;
+		Float timesLeave = (float) 0;
+		String statusLeave = null;
+		Float leaveDayAmount = (float) 0;
+		boolean isDelay = false;
+		Float timeDelay = (float) 0;
+		boolean isAbsolve = false;
+		Float delayAmount = (float) 0;
+		Float daySalary = user.getDayBonusAmount() + user.getDaySalaryAmount();
+		Float housSalary = (user.getDayBonusAmount() + user.getDaySalaryAmount()) / 8;
+		if (timeKeeping.getStartTime() != null) {
+			workDay = timeKeeping.getStartTime();
+			isDelay = timeKeeping.isDelay();
+			timeDelay = timeKeeping.getTimeDelay();
+			isAbsolve = timeKeeping.isAbsolve();
+			delayAmount = isAbsolve ? (float) 0 : timeDelay * housSalary;
+			daySalary = daySalary - delayAmount;
+		}
+		if (leaveDay.getDateleave() != null) {
+			workDay = leaveDay.getDateleave();
+			timesLeave = leaveDay.getTimesleave();
+			statusLeave = leaveDay.getStatus();
+			leaveDayAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusLeave) ? (float) 0
+					: leaveDay.getTimesleave() * housSalary;
+			daySalary = daySalary - leaveDayAmount;
+		}
+		if (ot.getDateot() != null) {
+			workDay = ot.getDateot();
+			timesOt = ot.getTimesot();
+			statusOt = ot.getStatus();
+			otAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusOt) ? ot.getTimesot() * housSalary : (float) 0;
+			daySalary = daySalary + otAmount;
+		}
+		workDay = dateUtils.getStartDay(workDay);
+		entity.setWorkDay(workDay);
+		entity.setUserid(user.getOriginid());
+		entity.setFullname(user.getFullname());
+		entity.setTimesOt(timesOt);
+		entity.setStatusOt(statusOt);
+		entity.setOtAmount(otAmount);
+		entity.setTimesLeave(timesLeave);
+		entity.setStatusLeave(statusLeave);
+		entity.setLeaveDayAmount(leaveDayAmount);
+		entity.setIsDelay(isDelay);
+		entity.setTimeDelay(timeDelay);
+		entity.setAbsolve(isAbsolve);
+		entity.setDelayAmount(delayAmount);
+		entity.setDayBonusAmount(user.getDayBonusAmount());
+		entity.setDaySalaryAmount(user.getDaySalaryAmount());
+		entity.setDaySalary(daySalary);
+		return null;
 	}
 }

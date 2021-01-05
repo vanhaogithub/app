@@ -73,6 +73,7 @@ public class DateUtils {
 		return nextMonth;
 	}
 
+	//output 2020-10-10 00:00:00
 	public Date getStartDay(Date date) {
 		Date startDay = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

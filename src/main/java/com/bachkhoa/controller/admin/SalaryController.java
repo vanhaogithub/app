@@ -1,5 +1,7 @@
 package com.bachkhoa.controller.admin;
 
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ import com.bachkhoa.dto.SalarySummaryDTO;
 import com.bachkhoa.service.ISalaryService;
 import com.bachkhoa.service.ISalarySummaryService;
 import com.bachkhoa.service.IUserDetailService;
+import com.bachkhoa.util.MessageUtil;
 
 @Controller(value = "salaryControllerOfAdmin")
 public class SalaryController {
@@ -28,6 +31,9 @@ public class SalaryController {
 
 	@Autowired
 	private IUserDetailService userDetailService;
+	
+	@Autowired
+	private MessageUtil messageUtil;
 
 	@RequestMapping(value = "/admin/salary/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, @RequestParam("limit") int limit,
@@ -42,6 +48,11 @@ public class SalaryController {
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);
 		mav.addObject("month", month);
+		if (request.getParameter("message") != null) {
+			Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));
+			mav.addObject("message", message.get("message"));
+			mav.addObject("alert", message.get("alert"));
+		}
 		return mav;
 	}
 
