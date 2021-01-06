@@ -178,8 +178,8 @@
 				$.ajax({
 		            url: '${salaryAPI}',
 		            type: 'POST',
-		            contentType: 'application/json',
-		            data: JSON.stringify({"month": month}),
+		            contentType: 'text/plain',
+		            data: month,
 		            dataType: 'json',
 		            success: function (result) {
 		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';
@@ -189,6 +189,7 @@
 		            }
 		        });
 			}
+			
 		</script>
 	</body>
 	</html>

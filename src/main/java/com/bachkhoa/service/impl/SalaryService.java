@@ -102,6 +102,7 @@ public class SalaryService implements ISalaryService {
 					if (calendar.get(Calendar.DAY_OF_MONTH) == i) {
 						timeKeeping = entity;
 						checkDay = true;
+						break;
 					}
 				}
 
@@ -110,6 +111,7 @@ public class SalaryService implements ISalaryService {
 					if (calendar.get(Calendar.DAY_OF_MONTH) == i) {
 						leaveDay = entity;
 						checkDay = true;
+						break;
 					}
 				}
 
@@ -118,13 +120,13 @@ public class SalaryService implements ISalaryService {
 					if (calendar.get(Calendar.DAY_OF_MONTH) == i) {
 						ot = entity;
 						checkDay = true;
+						break;
 					}
 				}
 				if (checkDay) {
 					SalaryEntity newEntity = new SalaryEntity();
 					SalaryEntity calculateEntity = this.calculateTimeKeeping(user, timeKeeping, leaveDay, ot);
-					SalaryEntity oldEntity = salaryRepo.findOneByWorkDay(calculateEntity.getWorkDay(),
-							user.getOriginid());
+					SalaryEntity oldEntity = salaryRepo.findOneByWorkDay(calculateEntity.getWorkDay(), user.getOriginid());
 					if (oldEntity != null) {
 						newEntity = salaryConverter.toEntity(oldEntity, calculateEntity);
 					} else {
@@ -195,6 +197,6 @@ public class SalaryService implements ISalaryService {
 		entity.setDayBonusAmount(user.getDayBonusAmount());
 		entity.setDaySalaryAmount(user.getDaySalaryAmount());
 		entity.setDaySalary(daySalary);
-		return null;
+		return entity;
 	}
 }

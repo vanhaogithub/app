@@ -18,6 +18,6 @@ public interface SalarySummaryRepository extends JpaRepository<SalarySummaryEnti
 	@Query(value = "SELECT u.sumsalary FROM salarysummary u WHERE u.month = :month and u.userid =:userid", nativeQuery = true)
 	Float getSalaryByUserId(@Param("userid") Long  userid, @Param("month") Date month);
 
-	@Query(value = "SELECT TOP 1 * FROM salarysummary u WHERE u.month = :month and u.userid = :userid", nativeQuery = true)
+	@Query(value = "SELECT * FROM salarysummary u WHERE u.month = :month and u.userid = :userid", nativeQuery = true)
 	SalarySummaryEntity findOneByMonth(@Param("month") Date workDay, @Param("userid") Long userid);
 }

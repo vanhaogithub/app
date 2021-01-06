@@ -101,7 +101,7 @@ public class SalarySummaryService implements ISalarySummaryService {
 			SalarySummaryEntity salarySummary = salarySummaryRepository.save(newEntity);
 			salarySummaryDTOs.add(salarySummaryConverter.toDTO(salarySummary));
 		}
-		return null;
+		return salarySummaryDTOs;
 	}
 
 }

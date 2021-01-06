@@ -19,6 +19,6 @@ public interface SalaryRepository extends JpaRepository<SalaryEntity, Long> {
 	List<SalaryEntity> findByUserIdAndMonth(@Param("start") Date start, @Param("end") Date end,
 			@Param("userid") Long userid);
 
-	@Query(value = "SELECT TOP 1 * FROM salary u WHERE u.workday = :workDay and u.userid = :userid", nativeQuery = true)
+	@Query(value = "SELECT * FROM salary u WHERE u.workday = :workDay and u.userid = :userid", nativeQuery = true)
 	SalaryEntity findOneByWorkDay(@Param("workDay") Date workDay, @Param("userid") Long userid);
 }
