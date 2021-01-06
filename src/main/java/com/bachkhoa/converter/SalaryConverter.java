@@ -1,10 +1,7 @@
 package com.bachkhoa.converter;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -53,7 +50,7 @@ public class SalaryConverter {
 		dto.setTimesLeave(salaryDTO.getTimesLeave());
 		dto.setStatusLeave(salaryDTO.getStatusLeave());
 		dto.setLeaveDayAmount(stringUtils.floatToString(salaryDTO.getLeaveDayAmount()));
-		dto.setDelay(salaryDTO.getIsDelay());
+		dto.setIsDelay(salaryDTO.getIsDelay());
 		dto.setDelayAmount(stringUtils.floatToString(salaryDTO.getDelayAmount()));
 		dto.setDaySalaryAmount(stringUtils.floatToString(salaryDTO.getDaySalaryAmount()));
 		dto.setDayBonusAmount(stringUtils.floatToString(salaryDTO.getDayBonusAmount()));

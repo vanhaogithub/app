@@ -107,11 +107,11 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 		this.leaveDayAmount = leaveDayAmount;
 	}
 
-	public boolean isDelay() {
+	public boolean getIsDelay() {
 		return isDelay;
 	}
 
-	public void setDelay(boolean isDelay) {
+	public void setIsDelay(boolean isDelay) {
 		this.isDelay = isDelay;
 	}
 
