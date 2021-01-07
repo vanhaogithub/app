@@ -2,20 +2,20 @@ package com.bachkhoa.dto;
 
 import java.util.Date;
 
-public class SalarySummaryDTO extends AbstractDTO<SalarySummaryDTO> {
+public class SalarySummaryOutDTO extends AbstractDTO<SalarySummaryOutDTO> {
 	private Long userid;
 
 	private Date month;
 
 	private String fullname;
 
-	private Double sumOtAmount;
+	private String sumOtAmount;
 
-	private Double sumLeaveDayAmount;
+	private String sumLeaveDayAmount;
 
-	private Double sumDelayAmount;
+	private String sumDelayAmount;
 
-	private Double sumSalary;
+	private String sumSalary;
 
 	public Long getUserid() {
 		return userid;
@@ -41,36 +41,37 @@ public class SalarySummaryDTO extends AbstractDTO<SalarySummaryDTO> {
 		this.fullname = fullname;
 	}
 
-	public Double getSumOtAmount() {
+	public String getSumOtAmount() {
 		return sumOtAmount;
 	}
 
-	public void setSumOtAmount(Double sumOtAmount) {
+	public void setSumOtAmount(String sumOtAmount) {
 		this.sumOtAmount = sumOtAmount;
 	}
 
-	public Double getSumLeaveDayAmount() {
+	public String getSumLeaveDayAmount() {
 		return sumLeaveDayAmount;
 	}
 
-	public void setSumLeaveDayAmount(Double sumLeaveDayAmount) {
+	public void setSumLeaveDayAmount(String sumLeaveDayAmount) {
 		this.sumLeaveDayAmount = sumLeaveDayAmount;
 	}
 
-	public Double getSumDelayAmount() {
+	public String getSumDelayAmount() {
 		return sumDelayAmount;
 	}
 
-	public void setSumDelayAmount(Double sumDelayAmount) {
+	public void setSumDelayAmount(String sumDelayAmount) {
 		this.sumDelayAmount = sumDelayAmount;
 	}
 
-	public Double getSumSalary() {
+	public String getSumSalary() {
 		return sumSalary;
 	}
 
-	public void setSumSalary(Double sumSalary) {
+	public void setSumSalary(String sumSalary) {
 		this.sumSalary = sumSalary;
 	}
-
+	
+	
 }

@@ -23,7 +23,7 @@ public class UserDetailService implements IUserDetailService {
 	private UserDetailConverter userDetailConverter;
 
 	@Override
-	public UserDetailDTO findByOriginid(long originid) {
+	public UserDetailDTO findByOriginid(Long originid) {
 		UserDetailEntity userDetailEntity = userDetailRepository.findOneByOriginid(originid);
 		UserDetailDTO userDetailDTO = userDetailConverter.toDto(userDetailEntity);
 		return userDetailDTO;

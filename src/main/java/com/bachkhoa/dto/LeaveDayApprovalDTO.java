@@ -2,20 +2,19 @@ package com.bachkhoa.dto;
 
 import java.util.Date;
 
-public class LeaveDayApprovalDTO extends AbstractDTO<LeaveDayApprovalDTO>{
-	
+public class LeaveDayApprovalDTO extends AbstractDTO<LeaveDayApprovalDTO> {
+
 	private Date dateleave;
 
-	private Float timesleave;
+	private Double timesleave;
 
 	private String reason;
 
 	private String status;
 
 	private Long userid;
-	
+
 	private String userName;
-	
 
 	public Date getDateleave() {
 		return dateleave;
@@ -25,11 +24,11 @@ public class LeaveDayApprovalDTO extends AbstractDTO<LeaveDayApprovalDTO>{
 		this.dateleave = dateleave;
 	}
 
-	public Float getTimesleave() {
+	public Double getTimesleave() {
 		return timesleave;
 	}
 
-	public void setTimesleave(Float timesleave) {
+	public void setTimesleave(Double timesleave) {
 		this.timesleave = timesleave;
 	}
 

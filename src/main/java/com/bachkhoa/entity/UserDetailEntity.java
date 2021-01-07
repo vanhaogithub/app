@@ -38,10 +38,10 @@ public class UserDetailEntity extends BaseEntity {
 	private Long manager02id;
 
 	@Column(name = "daysalaryamount")
-	private Float daySalaryAmount;
+	private Double daySalaryAmount;
 
 	@Column(name = "daybonusamount")
-	private Float dayBonusAmount;
+	private Double dayBonusAmount;
 
 	@Column(name = "effectivedate")
 	private Date effectiveDate;
@@ -117,19 +117,19 @@ public class UserDetailEntity extends BaseEntity {
 		this.manager02id = manager02id;
 	}
 
-	public Float getDaySalaryAmount() {
+	public Double getDaySalaryAmount() {
 		return daySalaryAmount;
 	}
 
-	public void setDaySalaryAmount(Float daySalaryAmount) {
+	public void setDaySalaryAmount(Double daySalaryAmount) {
 		this.daySalaryAmount = daySalaryAmount;
 	}
 
-	public Float getDayBonusAmount() {
+	public Double getDayBonusAmount() {
 		return dayBonusAmount;
 	}
 
-	public void setDayBonusAmount(Float dayBonusAmount) {
+	public void setDayBonusAmount(Double dayBonusAmount) {
 		this.dayBonusAmount = dayBonusAmount;
 	}
 

@@ -58,7 +58,7 @@ public class SalarySummaryService implements ISalarySummaryService {
 	}
 
 	@Override
-	public Float getSalaryByUserId(Long userId, String month) {
+	public Double getSalaryByUserId(Long userId, String month) {
 		Date date = dateUtils.stringToDate(month);
 		return salarySummaryRepository.getSalaryByUserId(userId, date);
 	}
@@ -74,10 +74,10 @@ public class SalarySummaryService implements ISalarySummaryService {
 		for (UserDetailEntity user : allUser) {
 			List<SalaryEntity> salarys = salaryRepo.findByUserIdAndMonth(startMonth, endMonth, user.getOriginid());
 			SalarySummaryEntity entity = new SalarySummaryEntity();
-			Float sumOtAmount = (float) 0;
-			Float sumLeaveDayAmount = (float) 0;
-			Float sumDelayAmount = (float) 0;
-			Float sumSalary = (float) 0;
+			Double sumOtAmount = (double) 0;
+			Double sumLeaveDayAmount = (double) 0;
+			Double sumDelayAmount = (double) 0;
+			Double sumSalary = (double) 0;
 			for (SalaryEntity salaryEntity : salarys) {
 				sumOtAmount = sumOtAmount + salaryEntity.getOtAmount();
 				sumLeaveDayAmount = sumLeaveDayAmount + salaryEntity.getLeaveDayAmount();
@@ -93,7 +93,7 @@ public class SalarySummaryService implements ISalarySummaryService {
 			entity.setSumSalary(sumSalary);
 			SalarySummaryEntity origEntity = salarySummaryRepository.findOneByMonth(startMonth, user.getOriginid());
 			SalarySummaryEntity newEntity = new SalarySummaryEntity();
-			if(origEntity != null){
+			if (origEntity != null) {
 				newEntity = salarySummaryConverter.toEntity(origEntity, entity);
 			} else {
 				newEntity = entity;

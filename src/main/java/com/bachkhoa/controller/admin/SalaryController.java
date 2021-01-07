@@ -14,12 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.bachkhoa.converter.SalaryConverter;
+import com.bachkhoa.converter.SalarySummaryConverter;
 import com.bachkhoa.dto.SalaryOutDTO;
-import com.bachkhoa.dto.SalarySummaryDTO;
+import com.bachkhoa.dto.SalarySummaryOutDTO;
 import com.bachkhoa.service.ISalaryService;
 import com.bachkhoa.service.ISalarySummaryService;
 import com.bachkhoa.service.IUserDetailService;
 import com.bachkhoa.util.MessageUtil;
+import com.bachkhoa.util.StringUtils;
 
 @Controller(value = "salaryControllerOfAdmin")
 public class SalaryController {
@@ -32,22 +34,28 @@ public class SalaryController {
 
 	@Autowired
 	private IUserDetailService userDetailService;
-	
+
 	@Autowired
 	private MessageUtil messageUtil;
 
 	@Autowired
 	private SalaryConverter salaryConverter;
-	
+
+	@Autowired
+	private SalarySummaryConverter salarySummaryConverter;
+
+	@Autowired
+	private StringUtils stringUtils;
+
 	@RequestMapping(value = "/admin/salary/list", method = RequestMethod.GET)
 	public ModelAndView showList(@RequestParam("page") int page, @RequestParam("limit") int limit,
 			@RequestParam("month") String month, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("admin/salary/list");
-		SalarySummaryDTO model = new SalarySummaryDTO();
+		SalarySummaryOutDTO model = new SalarySummaryOutDTO();
 		model.setPage(page);
 		model.setLimit(limit);
 		Pageable pageable = new PageRequest(page - 1, limit);
-		model.setListResult(salarySummaryService.findByMonth(pageable, month));
+		model.setListResult(salarySummaryConverter.toListOutDTO(salarySummaryService.findByMonth(pageable, month)));
 		model.setTotalItem(salarySummaryService.getTotalItem(month));
 		model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 		mav.addObject("model", model);
@@ -75,7 +83,7 @@ public class SalaryController {
 		mav.addObject("month", month);
 		mav.addObject("userid", userid);
 		mav.addObject("userName", userDetailService.getNameByOriginid(userid));
-		mav.addObject("sumSalary", salarySummaryService.getSalaryByUserId(userid, month));
+		mav.addObject("sumSalary", stringUtils.doubleToString(salarySummaryService.getSalaryByUserId(userid, month)));
 		return mav;
 	}
 }

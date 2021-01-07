@@ -13,7 +13,7 @@ public class OtEntity extends BaseEntity {
 	private Date dateot;
 
 	@Column(name = "timesot")
-	private Float timesot;
+	private Double timesot;
 
 	@Column(name = "reason")
 	private String reason;
@@ -29,21 +29,20 @@ public class OtEntity extends BaseEntity {
 	}
 
 	public void setDateot(Date dateot) {
-		/*String pattern = "yyyy-mm-dd hh:mm:ss";
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-		try {
-			this.dateot = simpleDateFormat.parse(dateot);
-		} catch (ParseException e) {
-			this.dateot = null;
-		}*/
+		/*
+		 * String pattern = "yyyy-mm-dd hh:mm:ss"; SimpleDateFormat
+		 * simpleDateFormat = new SimpleDateFormat(pattern); try { this.dateot =
+		 * simpleDateFormat.parse(dateot); } catch (ParseException e) {
+		 * this.dateot = null; }
+		 */
 		this.dateot = dateot;
 	}
 
-	public Float getTimesot() {
+	public Double getTimesot() {
 		return timesot;
 	}
 
-	public void setTimesot(Float timesot) {
+	public void setTimesot(Double timesot) {
 		this.timesot = timesot;
 	}
 

@@ -1,13 +1,21 @@
 package com.bachkhoa.util;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public class StringUtils {
 
-	public String floatToString(Float amount){
-		Float a = (float) 1000000000;
-		String amountString = amount.toString();
+	public String doubleToString(Double amount) {
+		String amountString = "0";
+		if(amount != null){
+			Locale localeEN = new Locale("en", "EN");
+			NumberFormat en = NumberFormat.getInstance(localeEN);
+			amountString = en.format(amount);
+		}
+		
 		return amountString;
 	}
 }

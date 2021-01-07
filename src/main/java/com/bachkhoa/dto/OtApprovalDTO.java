@@ -6,7 +6,7 @@ public class OtApprovalDTO extends AbstractDTO<OtApprovalDTO> {
 
 	private Date dateot;
 
-	private Float timesot;
+	private Double timesot;
 
 	private String reason;
 
@@ -24,11 +24,11 @@ public class OtApprovalDTO extends AbstractDTO<OtApprovalDTO> {
 		this.dateot = dateot;
 	}
 
-	public Float getTimesot() {
+	public Double getTimesot() {
 		return timesot;
 	}
 
-	public void setTimesot(Float timesot) {
+	public void setTimesot(Double timesot) {
 		this.timesot = timesot;
 	}
 

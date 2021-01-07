@@ -14,7 +14,7 @@ public interface TimekeepingRepository extends JpaRepository<TimekeepingEntity, 
 	TimekeepingEntity findOneByUseridAndDate(@Param("userid") Long userid, @Param("start") Date start,
 			@Param("next") Date next);
 	
-	@Query(value = "SELECT * FROM timekeeping t WHERE t.userid = :userid and t.starttime >= :start and t.starttime < :next", nativeQuery = true)
+	@Query(value = "SELECT * FROM timekeeping t WHERE t.userid = :userid and t.endtime >= :start and t.endtime < :next", nativeQuery = true)
 	List<TimekeepingEntity> findAllByUseridAndDate(@Param("userid") Long userid, @Param("start") Date start,
 			@Param("next") Date next);
 }

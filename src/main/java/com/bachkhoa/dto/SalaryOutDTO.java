@@ -9,13 +9,13 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 
 	private String fullname;
 
-	private Float timesOt;
+	private Double timesOt;
 
 	private String statusOt;
 
 	private String otAmount;
 
-	private Float timesLeave;
+	private Double timesLeave;
 
 	private String statusLeave;
 
@@ -23,7 +23,7 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 
 	private boolean isDelay;
 
-	private Float timeDelay;
+	private Double timeDelay;
 
 	private String delayAmount;
 
@@ -59,11 +59,11 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 		this.fullname = fullname;
 	}
 
-	public Float getTimesOt() {
+	public Double getTimesOt() {
 		return timesOt;
 	}
 
-	public void setTimesOt(Float timesOt) {
+	public void setTimesOt(Double timesOt) {
 		this.timesOt = timesOt;
 	}
 
@@ -83,11 +83,11 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 		this.otAmount = otAmount;
 	}
 
-	public Float getTimesLeave() {
+	public Double getTimesLeave() {
 		return timesLeave;
 	}
 
-	public void setTimesLeave(Float timesLeave) {
+	public void setTimesLeave(Double timesLeave) {
 		this.timesLeave = timesLeave;
 	}
 
@@ -115,11 +115,11 @@ public class SalaryOutDTO extends AbstractDTO<SalaryOutDTO> {
 		this.isDelay = isDelay;
 	}
 
-	public Float getTimeDelay() {
+	public Double getTimeDelay() {
 		return timeDelay;
 	}
 
-	public void setTimeDelay(Float timeDelay) {
+	public void setTimeDelay(Double timeDelay) {
 		this.timeDelay = timeDelay;
 	}
 

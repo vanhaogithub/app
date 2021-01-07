@@ -9,31 +9,31 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 
 	private String fullname;
 
-	private Float timesOt;
+	private Double timesOt;
 
 	private String statusOt;
 
-	private Float otAmount;
+	private Double otAmount;
 
-	private Float timesLeave;
+	private Double timesLeave;
 
 	private String statusLeave;
 
-	private Float leaveDayAmount;
+	private Double leaveDayAmount;
 
 	private boolean isDelay;
 
-	private Float timeDelay;
-	
-	private Float delayAmount;
-	
+	private Double timeDelay;
+
+	private Double delayAmount;
+
 	private boolean isAbsolve;
 
-	private Float daySalaryAmount;
+	private Double daySalaryAmount;
 
-	private Float dayBonusAmount;
+	private Double dayBonusAmount;
 
-	private Float daySalary;
+	private Double daySalary;
 
 	public Long getUserid() {
 		return userid;
@@ -59,11 +59,11 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 		this.fullname = fullname;
 	}
 
-	public Float getTimesOt() {
+	public Double getTimesOt() {
 		return timesOt;
 	}
 
-	public void setTimesOt(Float timesOt) {
+	public void setTimesOt(Double timesOt) {
 		this.timesOt = timesOt;
 	}
 
@@ -75,19 +75,19 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 		this.statusOt = statusOt;
 	}
 
-	public Float getOtAmount() {
+	public Double getOtAmount() {
 		return otAmount;
 	}
 
-	public void setOtAmount(Float otAmount) {
+	public void setOtAmount(Double otAmount) {
 		this.otAmount = otAmount;
 	}
 
-	public Float getTimesLeave() {
+	public Double getTimesLeave() {
 		return timesLeave;
 	}
 
-	public void setTimesLeave(Float timesLeave) {
+	public void setTimesLeave(Double timesLeave) {
 		this.timesLeave = timesLeave;
 	}
 
@@ -99,11 +99,11 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 		this.statusLeave = statusLeave;
 	}
 
-	public Float getLeaveDayAmount() {
+	public Double getLeaveDayAmount() {
 		return leaveDayAmount;
 	}
 
-	public void setLeaveDayAmount(Float leaveDayAmount) {
+	public void setLeaveDayAmount(Double leaveDayAmount) {
 		this.leaveDayAmount = leaveDayAmount;
 	}
 
@@ -115,43 +115,43 @@ public class SalaryDTO extends AbstractDTO<SalaryDTO> {
 		this.isDelay = isDelay;
 	}
 
-	public Float getDelayAmount() {
+	public Double getDelayAmount() {
 		return delayAmount;
 	}
 
-	public void setDelayAmount(Float delayAmount) {
+	public void setDelayAmount(Double delayAmount) {
 		this.delayAmount = delayAmount;
 	}
 
-	public Float getDaySalaryAmount() {
+	public Double getDaySalaryAmount() {
 		return daySalaryAmount;
 	}
 
-	public void setDaySalaryAmount(Float daySalaryAmount) {
+	public void setDaySalaryAmount(Double daySalaryAmount) {
 		this.daySalaryAmount = daySalaryAmount;
 	}
 
-	public Float getDayBonusAmount() {
+	public Double getDayBonusAmount() {
 		return dayBonusAmount;
 	}
 
-	public void setDayBonusAmount(Float dayBonusAmount) {
+	public void setDayBonusAmount(Double dayBonusAmount) {
 		this.dayBonusAmount = dayBonusAmount;
 	}
 
-	public Float getDaySalary() {
+	public Double getDaySalary() {
 		return daySalary;
 	}
 
-	public void setDaySalary(Float daySalary) {
+	public void setDaySalary(Double daySalary) {
 		this.daySalary = daySalary;
 	}
 
-	public Float getTimeDelay() {
+	public Double getTimeDelay() {
 		return timeDelay;
 	}
 
-	public void setTimeDelay(Float timeDelay) {
+	public void setTimeDelay(Double timeDelay) {
 		this.timeDelay = timeDelay;
 	}
 

@@ -23,14 +23,15 @@
 					</div>
 				</c:if>
 				<form action="j_spring_security_check" id="formLogin" method="post">
+					<h3>Login</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" id="userName" name="j_username" placeholder="Tên đăng nhập">
+						<input type="text" class="form-control" id="userName" name="j_username" placeholder="User Name">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control" id="password" name="j_password" placeholder="Mật khẩu">
+						<input type="password" class="form-control" id="password" name="j_password" placeholder="Password">
 					</div>
-					<button type="submit" class="btn btn-primary" >Đăng nhập</button>
+					<button type="submit" class="btn btn-primary" >Login</button>
 				</form>
 			</div>
 		</div>

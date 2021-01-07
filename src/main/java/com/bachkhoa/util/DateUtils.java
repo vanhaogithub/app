@@ -13,8 +13,8 @@ import com.bachkhoa.constant.SystemConstant;
 @Component
 public class DateUtils {
 
-	//input 10/2020
-	//output 2020-10-01
+	// input 10/2020
+	// output 2020-10-01
 	public Date stringToDate(String text) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = null;
@@ -28,8 +28,9 @@ public class DateUtils {
 
 		return date;
 	}
-	//input 2020-10-01
-	//output 2020-11-01
+
+	// input 2020-10-01
+	// output 2020-11-01
 	public Date getNextMonth(Date date) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date nextMonth = null;
@@ -73,7 +74,7 @@ public class DateUtils {
 		return nextMonth;
 	}
 
-	//output 2020-10-10 00:00:00
+	// output 2020-10-10 00:00:00
 	public Date getStartDay(Date date) {
 		Date startDay = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -106,8 +107,8 @@ public class DateUtils {
 		return startWorkTime;
 	}
 
-	public Float getHours(Date loginDate, Date startWorkDate) {
-		Float hours = (float) (loginDate.getTime() - startWorkDate.getTime());
+	public Double getHours(Date loginDate, Date startWorkDate) {
+		Double hours = (double) (loginDate.getTime() - startWorkDate.getTime());
 		hours = hours / (60 * 60 * 1000);
 		return hours;
 	}

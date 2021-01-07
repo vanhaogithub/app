@@ -40,7 +40,7 @@ public class TimekeepingService implements ITimekeepingService {
 			} else {
 				timekeepingEntity.setDelay(false);
 				timekeepingEntity.setAbsolve(true);
-				timekeepingEntity.setTimeDelay((float) 0);
+				timekeepingEntity.setTimeDelay((double) 0);
 			}
 			timekeepingRepository.save(timekeepingEntity);
 		}

@@ -19,16 +19,16 @@ public class SalarySummaryEntity extends BaseEntity {
 	private String fullname;
 
 	@Column(name = "sumotamount")
-	private Float sumOtAmount;
+	private Double sumOtAmount;
 
 	@Column(name = "sumleavedayamount")
-	private Float sumLeaveDayAmount;
+	private Double sumLeaveDayAmount;
 
 	@Column(name = "sumdelayamount")
-	private Float sumDelayAmount;
+	private Double sumDelayAmount;
 
 	@Column(name = "sumsalary")
-	private Float sumSalary;
+	private Double sumSalary;
 
 	public Long getUserid() {
 		return userid;
@@ -54,35 +54,35 @@ public class SalarySummaryEntity extends BaseEntity {
 		this.fullname = fullname;
 	}
 
-	public Float getSumOtAmount() {
+	public Double getSumOtAmount() {
 		return sumOtAmount;
 	}
 
-	public void setSumOtAmount(Float sumOtAmount) {
+	public void setSumOtAmount(Double sumOtAmount) {
 		this.sumOtAmount = sumOtAmount;
 	}
 
-	public Float getSumLeaveDayAmount() {
+	public Double getSumLeaveDayAmount() {
 		return sumLeaveDayAmount;
 	}
 
-	public void setSumLeaveDayAmount(Float sumLeaveDayAmount) {
+	public void setSumLeaveDayAmount(Double sumLeaveDayAmount) {
 		this.sumLeaveDayAmount = sumLeaveDayAmount;
 	}
 
-	public Float getSumDelayAmount() {
+	public Double getSumDelayAmount() {
 		return sumDelayAmount;
 	}
 
-	public void setSumDelayAmount(Float sumDelayAmount) {
+	public void setSumDelayAmount(Double sumDelayAmount) {
 		this.sumDelayAmount = sumDelayAmount;
 	}
 
-	public Float getSumSalary() {
+	public Double getSumSalary() {
 		return sumSalary;
 	}
 
-	public void setSumSalary(Float sumSalary) {
+	public void setSumSalary(Double sumSalary) {
 		this.sumSalary = sumSalary;
 	}
 

@@ -5,7 +5,7 @@ import java.util.Date;
 public class LeaveDayDTO extends AbstractDTO<LeaveDayDTO> {
 	private Date dateleave;
 
-	private Float timesleave;
+	private Double timesleave;
 
 	private String reason;
 
@@ -21,11 +21,11 @@ public class LeaveDayDTO extends AbstractDTO<LeaveDayDTO> {
 		this.dateleave = dateleave;
 	}
 
-	public Float getTimesleave() {
+	public Double getTimesleave() {
 		return timesleave;
 	}
 
-	public void setTimesleave(Float timesleave) {
+	public void setTimesleave(Double timesleave) {
 		this.timesleave = timesleave;
 	}
 

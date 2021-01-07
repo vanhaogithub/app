@@ -13,7 +13,7 @@ public class LeaveDayEntity extends BaseEntity {
 	private Date dateleave;
 
 	@Column(name = "timesleave")
-	private Float timesleave;
+	private Double timesleave;
 
 	@Column(name = "reason")
 	private String reason;
@@ -32,11 +32,11 @@ public class LeaveDayEntity extends BaseEntity {
 		this.dateleave = dateleave;
 	}
 
-	public Float getTimesleave() {
+	public Double getTimesleave() {
 		return timesleave;
 	}
 
-	public void setTimesleave(Float timesleave) {
+	public void setTimesleave(Double timesleave) {
 		this.timesleave = timesleave;
 	}
 

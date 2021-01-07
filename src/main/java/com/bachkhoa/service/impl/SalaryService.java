@@ -145,31 +145,31 @@ public class SalaryService implements ISalaryService {
 			LeaveDayEntity leaveDay, OtEntity ot) {
 		SalaryEntity entity = new SalaryEntity();
 		Date workDay = null;
-		Float timesOt = (float) 0;
+		Double timesOt = (double) 0;
 		String statusOt = null;
-		Float otAmount = (float) 0;
-		Float timesLeave = (float) 0;
+		Double otAmount = (double) 0;
+		Double timesLeave = (double) 0;
 		String statusLeave = null;
-		Float leaveDayAmount = (float) 0;
+		Double leaveDayAmount = (double) 0;
 		boolean isDelay = false;
-		Float timeDelay = (float) 0;
+		Double timeDelay = (double) 0;
 		boolean isAbsolve = false;
-		Float delayAmount = (float) 0;
-		Float daySalary = user.getDayBonusAmount() + user.getDaySalaryAmount();
-		Float housSalary = (user.getDayBonusAmount() + user.getDaySalaryAmount()) / 8;
+		Double delayAmount = (double) 0;
+		Double daySalary = user.getDayBonusAmount() + user.getDaySalaryAmount();
+		Double housSalary = (user.getDayBonusAmount() + user.getDaySalaryAmount()) / 8;
 		if (timeKeeping.getStartTime() != null) {
 			workDay = timeKeeping.getStartTime();
 			isDelay = timeKeeping.isDelay();
 			timeDelay = timeKeeping.getTimeDelay();
 			isAbsolve = timeKeeping.isAbsolve();
-			delayAmount = isAbsolve ? (float) 0 : timeDelay * housSalary;
+			delayAmount = isAbsolve ? (double) 0 : timeDelay * housSalary;
 			daySalary = daySalary - delayAmount;
 		}
 		if (leaveDay.getDateleave() != null) {
 			workDay = leaveDay.getDateleave();
 			timesLeave = leaveDay.getTimesleave();
 			statusLeave = leaveDay.getStatus();
-			leaveDayAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusLeave) ? (float) 0
+			leaveDayAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusLeave) ? (double) 0
 					: leaveDay.getTimesleave() * housSalary;
 			daySalary = daySalary - leaveDayAmount;
 		}
@@ -177,7 +177,7 @@ public class SalaryService implements ISalaryService {
 			workDay = ot.getDateot();
 			timesOt = ot.getTimesot();
 			statusOt = ot.getStatus();
-			otAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusOt) ? ot.getTimesot() * housSalary : (float) 0;
+			otAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusOt) ? ot.getTimesot() * housSalary : (double) 0;
 			daySalary = daySalary + otAmount;
 		}
 		workDay = dateUtils.getStartDay(workDay);

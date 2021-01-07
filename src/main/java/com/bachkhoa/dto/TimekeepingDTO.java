@@ -11,7 +11,7 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 
 	private boolean isDelay;
 
-	private Float timeDelay;
+	private Double timeDelay;
 
 	private boolean isAbsolve;
 
@@ -47,11 +47,11 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 		this.isDelay = isDelay;
 	}
 
-	public Float getTimeDelay() {
+	public Double getTimeDelay() {
 		return timeDelay;
 	}
 
-	public void setTimeDelay(Float timeDelay) {
+	public void setTimeDelay(Double timeDelay) {
 		this.timeDelay = timeDelay;
 	}
 

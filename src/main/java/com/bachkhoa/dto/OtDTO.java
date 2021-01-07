@@ -5,7 +5,7 @@ import java.util.Date;
 public class OtDTO extends AbstractDTO<OtDTO> {
 	private Date dateot;
 
-	private Float timesot;
+	private Double timesot;
 
 	private String reason;
 
@@ -21,11 +21,11 @@ public class OtDTO extends AbstractDTO<OtDTO> {
 		this.dateot = dateot;
 	}
 
-	public Float getTimesot() {
+	public Double getTimesot() {
 		return timesot;
 	}
 
-	public void setTimesot(Float timesot) {
+	public void setTimesot(Double timesot) {
 		this.timesot = timesot;
 	}
 

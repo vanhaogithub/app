@@ -19,43 +19,43 @@ public class SalaryEntity extends BaseEntity {
 	private String fullname;
 
 	@Column(name = "timesot")
-	private Float timesOt;
+	private Double timesOt;
 
 	@Column(name = "statusot")
 	private String statusOt;
 
 	@Column(name = "otamount")
-	private Float otAmount;
+	private Double otAmount;
 
 	@Column(name = "timesleave")
-	private Float timesLeave;
+	private Double timesLeave;
 
 	@Column(name = "statusleave")
 	private String statusLeave;
 
 	@Column(name = "leavedayamount")
-	private Float leaveDayAmount;
+	private Double leaveDayAmount;
 
 	@Column(name = "isdelay")
 	private boolean isDelay;
 
 	@Column(name = "timedelay")
-	private Float timeDelay;
+	private Double timeDelay;
 
 	@Column(name = "isabsolve")
 	private boolean isAbsolve;
-	
+
 	@Column(name = "delayamount")
-	private Float delayAmount;
+	private Double delayAmount;
 
 	@Column(name = "daysalaryamount")
-	private Float daySalaryAmount;
+	private Double daySalaryAmount;
 
 	@Column(name = "daybonusamount")
-	private Float dayBonusAmount;
+	private Double dayBonusAmount;
 
 	@Column(name = "daysalary")
-	private Float daySalary;
+	private Double daySalary;
 
 	public Long getUserid() {
 		return userid;
@@ -81,11 +81,11 @@ public class SalaryEntity extends BaseEntity {
 		this.fullname = fullname;
 	}
 
-	public Float getTimesOt() {
+	public Double getTimesOt() {
 		return timesOt;
 	}
 
-	public void setTimesOt(Float timesOt) {
+	public void setTimesOt(Double timesOt) {
 		this.timesOt = timesOt;
 	}
 
@@ -97,19 +97,19 @@ public class SalaryEntity extends BaseEntity {
 		this.statusOt = statusOt;
 	}
 
-	public Float getOtAmount() {
+	public Double getOtAmount() {
 		return otAmount;
 	}
 
-	public void setOtAmount(Float otAmount) {
+	public void setOtAmount(Double otAmount) {
 		this.otAmount = otAmount;
 	}
 
-	public Float getTimesLeave() {
+	public Double getTimesLeave() {
 		return timesLeave;
 	}
 
-	public void setTimesLeave(Float timesLeave) {
+	public void setTimesLeave(Double timesLeave) {
 		this.timesLeave = timesLeave;
 	}
 
@@ -121,11 +121,11 @@ public class SalaryEntity extends BaseEntity {
 		this.statusLeave = statusLeave;
 	}
 
-	public Float getLeaveDayAmount() {
+	public Double getLeaveDayAmount() {
 		return leaveDayAmount;
 	}
 
-	public void setLeaveDayAmount(Float leaveDayAmount) {
+	public void setLeaveDayAmount(Double leaveDayAmount) {
 		this.leaveDayAmount = leaveDayAmount;
 	}
 
@@ -137,43 +137,43 @@ public class SalaryEntity extends BaseEntity {
 		this.isDelay = isDelay;
 	}
 
-	public Float getDelayAmount() {
+	public Double getDelayAmount() {
 		return delayAmount;
 	}
 
-	public void setDelayAmount(Float delayAmount) {
+	public void setDelayAmount(Double delayAmount) {
 		this.delayAmount = delayAmount;
 	}
 
-	public Float getDaySalaryAmount() {
+	public Double getDaySalaryAmount() {
 		return daySalaryAmount;
 	}
 
-	public void setDaySalaryAmount(Float daySalaryAmount) {
+	public void setDaySalaryAmount(Double daySalaryAmount) {
 		this.daySalaryAmount = daySalaryAmount;
 	}
 
-	public Float getDayBonusAmount() {
+	public Double getDayBonusAmount() {
 		return dayBonusAmount;
 	}
 
-	public void setDayBonusAmount(Float dayBonusAmount) {
+	public void setDayBonusAmount(Double dayBonusAmount) {
 		this.dayBonusAmount = dayBonusAmount;
 	}
 
-	public Float getDaySalary() {
+	public Double getDaySalary() {
 		return daySalary;
 	}
 
-	public void setDaySalary(Float daySalary) {
+	public void setDaySalary(Double daySalary) {
 		this.daySalary = daySalary;
 	}
 
-	public Float getTimeDelay() {
+	public Double getTimeDelay() {
 		return timeDelay;
 	}
 
-	public void setTimeDelay(Float timeDelay) {
+	public void setTimeDelay(Double timeDelay) {
 		this.timeDelay = timeDelay;
 	}
 

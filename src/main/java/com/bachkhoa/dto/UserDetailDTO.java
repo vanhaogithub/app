@@ -20,9 +20,9 @@ public class UserDetailDTO extends AbstractDTO<UserDetailDTO> {
 
 	private Long manager02id;
 
-	private Float daySalaryAmount;
+	private Double daySalaryAmount;
 
-	private Float dayBonusAmount;
+	private Double dayBonusAmount;
 
 	private Date effectiveDate;
 
@@ -94,21 +94,19 @@ public class UserDetailDTO extends AbstractDTO<UserDetailDTO> {
 		this.manager02id = manager02id;
 	}
 
-	
-
-	public Float getDaySalaryAmount() {
+	public Double getDaySalaryAmount() {
 		return daySalaryAmount;
 	}
 
-	public void setDaySalaryAmount(Float daySalaryAmount) {
+	public void setDaySalaryAmount(Double daySalaryAmount) {
 		this.daySalaryAmount = daySalaryAmount;
 	}
 
-	public Float getDayBonusAmount() {
+	public Double getDayBonusAmount() {
 		return dayBonusAmount;
 	}
 
-	public void setDayBonusAmount(Float dayBonusAmount) {
+	public void setDayBonusAmount(Double dayBonusAmount) {
 		this.dayBonusAmount = dayBonusAmount;
 	}
 

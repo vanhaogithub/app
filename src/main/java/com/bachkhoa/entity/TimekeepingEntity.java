@@ -22,7 +22,7 @@ public class TimekeepingEntity extends BaseEntity {
 	private boolean isDelay;
 
 	@Column(name = "timedelay")
-	private Float timeDelay;
+	private Double timeDelay;
 
 	@Column(name = "isabsolve")
 	private boolean isAbsolve;
@@ -59,11 +59,11 @@ public class TimekeepingEntity extends BaseEntity {
 		this.isDelay = isDelay;
 	}
 
-	public Float getTimeDelay() {
+	public Double getTimeDelay() {
 		return timeDelay;
 	}
 
-	public void setTimeDelay(Float timeDelay) {
+	public void setTimeDelay(Double timeDelay) {
 		this.timeDelay = timeDelay;
 	}
 
