@@ -728,1148 +728,1148 @@ INSERT INTO ot(dateot,timesot,reason,status,userid)
 VALUES ('2020-01-28',3, 'OT Project DYN','REJECT', 6);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (1, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (1, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (1, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (1, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (1, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (1, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (1, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (1, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (1, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (1, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (1, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (1, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (1, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (1, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (1, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (1, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (1, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (1, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (1, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (1, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (1, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (1, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (1, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (1, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (2, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (2, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (2, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (2, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (2, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (2, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (2, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (2, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (2, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (2, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (2, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (2, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (2, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (2, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (2, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (2, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (2, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (2, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (2, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (2, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (2, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (2, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (2, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (2, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (3, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (3, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (3, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (3, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (3, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (3, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (3, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (3, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (3, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (3, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (3, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (3, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (3, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (3, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (3, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (3, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (3, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (3, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (3, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (3, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (3, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (3, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (3, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (3, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (4, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (4, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (4, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (4, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (4, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (4, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (4, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (4, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (4, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (4, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (4, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (4, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (4, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (4, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (4, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (4, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (4, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (4, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (4, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (4, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (4, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (4, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (4, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (4, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (5, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (5, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (5, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (5, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (5, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (5, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (5, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (5, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (5, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (5, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (5, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (5, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (5, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (5, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (5, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (5, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (5, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (5, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (5, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (5, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (5, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (5, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (5, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (5, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-01 08:00:00','2020-10-01 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-01 08:00:01','2020-10-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-02 08:00:00','2020-10-02 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-02 08:00:01','2020-10-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-03 08:00:00','2020-10-03 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-03 08:00:01','2020-10-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-04 09:00:00','2020-10-04 17:00:00', 1, 1, 0);
+VALUES (6, '2020-10-04 09:00:01','2020-10-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-05 08:00:00','2020-10-05 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-05 08:00:01','2020-10-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-06 08:00:00','2020-10-06 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-06 08:00:01','2020-10-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-07 08:30:00','2020-10-07 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-10-07 08:30:00','2020-10-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-08 08:00:00','2020-10-08 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-08 08:00:01','2020-10-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-09 08:00:00','2020-10-09 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-09 08:00:01','2020-10-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-10 08:00:00','2020-10-10 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-10 08:00:01','2020-10-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-11 10:00:00','2020-10-11 17:00:00', 1, 2, 0);
+VALUES (6, '2020-10-11 10:00:01','2020-10-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-12 08:00:00','2020-10-12 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-12 08:00:01','2020-10-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-13 08:00:00','2020-10-13 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-13 08:00:01','2020-10-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-14 08:00:00','2020-10-14 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-14 08:00:01','2020-10-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-15 08:30:00','2020-10-15 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-10-15 08:30:00','2020-10-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-16 08:00:00','2020-10-16 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-16 08:00:01','2020-10-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-17 08:00:00','2020-10-17 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-17 08:00:01','2020-10-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-18 08:00:00','2020-10-18 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-18 08:00:01','2020-10-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-19 09:00:00','2020-10-19 17:00:00', 1, 1, 0);
+VALUES (6, '2020-10-19 09:00:01','2020-10-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-20 08:00:00','2020-10-20 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-20 08:00:01','2020-10-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-21 08:00:00','2020-10-21 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-21 08:00:01','2020-10-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-22 08:00:00','2020-10-22 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-22 08:00:01','2020-10-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-23 09:00:00','2020-10-23 17:00:00', 1, 1, 0);
+VALUES (6, '2020-10-23 09:00:01','2020-10-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-24 08:00:00','2020-10-24 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-24 08:00:01','2020-10-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-25 08:00:00','2020-10-25 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-25 08:00:01','2020-10-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-26 08:00:00','2020-10-26 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-26 08:00:01','2020-10-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-27 08:00:00','2020-10-27 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-27 08:00:01','2020-10-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-28 09:00:00','2020-10-28 17:00:00', 1, 1, 0);
+VALUES (6, '2020-10-28 09:00:01','2020-10-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-29 08:00:00','2020-10-29 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-29 08:00:01','2020-10-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-30 08:00:00','2020-10-30 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-30 08:00:01','2020-10-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-10-31 08:00:00','2020-10-31 17:00:00', 0, 0, 0);
+VALUES (6, '2020-10-31 08:00:01','2020-10-31 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-01 08:00:00','2020-11-01 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-01 08:00:01','2020-11-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-02 08:00:00','2020-11-02 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-02 08:00:01','2020-11-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-03 08:00:00','2020-11-03 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-03 08:00:01','2020-11-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-04 09:00:00','2020-11-04 17:00:00', 1, 1, 0);
+VALUES (6, '2020-11-04 09:00:01','2020-11-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-05 08:00:00','2020-11-05 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-05 08:00:01','2020-11-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-06 08:00:00','2020-11-06 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-06 08:00:01','2020-11-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-07 08:30:00','2020-11-07 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-11-07 08:30:00','2020-11-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-08 08:00:00','2020-11-08 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-08 08:00:01','2020-11-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-09 08:00:00','2020-11-09 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-09 08:00:01','2020-11-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-10 08:00:00','2020-11-10 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-10 08:00:01','2020-11-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-11 10:00:00','2020-11-11 17:00:00', 1, 2, 0);
+VALUES (6, '2020-11-11 10:00:01','2020-11-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-12 08:00:00','2020-11-12 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-12 08:00:01','2020-11-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-13 08:00:00','2020-11-13 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-13 08:00:01','2020-11-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-14 08:00:00','2020-11-14 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-14 08:00:01','2020-11-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-15 08:30:00','2020-11-15 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-11-15 08:30:00','2020-11-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-16 08:00:00','2020-11-16 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-16 08:00:01','2020-11-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-17 08:00:00','2020-11-17 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-17 08:00:01','2020-11-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-18 08:00:00','2020-11-18 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-18 08:00:01','2020-11-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-19 09:00:00','2020-11-19 17:00:00', 1, 1, 0);
+VALUES (6, '2020-11-19 09:00:01','2020-11-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-20 08:00:00','2020-11-20 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-20 08:00:01','2020-11-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-21 08:00:00','2020-11-21 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-21 08:00:01','2020-11-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-22 08:00:00','2020-11-22 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-22 08:00:01','2020-11-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-23 09:00:00','2020-11-23 17:00:00', 1, 1, 0);
+VALUES (6, '2020-11-23 09:00:01','2020-11-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-24 08:00:00','2020-11-24 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-24 08:00:01','2020-11-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-25 08:00:00','2020-11-25 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-25 08:00:01','2020-11-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-26 08:00:00','2020-11-26 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-26 08:00:01','2020-11-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-27 08:00:00','2020-11-27 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-27 08:00:01','2020-11-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-28 09:00:00','2020-11-28 17:00:00', 1, 1, 0);
+VALUES (6, '2020-11-28 09:00:01','2020-11-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-29 08:00:00','2020-11-29 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-29 08:00:01','2020-11-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-11-30 08:00:00','2020-11-30 17:00:00', 0, 0, 0);
+VALUES (6, '2020-11-30 08:00:01','2020-11-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-01 08:00:00','2020-12-01 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-01 08:00:01','2020-12-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-02 08:00:00','2020-12-02 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-02 08:00:01','2020-12-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-03 08:00:00','2020-12-03 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-03 08:00:01','2020-12-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-04 09:00:00','2020-12-04 17:00:00', 1, 1, 0);
+VALUES (6, '2020-12-04 09:00:01','2020-12-04 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-05 08:00:00','2020-12-05 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-05 08:00:01','2020-12-05 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-06 08:00:00','2020-12-06 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-06 08:00:01','2020-12-06 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-07 08:30:00','2020-12-07 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-12-07 08:30:00','2020-12-07 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-08 08:00:00','2020-12-08 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-08 08:00:01','2020-12-08 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-09 08:00:00','2020-12-09 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-09 08:00:01','2020-12-09 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-10 08:00:00','2020-12-10 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-10 08:00:01','2020-12-10 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-11 10:00:00','2020-12-11 17:00:00', 1, 2, 0);
+VALUES (6, '2020-12-11 10:00:01','2020-12-11 17:00:01', 1, 2, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-12 08:00:00','2020-12-12 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-12 08:00:01','2020-12-12 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-13 08:00:00','2020-12-13 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-13 08:00:01','2020-12-13 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-14 08:00:00','2020-12-14 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-14 08:00:01','2020-12-14 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-15 08:30:00','2020-12-15 17:00:00', 1, 0.5, 0);
+VALUES (6, '2020-12-15 08:30:00','2020-12-15 17:00:01', 1, 0.5, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-16 08:00:00','2020-12-16 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-16 08:00:01','2020-12-16 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-17 08:00:00','2020-12-17 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-17 08:00:01','2020-12-17 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-18 08:00:00','2020-12-18 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-18 08:00:01','2020-12-18 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-19 09:00:00','2020-12-19 17:00:00', 1, 1, 0);
+VALUES (6, '2020-12-19 09:00:01','2020-12-19 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-20 08:00:00','2020-12-20 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-20 08:00:01','2020-12-20 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-21 08:00:00','2020-12-21 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-21 08:00:01','2020-12-21 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-22 08:00:00','2020-12-22 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-22 08:00:01','2020-12-22 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-23 09:00:00','2020-12-23 17:00:00', 1, 1, 0);
+VALUES (6, '2020-12-23 09:00:01','2020-12-23 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-24 08:00:00','2020-12-24 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-24 08:00:01','2020-12-24 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-25 08:00:00','2020-12-25 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-25 08:00:01','2020-12-25 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-26 08:00:00','2020-12-26 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-26 08:00:01','2020-12-26 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-27 08:00:00','2020-12-27 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-27 08:00:01','2020-12-27 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-28 09:00:00','2020-12-28 17:00:00', 1, 1, 0);
+VALUES (6, '2020-12-28 09:00:01','2020-12-28 17:00:01', 1, 1, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-29 08:00:00','2020-12-29 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-29 08:00:01','2020-12-29 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-12-30 08:00:00','2020-12-30 17:00:00', 0, 0, 0);
+VALUES (6, '2020-12-30 08:00:01','2020-12-30 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-01-01 08:00:00','2020-01-01 17:00:00', 0, 0, 0);
+VALUES (6, '2020-01-01 08:00:01','2020-01-01 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-01-02 08:00:00','2020-01-02 17:00:00', 0, 0, 0);
+VALUES (6, '2020-01-02 08:00:01','2020-01-02 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-01-03 08:00:00','2020-01-03 17:00:00', 0, 0, 0);
+VALUES (6, '2020-01-03 08:00:01','2020-01-03 17:00:01', 0, 0, 0);
 INSERT INTO timekeeping(userid,starttime,endtime,isdelay,timedelay,isabsolve) 
-VALUES (6, '2020-01-04 09:00:00','2020-01-04 17:00:00', 1, 1, 0);
+VALUES (6, '2020-01-04 09:00:01','2020-01-04 17:00:01', 1, 1, 0);
 

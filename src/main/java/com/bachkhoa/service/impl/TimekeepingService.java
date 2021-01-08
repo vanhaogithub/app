@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bachkhoa.constant.SystemConstant;
 import com.bachkhoa.entity.TimekeepingEntity;
 import com.bachkhoa.repository.TimekeepingRepository;
 import com.bachkhoa.service.ITimekeepingService;
@@ -31,17 +32,16 @@ public class TimekeepingService implements ITimekeepingService {
 			timekeepingEntity = new TimekeepingEntity();
 			timekeepingEntity.setUserid(SecurityUtils.getPrincipal().getId());
 			timekeepingEntity.setStartTime(date);
-
-			if (date.after(dateUtils.getStartWorkTime(date))) {
+			Date startWorkTime = dateUtils.getFinalWorkTime(date, SystemConstant.START_WORK_TIME);
+			if (date.after(startWorkTime)) {
 				result = false;
 				timekeepingEntity.setDelay(true);
-				timekeepingEntity.setAbsolve(false);
-				timekeepingEntity.setTimeDelay(dateUtils.getHours(date, dateUtils.getStartWorkTime(date)));
+				timekeepingEntity.setTimeDelay(dateUtils.getHours(date, startWorkTime));
 			} else {
 				timekeepingEntity.setDelay(false);
-				timekeepingEntity.setAbsolve(true);
 				timekeepingEntity.setTimeDelay((double) 0);
 			}
+			timekeepingEntity.setAbsolve(false);
 			timekeepingRepository.save(timekeepingEntity);
 		}
 		return result;

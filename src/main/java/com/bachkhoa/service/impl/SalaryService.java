@@ -93,9 +93,9 @@ public class SalaryService implements ISalaryService {
 			for (int i = 1; i <= 31; i++) {
 				boolean checkDay = false;
 				Calendar calendar = Calendar.getInstance();
-				TimekeepingEntity timeKeeping = new TimekeepingEntity();
-				LeaveDayEntity leaveDay = new LeaveDayEntity();
-				OtEntity ot = new OtEntity();
+				TimekeepingEntity timeKeeping = null;
+				LeaveDayEntity leaveDay = null;
+				OtEntity ot = null;
 
 				for (TimekeepingEntity entity : timekeepings) {
 					calendar.setTime(entity.getStartTime());
@@ -126,7 +126,8 @@ public class SalaryService implements ISalaryService {
 				if (checkDay) {
 					SalaryEntity newEntity = new SalaryEntity();
 					SalaryEntity calculateEntity = this.calculateTimeKeeping(user, timeKeeping, leaveDay, ot);
-					SalaryEntity oldEntity = salaryRepo.findOneByWorkDay(calculateEntity.getWorkDay(), user.getOriginid());
+					SalaryEntity oldEntity = salaryRepo.findOneByWorkDay(calculateEntity.getWorkDay(),
+							user.getOriginid());
 					if (oldEntity != null) {
 						newEntity = salaryConverter.toEntity(oldEntity, calculateEntity);
 					} else {
@@ -155,25 +156,25 @@ public class SalaryService implements ISalaryService {
 		Double timeDelay = (double) 0;
 		boolean isAbsolve = false;
 		Double delayAmount = (double) 0;
-		Double daySalary = user.getDayBonusAmount() + user.getDaySalaryAmount();
+		Double daySalary = (double) 0;
 		Double housSalary = (user.getDayBonusAmount() + user.getDaySalaryAmount()) / 8;
-		if (timeKeeping.getStartTime() != null) {
+		if (timeKeeping != null) {
 			workDay = timeKeeping.getStartTime();
 			isDelay = timeKeeping.isDelay();
 			timeDelay = timeKeeping.getTimeDelay();
 			isAbsolve = timeKeeping.isAbsolve();
 			delayAmount = isAbsolve ? (double) 0 : timeDelay * housSalary;
-			daySalary = daySalary - delayAmount;
+			Double timeWork = dateUtils.getActualWorkTime(timeKeeping.getStartTime(), timeKeeping.getEndTime());
+			daySalary = timeWork * housSalary;
 		}
-		if (leaveDay.getDateleave() != null) {
+		if (leaveDay != null) {
 			workDay = leaveDay.getDateleave();
 			timesLeave = leaveDay.getTimesleave();
 			statusLeave = leaveDay.getStatus();
-			leaveDayAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusLeave) ? (double) 0
-					: leaveDay.getTimesleave() * housSalary;
-			daySalary = daySalary - leaveDayAmount;
+			leaveDayAmount = ApprovalStatus.APPROVALE_STATUS.equals(statusLeave) ? leaveDay.getTimesleave() * housSalary : (double) 0;
+			daySalary = daySalary + leaveDayAmount;
 		}
-		if (ot.getDateot() != null) {
+		if (ot != null) {
 			workDay = ot.getDateot();
 			timesOt = ot.getTimesot();
 			statusOt = ot.getStatus();

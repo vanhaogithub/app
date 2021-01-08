@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <c:url var="leaveDayURL" value="/home/leave/edit"/>
+<c:url var="leaveListURL" value="/home/leave/list"/>
 <!DOCTYPE html>
 
 <html>
@@ -70,6 +71,13 @@
 	<script>
 		var totalPages = ${model.totalPage};
 		var currentPage = ${model.page};
+		if(totalPages == 0){
+			totalPages = 1;
+		}
+		if(currentPage > totalPages){
+			currentPage = totalPages;
+			window.location.href = "${leaveListURL}?page="+currentPage+"&limit=5";
+		}
 		$(function () {
 	        window.pagObj = $('#pagination').twbsPagination({
 	            totalPages: totalPages,

@@ -94,22 +94,57 @@ public class DateUtils {
 		nextday = calendar.getTime();
 		return nextday;
 	}
-
-	public Date getStartWorkTime(Date date) {
+	
+	public Date getFinalWorkTime(Date date, String finalTime) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String text = sdf.format(date).substring(0, 10) + SystemConstant.START_WORK_TIME;
-		Date startWorkTime = null;
+		String text = sdf.format(date).substring(0, 10) + finalTime;
+		Date finalWorkTime = null;
 		try {
-			startWorkTime = sdf.parse(text);
+			finalWorkTime = sdf.parse(text);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		return startWorkTime;
+		return finalWorkTime;
 	}
 
 	public Double getHours(Date loginDate, Date startWorkDate) {
 		Double hours = (double) (loginDate.getTime() - startWorkDate.getTime());
 		hours = hours / (60 * 60 * 1000);
 		return hours;
+	}
+	
+	public Double getActualWorkTime(Date startTime, Date endTime){
+		Double timeWork = (double) 0;
+		Date startWorkTime = this.getFinalWorkTime(startTime, SystemConstant.START_WORK_TIME);
+		Date endWorkTime = this.getFinalWorkTime(startTime, SystemConstant.END_WORK_TIME);
+		Date startRelaxWorkTime = this.getFinalWorkTime(startTime, SystemConstant.START_RELAX_WORK_TIME);
+		Date endRelaxWorkTime = this.getFinalWorkTime(startTime, SystemConstant.END_RELAX_WORK_TIME);
+		if (startTime.before(startWorkTime) && endTime.after(startWorkTime) && endTime.before(startRelaxWorkTime)) {
+			timeWork = this.getHours(endTime, startWorkTime);
+		} else if(startTime.before(startWorkTime) && endTime.before(endRelaxWorkTime) && endTime.after(startRelaxWorkTime)){
+			timeWork = this.getHours(startRelaxWorkTime, startWorkTime);
+		} else if(startTime.before(startWorkTime) && endTime.before(endWorkTime) && endTime.after(endRelaxWorkTime)){
+			timeWork = this.getHours(endTime, startWorkTime) - 1;
+		} else if(startTime.before(startWorkTime) && endTime.after(endWorkTime)){
+			timeWork = this.getHours(endWorkTime, startWorkTime) - 1;
+		} else if(startTime.after(startWorkTime) && startTime.before(startRelaxWorkTime) && endTime.after(startWorkTime) && endTime.before(startRelaxWorkTime)){
+			timeWork = this.getHours(endTime, startTime);
+		} else if(startTime.after(startWorkTime) && startTime.before(startRelaxWorkTime) && endTime.before(endRelaxWorkTime) && endTime.after(startRelaxWorkTime)){
+			timeWork = this.getHours(startRelaxWorkTime, startTime);
+		} else if(startTime.after(startWorkTime) && startTime.before(startRelaxWorkTime) && endTime.before(endWorkTime) && endTime.after(endRelaxWorkTime)){
+			timeWork = this.getHours(endTime, startTime) - 1;
+		} else if(startTime.after(startWorkTime) && startTime.before(startRelaxWorkTime) && endTime.after(endWorkTime)){
+			timeWork = this.getHours(endWorkTime, startTime) - 1;
+		} else if(startTime.after(startRelaxWorkTime) && startTime.before(endRelaxWorkTime) && endTime.before(endWorkTime) && endTime.after(endRelaxWorkTime)){
+			timeWork = this.getHours(endTime, endRelaxWorkTime);
+		} else if(startTime.after(startRelaxWorkTime) && startTime.before(endRelaxWorkTime) && endTime.after(endWorkTime)){
+			timeWork = this.getHours(endWorkTime, endRelaxWorkTime);
+		} else if(startTime.after(endRelaxWorkTime) && startTime.before(endWorkTime) && endTime.before(endWorkTime) && endTime.after(endRelaxWorkTime)){
+			timeWork = this.getHours(endTime, startTime);
+		} else if(startTime.after(endRelaxWorkTime) && startTime.before(endWorkTime) && endTime.after(endWorkTime)){
+			timeWork = this.getHours(endWorkTime, startTime);
+		}
+		
+		return timeWork;
 	}
 }

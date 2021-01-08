@@ -101,6 +101,10 @@
 		<script>
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
+			if(currentPage > totalPages){
+				currentPage = totalPages;
+				window.location.href = "${newURL}?page="+currentPage+"&limit=5";
+			}
 			$(function () {
 		        window.pagObj = $('#pagination').twbsPagination({
 		            totalPages: totalPages,

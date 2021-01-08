@@ -17,5 +17,8 @@ public class SystemConstant {
 	public static final String ERROR_SYSTEM = "error_system";
 	public static final String WORK_LATE = "work_late";
 	public static final String START_WORK_TIME =" 08:00:00";
+	public static final String END_WORK_TIME =" 17:00:00";
+	public static final String END_RELAX_WORK_TIME =" 13:00:00";
+	public static final String START_RELAX_WORK_TIME =" 12:00:00";
 
 }

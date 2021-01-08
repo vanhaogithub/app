@@ -98,6 +98,13 @@
 		<script>
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
+			if(totalPages == 0){
+				totalPages = 1;
+			}
+			if(currentPage > totalPages){
+				currentPage = totalPages;
+				window.location.href = "${leaveURL}?page="+currentPage+"&limit=5";
+			}
 			$(function () {
 		        window.pagObj = $('#pagination').twbsPagination({
 		            totalPages: totalPages,

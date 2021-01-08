@@ -117,10 +117,10 @@
 			var currentPage = ${model.page};
 			var monthParam = "${month}";
 			var monthSplit;
-			var month
+			var month;
 			if(monthParam.search("-") != -1){
 				monthSplit = monthParam.substr(0, 7).split("-");
-				month = monthSplit[1] + "/" + monthSplit[0]
+				month = monthSplit[1] + "/" + monthSplit[0];
 			} else{
 				month = monthParam;
 			}
@@ -136,6 +136,13 @@
 			    $('#monthPicker').MonthPicker({ Button: false });
 			    $('#monthPicker').val(month);
 			});
+			if(totalPages == 0){
+				totalPages = 1;
+			}
+			if(currentPage > totalPages && totalPages != 0){
+				currentPage = totalPages;
+			}
+			
 			$(function () {
 		        window.pagObj = $('#pagination').twbsPagination({
 		            totalPages: totalPages,
