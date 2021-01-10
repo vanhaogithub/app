@@ -31,17 +31,13 @@ public class ErrorHandleFilter implements Filter {
 		try {
 			String servletPath = req.getServletPath();
 			if (!UrlUtils.checkExistUrl(servletPath)) {
-//				RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/error");
-//				dispatcher.forward(request, response);
 				req.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(request, response);
-			} else{
+			} else {
 				chain.doFilter(request, response);
 			}
 		} catch (Exception ex) {
 			req.setAttribute("errorMessage", ex);
 			req.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(request, response);
 		}
-
 	}
-
 }

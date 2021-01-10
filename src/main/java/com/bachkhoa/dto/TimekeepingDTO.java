@@ -9,11 +9,11 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 
 	private Date endTime;
 
-	private boolean isDelay;
+	private String isDelay;
 
-	private Double timeDelay;
+	private String timeDelay;
 
-	private boolean isAbsolve;
+	private String isAbsolve;
 
 	public Long getUserid() {
 		return userid;
@@ -39,28 +39,28 @@ public class TimekeepingDTO extends AbstractDTO<TimekeepingDTO> {
 		this.endTime = endTime;
 	}
 
-	public boolean isDelay() {
+	public String getIsDelay() {
 		return isDelay;
 	}
 
-	public void setDelay(boolean isDelay) {
+	public void setIsDelay(String isDelay) {
 		this.isDelay = isDelay;
 	}
 
-	public Double getTimeDelay() {
-		return timeDelay;
-	}
-
-	public void setTimeDelay(Double timeDelay) {
-		this.timeDelay = timeDelay;
-	}
-
-	public boolean isAbsolve() {
+	public String getIsAbsolve() {
 		return isAbsolve;
 	}
 
-	public void setAbsolve(boolean isAbsolve) {
+	public void setIsAbsolve(String isAbsolve) {
 		this.isAbsolve = isAbsolve;
+	}
+
+	public String getTimeDelay() {
+		return timeDelay;
+	}
+
+	public void setTimeDelay(String timeDelay) {
+		this.timeDelay = timeDelay;
 	}
 
 }

@@ -59,13 +59,17 @@
 
         <div class="jumbotron text-feft">
 	        <div class="row">
-	        	<div class="col-sm-6">
+	        	<div class="col-sm-4">
 	            	<h3>Ngay dang ky nghi phep</h3>
 	            	<a class="nav-link" href="<c:url value='/home/leave/list?page=1&limit=5'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
 	            </div>
-	            <div class="col-sm-6">
+	            <div class="col-sm-4">
 	            	<h3>Ngay dang ky OT</h3>
 	            	<a class="nav-link" href="<c:url value='/home/ot/list?page=1&limit=5'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
+		        </div>
+		        <div class="col-sm-4">
+	            	<h3>List timekeeping</h3>
+	            	<a class="nav-link" href="<c:url value='/home/timekeep/list?page=1&limit=10'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
 		        </div>
 	        </div>
         </div>
