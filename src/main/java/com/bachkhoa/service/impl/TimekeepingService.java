@@ -1,14 +1,15 @@
 package com.bachkhoa.service.impl;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.constant.SystemConstant;
+import com.bachkhoa.converter.TimeKeepingConverter;
 import com.bachkhoa.dto.TimekeepingDTO;
 import com.bachkhoa.entity.TimekeepingEntity;
 import com.bachkhoa.repository.TimekeepingRepository;
@@ -23,6 +24,9 @@ public class TimekeepingService implements ITimekeepingService {
 
 	@Autowired
 	private DateUtils dateUtils;
+
+	@Autowired
+	private TimeKeepingConverter timeKeepingConverter;
 
 	@Override
 	@Transactional
@@ -66,15 +70,30 @@ public class TimekeepingService implements ITimekeepingService {
 	}
 
 	@Override
-	public List<TimekeepingDTO> findByMonth(Pageable pageable, String month) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<TimekeepingDTO> findByMonth(int page, int limit, String month) {
+		List<TimekeepingDTO> models = new ArrayList<>();
+		List<TimekeepingDTO> all = this.findAllByMonth(month);
+		int start = (page - 1) * limit;
+		int end = (page - 1) * limit + limit - 1;
+		end = end < all.size() ? end : (all.size()-1);
+		for (int i = start; i <= end; i++) {
+			models.add(all.get(i));
+		}
+		return models;
 	}
 
 	@Override
 	public int getTotalItem(String month) {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.findAllByMonth(month).size();
 	}
 
+	@Override
+	public List<TimekeepingDTO> findAllByMonth(String month) {
+		Date startMonth = dateUtils.stringToDate(month);
+		Date endMonth = dateUtils.getNextMonth(startMonth);
+		List<TimekeepingEntity> timekeepings = timekeepingRepository
+				.findAllByUseridAndDate(SecurityUtils.getPrincipal().getId(), startMonth, endMonth);
+		List<TimekeepingDTO> models = timeKeepingConverter.toListDTO(timekeepings);
+		return models;
+	}
 }

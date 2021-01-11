@@ -69,7 +69,7 @@
 		        </div>
 		        <div class="col-sm-4">
 	            	<h3>List timekeeping</h3>
-	            	<a class="nav-link" href="<c:url value='/home/timekeep/list?page=1&limit=10'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
+	            	<a class="nav-link" href="<c:url value='/home/timekeep/list?page=1&limit=5&month=10/2020'/>"><button type="button" class="btn btn-success pull-left">Go to</button></a>
 		        </div>
 	        </div>
         </div>

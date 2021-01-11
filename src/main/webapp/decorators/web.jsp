@@ -23,6 +23,10 @@
 	<link href="<c:url value='/template/web/otEdit/css/register.css'/>" rel="stylesheet" type="text/css">
 	<link href="<c:url value='/template/web/otEdit/css/themes/base/jquery-ui.css'/>" rel="stylesheet" type="text/css">
 	<script src="<c:url value='/template/web/otEdit/js/jquery-ui.js'/>"></script>
+	<!-- Month picker -->
+    <link rel="stylesheet" href="<c:url value='/template/monthPicker/MonthPicker.min.css' />" />
+    <link rel="stylesheet" href="<c:url value='/template/monthPicker/examples.css' />" />
+    <script src="<c:url value='/template/monthPicker/MonthPicker.min.js' />"></script>
 </head>
 <body>
 	<!-- Navigation -->

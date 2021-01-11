@@ -1,6 +1,8 @@
 package com.bachkhoa.converter;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.stereotype.Component;
 
@@ -33,5 +35,14 @@ public class TimeKeepingConverter {
 		}
 		dto.setIsAbsolve(isAbsolve);
 		return dto;
+	}
+	
+	public List<TimekeepingDTO> toListDTO(List<TimekeepingEntity> entities) {
+		List<TimekeepingDTO> dtos = new ArrayList<>();
+		for (TimekeepingEntity en : entities) {
+			TimekeepingDTO dto = this.toDTO(en);
+			dtos.add(dto);
+		}
+		return dtos;
 	}
 }

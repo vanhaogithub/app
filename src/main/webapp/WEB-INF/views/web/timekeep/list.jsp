@@ -11,86 +11,63 @@
 	</head>
 
 	<body>
-		<div class="main-content">
-		<form action="<c:url value='/home/timekeep/list'/>" id="formSubmit" method="get">
-			
-				<div class="main-content-inner">
-					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
-						<ul class="breadcrumb">
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Trang chủ</a>
-							</li>
-						</ul>
-						<!-- /.breadcrumb -->
-					</div>
-					<div class="page-content">
-						<div class="row">
-							<div class="col-xs-12">
-							
-								<c:if test="${not empty message}">
-									<div class="alert alert-${alert}">
-			  							${message}
-									</div>
-								</c:if>
-								
-								
-								<div class="widget-box table-filter">
-									<div class="col-xs-6">
-										<div class="form-group">
-										    <label>Select month:</label>
-										   	<input id="monthPicker" type="text" value="" />
-										</div>
+		<div class="container" >
+			<div class="jumbotron text-left">
+				<form action="<c:url value='/home/timekeep/list'/>" id="formSubmit" method="get">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="widget-box table-filter">
+								<div class="col-xs-6">
+									<div class="form-group">
+									    <label>Select month:</label>
+									   	<input id="monthPicker" type="text" value="" />
 									</div>
 								</div>
-								
-								<div class="row">
-									<div class="col-xs-12">
-										<div class="table-responsive">
-											<table class="table table-bordered">
-												<thead>
-													<tr>
-														<th>Month</th>
-														<th>Nhan vien</th>
-														<th>OT Amount</th>
-							                            <th>Leave day Amount</th>
-							                            <th>Delay work Amount</th>
-							                            <th>Luong Thang</th>
-							                            <th>Detail</th>
-													</tr>
-												</thead>
-												<tbody>
-													
-													<c:forEach var="item" items="${model.listResult}">
-														<c:set var="month" value="${item.month}"/>  
-														<tr>
-															<td>${fn:substring(month, 0, 7)}</td>
-															<td>${item.fullname}</td>
-															<td>${item.sumOtAmount}</td>
-															<td>${item.sumLeaveDayAmount}</td>
-															<td>${item.sumDelayAmount}</td>
-															<td>${item.sumSalary}</td>
-															<td>
-																<span onclick="goToDetail('${item.userid}')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
-															</td>
-														</tr>
-													</c:forEach>
-												
-												</tbody>
-											</table>
-											<ul class="pagination" id="pagination"></ul>	
-											<input type="hidden" value="" id="page" name="page"/>
-											<input type="hidden" value="" id="limit" name="limit"/>	
-											<input type="hidden" value="" id="month" name="month"/>									
-										</div>
-									</div>
-								</div>
-								
 							</div>
+							
+							<div class="row">
+								<div class="col-xs-11">
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>Ngay lam viec</th>
+													<th>Gio login</th>
+													<th>Gio logout</th>
+													<th>Di lam tre</th>
+						                            <th>So gio tre</th>
+						                            <th>Tha toi</th>
+												</tr>
+											</thead>
+											<tbody>
+												
+												<c:forEach var="item" items="${model.listResult}">
+													<c:set var="startTime" value="${item.startTime}"/>
+													<c:set var="endTime" value="${item.endTime}"/> 
+													<tr>
+														<td>${fn:substring(startTime, 0, 10)}</td>
+														<td>${fn:substring(startTime, 11, 19)}</td>
+														<td>${fn:substring(endTime, 11, 19)}</td>
+														<td>${item.isDelay}</td>
+														<td>${item.timeDelay}</td>
+														<td>${item.isAbsolve}</td>
+													</tr>
+												</c:forEach>
+											
+											</tbody>
+										</table>
+										<ul class="pagination" id="pagination"></ul>	
+										<input type="hidden" value="" id="page" name="page"/>
+										<input type="hidden" value="" id="limit" name="limit"/>	
+										<input type="hidden" value="" id="month" name="month"/>									
+									</div>
+								</div>
+							</div>
+							
 						</div>
 					</div>
-				</div>
-		</form>
+				</form>
+			</div>
 		</div>
 		<!-- /.main-content -->
 		<script>

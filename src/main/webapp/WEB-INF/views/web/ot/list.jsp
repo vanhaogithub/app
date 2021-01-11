@@ -18,10 +18,10 @@
 
 	<!-- Page Content -->
 	<div class="container">
-         <div class="jumbotron text-feft">
+         <div class="jumbotron text-left">
          	<form action="<c:url value='/home/ot/list'/>" id="formSubmit" method="get">
               <h3>Ngay dang ky OT</h3>
-              <div id="leaveDay" class="row">
+              <div id="otDay" class="row">
                   <div class="col-md-10 col-lg-10">
                       <div class="table-responsive">
 							<table class="table table-bordered">

@@ -89,7 +89,7 @@ public class LeaveDayService implements ILeaveDayService {
 		int start = (page - 1) * limit;
 		int end = (page - 1) * limit + limit - 1;
 		end = end < all.size() ? end : (all.size()-1);
-		for (int i = start; i < end; i++) {
+		for (int i = start; i <= end; i++) {
 			models.add(all.get(i));
 		}
 		return models;

@@ -2,8 +2,6 @@ package com.bachkhoa.service;
 
 import java.util.List;
 
-import org.springframework.data.domain.Pageable;
-
 import com.bachkhoa.dto.TimekeepingDTO;
 
 public interface ITimekeepingService {
@@ -12,7 +10,9 @@ public interface ITimekeepingService {
 
 	boolean registerEndTime();
 
-	List<TimekeepingDTO> findByMonth(Pageable pageable, String month);
+	List<TimekeepingDTO> findByMonth(int page, int limit, String month);
 
 	int getTotalItem(String month);
+	
+	List<TimekeepingDTO> findAllByMonth(String month);
 }
