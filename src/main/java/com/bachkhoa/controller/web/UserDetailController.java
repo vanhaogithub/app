@@ -15,7 +15,7 @@ import com.bachkhoa.service.IUserDetailService;
 import com.bachkhoa.util.MessageUtil;
 import com.bachkhoa.util.SecurityUtils;
 
-@Controller
+@Controller(value = "userDetailControllerOfWeb")
 public class UserDetailController {
 	@Autowired
 	private IUserDetailService userDetailService;

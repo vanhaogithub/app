@@ -8,7 +8,8 @@ public class SystemConstant {
 		{"/home","/login","/home/ot/list","/home/ot/edit","/api/ot","/home/leave/list","/home/leave/edit","/api/leave",
 		"/admin/home","/admin/news/list","/home/user/edit","/api/userDetail","/admin/leave/list","/api/admin/leave",
 		"/admin/ot/list","/api/admin/ot","/admin/salary/list","/api/admin/salary/timeKeeping","/admin/salary/detail",
-		"/admin/news/edit","/error","/logout","/accessDenied","/j_spring_security_check","/home/timekeep/list"};
+		"/admin/news/edit","/error","/logout","/accessDenied","/j_spring_security_check","/home/timekeep/list",
+		"/admin/mail/send"};
 	public static final String[] LIST_URL_PARTEN = {"^/template.+"};
 	
 	public static final String UPDATE_SUCCESS = "update_success";

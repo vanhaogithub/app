@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -37,10 +38,10 @@ public class UserDetailService implements IUserDetailService {
 			UserDetailDTO dto = userDetailConverter.toDto(item);
 			models.add(dto);
 		}
-		
+
 		return models;
 	}
-	
+
 	@Override
 	@Transactional
 	public UserDetailDTO save(UserDetailDTO dto) {
@@ -58,5 +59,21 @@ public class UserDetailService implements IUserDetailService {
 	@Override
 	public String getNameByOriginid(long originid) {
 		return userDetailRepository.getNameByOriginid(originid);
+	}
+
+	@Override
+	public List<UserDetailDTO> findAll(Pageable pageable) {
+		List<UserDetailDTO> models = new ArrayList<>();
+		List<UserDetailEntity> entities = userDetailRepository.findAll(pageable).getContent();
+		for (UserDetailEntity item : entities) {
+			UserDetailDTO dto = userDetailConverter.toDto1(item);
+			models.add(dto);
+		}
+		return models;
+	}
+
+	@Override
+	public int getTotalItem() {
+		return (int) userDetailRepository.count();
 	}
 }

@@ -4,6 +4,7 @@
 <c:url var="salaryAPI" value="/api/admin/salary/timeKeeping"/>
 <c:url var="salaryURL" value="/admin/salary/list"/>
 <c:url var="salaryDetailURL" value="/admin/salary/detail"/>
+<c:url var="sendMailURL" value="/admin/mail/send"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -46,13 +47,26 @@
 										</div>
 									</div>
 									
-									<div class="col-xs-6">
+									<div class="col-xs-3">
 										<div class="table-btn-controls">
 											<div class="pull-right tableTools-container">
 												<div class="dt-buttons btn-overlap btn-group">
 													<button id="btnRunSalary" type="button" onclick="runChamCong()">
 														<span>
 															Run cham cong
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3">
+										<div class="table-btn-controls">
+											<div class="pull-right tableTools-container">
+												<div class="dt-buttons btn-overlap btn-group">
+													<button id="btnSendMail" type="button" onclick="sendMail()">
+														<span>
+															Send mail
 														</span>
 													</button>
 												</div>
@@ -197,6 +211,9 @@
 		        });
 			}
 			
+			function sendMail() {
+				window.location.href = '${sendMailURL}';
+			}
 		</script>
 	</body>
 	</html>

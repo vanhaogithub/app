@@ -67,8 +67,7 @@
 											</table>
 											<ul class="pagination" id="pagination"></ul>	
 											<input type="hidden" value="" id="page" name="page"/>
-											<input type="hidden" value="" id="limit" name="limit"/>	
-											<input type="hidden" value="" id="month" name="month"/>									
+											<input type="hidden" value="" id="limit" name="limit"/>								
 										</div>
 									</div>
 								</div>
@@ -84,27 +83,6 @@
 			
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
-			var monthParam = "${month}";
-			var monthSplit;
-			var month;
-			if(monthParam.search("-") != -1){
-				monthSplit = monthParam.substr(0, 7).split("-");
-				month = monthSplit[1] + "/" + monthSplit[0];
-			} else{
-				month = monthParam;
-			}
-			
-			$("#monthPicker").focusout(function(){
-		        var month = $('#monthPicker').val();
-		        if(month != ""){
-		        	window.location.href = '${userListURL}?page=1&limit=5&month='+month;
-		        }
-		        
-		    });
-			$(document).ready(function() {	   
-			    $('#monthPicker').MonthPicker({ Button: false });
-			    $('#monthPicker').val(month);
-			});
 			if(totalPages == 0){
 				totalPages = 1;
 			}
@@ -121,14 +99,13 @@
 		            	if (currentPage != page) {
 		            		$('#limit').val(5);
 							$('#page').val(page);
-							$('#month').val(month);
 							$('#formSubmit').submit();
 						}
 		            }
 		        });
 		    });
 			function goToUpdate(userid) {
-				window.location.href = "${userUpdateURL}?page=1&limit=5&userid="+userid+"&month="+month;
+				window.location.href = "${userUpdateURL}?page=1&limit=5&userid="+userid;
 		    }
 			
 		</script>
