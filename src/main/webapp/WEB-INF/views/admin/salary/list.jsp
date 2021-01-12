@@ -4,7 +4,7 @@
 <c:url var="salaryAPI" value="/api/admin/salary/timeKeeping"/>
 <c:url var="salaryURL" value="/admin/salary/list"/>
 <c:url var="salaryDetailURL" value="/admin/salary/detail"/>
-<c:url var="sendMailURL" value="/admin/mail/send"/>
+<c:url var="apiSendMailURL" value="/api/admin/mail/send"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -212,7 +212,17 @@
 			}
 			
 			function sendMail() {
-				window.location.href = '${sendMailURL}';
+				$.ajax({
+		            url: '${apiSendMailURL}',
+		            type: 'PUT',
+		            dataType: 'json',
+		            success: function (result) {
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';
+		            },
+		            error: function (error) {
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=error_system';
+		            }
+		        });
 			}
 		</script>
 	</body>

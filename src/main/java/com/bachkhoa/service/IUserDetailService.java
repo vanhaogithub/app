@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.data.domain.Pageable;
 
 import com.bachkhoa.dto.UserDetailDTO;
+import com.bachkhoa.dto.UserDetailOutDTO;
 
 public interface IUserDetailService {
 	UserDetailDTO findByOriginid(Long originid);
@@ -15,7 +16,7 @@ public interface IUserDetailService {
 
 	String getNameByOriginid(long originid);
 
-	List<UserDetailDTO> findAll(Pageable pageable);
+	List<UserDetailOutDTO> findAll(Pageable pageable);
 
 	int getTotalItem();
 }

@@ -3,6 +3,7 @@ package com.bachkhoa.converter;
 import org.springframework.stereotype.Component;
 
 import com.bachkhoa.dto.UserDetailDTO;
+import com.bachkhoa.dto.UserDetailOutDTO;
 import com.bachkhoa.entity.UserDetailEntity;
 import com.bachkhoa.util.SecurityUtils;
 
@@ -75,5 +76,23 @@ public class UserDetailConverter {
 		entity.setExpirationDate(dto.getExpirationDate());
 		entity.setProjects(dto.getProjects());
 		return entity;
+	}
+	
+	public UserDetailOutDTO toOutDto(UserDetailEntity entity) {
+		UserDetailOutDTO result = new UserDetailOutDTO();
+		result.setId(entity.getId());
+		result.setOriginid(entity.getOriginid());
+		result.setFullname(entity.getFullname());
+		result.setEmail(entity.getEmail());
+		result.setPhone(entity.getPhone());
+		result.setDepartmentid(entity.getDepartmentid());
+		result.setManager01id(entity.getManager01id());
+		result.setManager02id(entity.getManager02id());
+		result.setDaySalaryAmount(entity.getDaySalaryAmount());
+		result.setDayBonusAmount(entity.getDayBonusAmount());
+		result.setEffectiveDate(entity.getEffectiveDate());
+		result.setExpirationDate(entity.getExpirationDate());
+		
+		return result;
 	}
 }

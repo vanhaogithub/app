@@ -9,7 +9,7 @@ public class SystemConstant {
 		"/admin/home","/admin/news/list","/home/user/edit","/api/userDetail","/admin/leave/list","/api/admin/leave",
 		"/admin/ot/list","/api/admin/ot","/admin/salary/list","/api/admin/salary/timeKeeping","/admin/salary/detail",
 		"/admin/news/edit","/error","/logout","/accessDenied","/j_spring_security_check","/home/timekeep/list",
-		"/admin/mail/send"};
+		"/admin/mail/send","/api/admin/mail/send","/admin/user/list","/admin/user/update"};
 	public static final String[] LIST_URL_PARTEN = {"^/template.+"};
 	
 	public static final String UPDATE_SUCCESS = "update_success";

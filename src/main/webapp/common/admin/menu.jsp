@@ -67,6 +67,13 @@
                     <b class="arrow"></b>
                     
                 </li>
+                <li>
+                    <a href="<c:url value='/admin/user/list?page=1&limit=5'/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Quan ly nhan vien
+                    </a>
+                    <b class="arrow"></b>
+                </li>
             </ul>
         </li>
     </ul>

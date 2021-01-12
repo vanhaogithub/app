@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.bachkhoa.dto.UserDetailDTO;
+import com.bachkhoa.dto.UserDetailOutDTO;
 import com.bachkhoa.service.IUserDetailService;
 
 @Controller(value = "userDetailControllerOfAdmin")
@@ -23,7 +23,7 @@ public class UserDetailController {
 	public ModelAndView showList(@RequestParam("page") int page, 
 								 @RequestParam("limit") int limit, HttpServletRequest request) {
 		// tao UserDetailOutDTO rieng lay ten thay Id
-		UserDetailDTO model = new UserDetailDTO();
+		UserDetailOutDTO model = new UserDetailOutDTO();
 		model.setPage(page);
 		model.setLimit(limit);
 		ModelAndView mav = new ModelAndView("/admin/user/list");
