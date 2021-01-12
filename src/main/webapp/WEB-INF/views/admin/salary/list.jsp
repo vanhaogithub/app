@@ -215,6 +215,8 @@
 				$.ajax({
 		            url: '${apiSendMailURL}',
 		            type: 'PUT',
+		            contentType: 'text/plain',
+		            data: month,
 		            dataType: 'json',
 		            success: function (result) {
 		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';

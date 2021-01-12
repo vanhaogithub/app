@@ -23,5 +23,6 @@ public class SystemConstant {
 	public static final String START_RELAX_WORK_TIME =" 12:00:00";
 	public static final String YES ="YES";
 	public static final String NO ="NO";
+	public static final String EMAIL_SERVER = "mailserver0501@gmail.com";
 
 }
