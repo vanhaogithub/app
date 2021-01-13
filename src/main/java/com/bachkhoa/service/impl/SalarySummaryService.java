@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bachkhoa.converter.SalarySummaryConverter;
 import com.bachkhoa.dto.SalarySummaryDTO;
+import com.bachkhoa.dto.SalarySummaryOutDTO;
 import com.bachkhoa.entity.SalaryEntity;
 import com.bachkhoa.entity.SalarySummaryEntity;
 import com.bachkhoa.entity.UserDetailEntity;
@@ -102,6 +103,22 @@ public class SalarySummaryService implements ISalarySummaryService {
 			salarySummaryDTOs.add(salarySummaryConverter.toDTO(salarySummary));
 		}
 		return salarySummaryDTOs;
+	}
+
+	@Override
+	public List<SalarySummaryOutDTO> findAllByMonth(String month) {
+		Date date = dateUtils.stringToDate(month);
+		List<SalarySummaryOutDTO> dtos = new ArrayList<>();
+		SalarySummaryEntity salarySummaryEntity = new SalarySummaryEntity();
+		salarySummaryEntity.setMonth(date);
+		Example<SalarySummaryEntity> example = Example.of(salarySummaryEntity);
+		List<SalarySummaryEntity> entities = salarySummaryRepository.findAll(example);
+
+		for (SalarySummaryEntity item : entities) {
+			SalarySummaryOutDTO dto = salarySummaryConverter.toOutDTO(salarySummaryConverter.toDTO(item));
+			dtos.add(dto);
+		}
+		return dtos;
 	}
 
 }

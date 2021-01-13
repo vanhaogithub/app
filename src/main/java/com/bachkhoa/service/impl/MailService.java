@@ -1,6 +1,7 @@
 package com.bachkhoa.service.impl;
 
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import javax.mail.internet.MimeMessage;
 
@@ -14,6 +15,8 @@ import com.bachkhoa.constant.SystemConstant;
 import com.bachkhoa.dto.SalarySummaryOutDTO;
 import com.bachkhoa.dto.UserDetailDTO;
 import com.bachkhoa.service.IMailService;
+import com.bachkhoa.service.ISalarySummaryService;
+import com.bachkhoa.service.IUserDetailService;
 
 @Service
 public class MailService implements IMailService {
@@ -21,12 +24,18 @@ public class MailService implements IMailService {
 	static String emailToRecipient, emailSubject, emailMessage;
 
 	@Autowired
+	private ISalarySummaryService salarySummaryService;
+
+	@Autowired
 	private JavaMailSender mailSenderObj;
+
+	@Autowired
+	private IUserDetailService userDetailService;
 
 	@Override
 	public void sendTimeKeepingMail(UserDetailDTO user, SalarySummaryOutDTO salary) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		emailToRecipient = user.getEmail();
+		emailToRecipient = "nguyenhao.mailfortest@gmail.com"; //user.getEmail();
 		emailSubject = "Cong ty XXX tra luong thang " + sdf.format(salary.getMonth()).substring(0, 10);
 		emailMessage = "<b>Dear " + salary.getFullname() + "</b>,<br>"
 				+ "<i>Sau day la thong tin luong ban nhan duoc trong thang </i>"
@@ -49,6 +58,16 @@ public class MailService implements IMailService {
 		});
 		System.out.println("\nMessage Send Successfully!\n");
 
+	}
+
+	@Override
+	public List<SalarySummaryOutDTO> processTimeKeepingMail(String month) {
+		List<SalarySummaryOutDTO> salarySummaryOutDTOs = salarySummaryService.findAllByMonth(month);
+		for (SalarySummaryOutDTO salarySummaryOutDTO : salarySummaryOutDTOs) {
+			UserDetailDTO userDetailDTO = userDetailService.findByOriginid(salarySummaryOutDTO.getUserid());
+			this.sendTimeKeepingMail(userDetailDTO, salarySummaryOutDTO);
+		}
+		return salarySummaryOutDTOs;
 	}
 
 }

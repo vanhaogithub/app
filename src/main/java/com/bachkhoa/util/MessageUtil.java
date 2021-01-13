@@ -29,8 +29,20 @@ public class MessageUtil {
 		}else if (message.equals("work_late")) {
 			result.put("message", "Ban da di lam tre!");
 			result.put("alert", "danger");
+		}else if (message.equals("send_mail_success")) {
+			result.put("message", "Send mail success!");
+			result.put("alert", "success");
+		}else if (message.equals("send_mail_error")) {
+			result.put("message", "Send mail error!");
+			result.put("alert", "danger");
+		}else if (message.equals("timeKeeping_success")) {
+			result.put("message", "TimeKeeping success!");
+			result.put("alert", "success");
+		}else if (message.equals("timeKeeping_error")) {
+			result.put("message", "TimeKeeping error!");
+			result.put("alert", "danger");
 		}
-		
+
 		return result;
 	}
 }

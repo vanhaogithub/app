@@ -14,8 +14,8 @@
 		<div class="container" >
 			<div class="jumbotron text-left">
 				<form action="<c:url value='/home/timekeep/list'/>" id="formSubmit" method="get">
-					<div class="row">
-						<div class="col-xs-12">
+					<h3>Ngay cham cong trong thang</h3>
+						<div class="col-md-12 col-lg-12">
 							<div class="widget-box table-filter">
 								<div class="col-xs-6">
 									<div class="form-group">
@@ -62,10 +62,8 @@
 										<input type="hidden" value="" id="month" name="month"/>									
 									</div>
 								</div>
-							</div>
-							
-						</div>
-					</div>
+							</div>						
+					</div>		
 				</form>
 			</div>
 		</div>

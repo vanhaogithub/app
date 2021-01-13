@@ -203,10 +203,10 @@
 		            data: month,
 		            dataType: 'json',
 		            success: function (result) {
-		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=timeKeeping_success';
 		            },
 		            error: function (error) {
-		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=error_system';
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=timeKeeping_error';
 		            }
 		        });
 			}
@@ -219,10 +219,10 @@
 		            data: month,
 		            dataType: 'json',
 		            success: function (result) {
-		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=update_success';
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=send_mail_success';
 		            },
 		            error: function (error) {
-		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=error_system';
+		            	window.location.href = '${salaryURL}?page=1&limit=5&month='+month+'&message=send_mail_error';
 		            }
 		        });
 			}
