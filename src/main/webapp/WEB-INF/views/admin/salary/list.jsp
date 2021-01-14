@@ -22,7 +22,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Trang chủ</a>
+								<a href="<c:url value='/home'/>">Trang chủ</a>
 							</li>
 						</ul>
 						<!-- /.breadcrumb -->
@@ -40,33 +40,31 @@
 								
 								<div class="widget-box table-filter">
 								
-									<div class="col-xs-6">
+									<div class="col-xs-8">
 										<div class="form-group">
 										    <label>Select month:</label>
 										   	<input id="monthPicker" type="text" value="" />
 										</div>
 									</div>
 									
-									<div class="col-xs-3">
+									<div class="col-xs-4">
 										<div class="table-btn-controls">
 											<div class="pull-right tableTools-container">
 												<div class="dt-buttons btn-overlap btn-group">
 													<button id="btnRunSalary" type="button" onclick="runChamCong()">
 														<span>
-															Run cham cong
+															Chay cham cong
 														</span>
 													</button>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-xs-3">
 										<div class="table-btn-controls">
 											<div class="pull-right tableTools-container">
 												<div class="dt-buttons btn-overlap btn-group">
 													<button id="btnSendMail" type="button" onclick="sendMail()">
 														<span>
-															Send mail
+															Gui mail luong
 														</span>
 													</button>
 												</div>
@@ -180,7 +178,6 @@
 				swal({
 				  title: "Run batch cham cong ?",
 				  text: "Month: " + month,
-				  icon: "warning",
 				  buttons: true,
 				  dangerMode: true,
 				})
@@ -190,8 +187,6 @@
 				    	title: "Please waiting when batch excuting!"
 				    });
 				    timeKeepExcuting(month);
-				  } else {
-				    swal("Please recheck status not approval!");
 				  }
 				});
 		    }
@@ -212,6 +207,23 @@
 			}
 			
 			function sendMail() {
+				swal({
+				  title: "Send mail cham cong ?",
+				  text: "Month: " + month,
+				  buttons: true,
+				  dangerMode: true,
+				})
+				.then((isRun) => {
+				  if (isRun) {
+				    swal({
+				    	title: "Please waiting when mail sending!"
+				    });
+				    sendTimeKeepingMail(month);
+				  }
+				});
+		    }
+			
+			function sendTimeKeepingMail(month) {
 				$.ajax({
 		            url: '${apiSendMailURL}',
 		            type: 'PUT',

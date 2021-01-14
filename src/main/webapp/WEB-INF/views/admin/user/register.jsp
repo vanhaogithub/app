@@ -18,7 +18,7 @@
 			</script>
 
 			<ul class="breadcrumb">
-				<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
+				<li><i class="ace-icon fa fa-home home-icon"></i> <a href="<c:url value='/home'/>">Home</a>
 				</li>
 
 				<li><a href="#">Forms</a></li>

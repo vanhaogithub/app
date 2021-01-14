@@ -9,10 +9,7 @@
 </head>
 <body>
 <div class="container">
-	<div class="jumbotron text-feft">															
-		<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-		   title="Edit content" href="<c:url value='/home'/>"><h5>Back to home page</h5>
-		</a>
+	<div class="jumbotron text-feft">
 		<div class="col-lg-12">
 			<c:if test="${not empty message}">
 				<div class="alert alert-${alert}">
