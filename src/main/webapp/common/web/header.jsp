@@ -15,10 +15,10 @@
 				<li class="nav-item active"><a class="nav-link" href="#">Wellcome <%=SecurityUtils.getPrincipal().getFullName()%></a></li>
 				<security:authorize access="hasAnyRole('ADMIN')">
 				    <li class="nav-item active">
-				    	<a class="nav-link" href="<c:url value='/admin/home'/>">Goto Admin page<span class="sr-only">(current)</span></a>
+				    	<a class="nav-link" href="<c:url value='/admin/home'/>">Admin Page<span class="sr-only">(current)</span></a>
 				    </li>
 				</security:authorize>
-				<li class="nav-item active"><a class="nav-link" href="<c:url value='/logout'/>">Thoát</a></li>
+				<li class="nav-item active"><a class="nav-link" href="<c:url value='/logout'/>">Logout</a></li>
 			</ul>
 		</div>
 	</div>
